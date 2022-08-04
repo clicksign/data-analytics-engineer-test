@@ -29,7 +29,7 @@ Lembre-se que queremos gerar insights com dados, então realize relações com t
 
 Encontre uma relação de dados entre as tabelas League, Country, Team_Attributes e Player, crie uma nova tabela chamada **'Relations'**
 
-**Exemplo:""
+**Exemplo:**
 
 Esquematize uma relação entre a **altura** e **peso** dos jogadores de forma isolada, com seu rendimento. 
 
