@@ -20,7 +20,7 @@ Faça uma análise exploratória dos dados no sentido de validar a qualidade dos
 
 Lembre-se que queremos gerar insights com dados, então realize relações com tabelas que nos forneçam alguma informação relevante para os dados tratados analisados. Crie análises exploratórias dos dados.
 
-**Exemplos**: 
+**Exemplos:** 
 
 - Qual a proporção entre jogadores destros e canhotos? Quais os seus nomes?
 - Qual o nome do país com maior saldo de gols.
@@ -28,6 +28,8 @@ Lembre-se que queremos gerar insights com dados, então realize relações com t
 **Questão 4 - Utilize SQL**
 
 Encontre uma relação de dados entre as tabelas League, Country, Team_Attributes e Player, crie uma nova tabela chamada **'Relations'**
+
+**Exemplo:""
 
 Esquematize uma relação entre a **altura** e **peso** dos jogadores de forma isolada, com seu rendimento. 
 
