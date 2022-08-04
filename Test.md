@@ -1,0 +1,41 @@
+De posse do link, entenda o repositório e se atente ao contexto em que está envolvido. No repositório você encontrará os arquivos .CSV disponiblizados com sample de dados, bem como as descrições necessárias para resolver as questões.
+
+**Questão 1 - Utilize Python**
+
+Como primeiro passo do desafio, faça a leitura desses arquivos CSVs via python e realize o upload/carregamento desses dados em um banco **SQLite**.
+
+- Crie um schema chamado: **test_analytics_engineer**
+- Crie as tabelas com os mesmos nomes dos arquivos .csv
+- Respeite a tipagem e os nomes das colunas dos arquivos .csv
+
+**Questão 2 - Utilize SQL**
+
+Estabeleça uma relação entre as tabelas **Atributes** e  **Player_Attributes** em uma nova tabela, chamada **‘Player_Attributes_Modified’**, onde cada key do json é uma nova coluna. Faça o mesmo para a relação **Team** e **Team_Attributes**, como o nome para a tabela **‘Team_Attributes_Modified’**
+
+Crie uma tabela chamada **Match_Modified** cuja coluna seja representada como JSON, onde as chaves precisam ser referentes às colunas da tabela Match, sendo elas : i**d,match_api_id, home_team_api_id, away_team_api_id .**
+
+**Questão 3 - Utilize SQL**
+
+Faça uma análise exploratória dos dados no sentido de validar a qualidade dos dados destes datasets. Use sua criatividade e imaginação para buscar “sujeiras” na base de dados.
+
+Lembre-se que queremos gerar insights com dados, então realize relações com tabelas que nos forneçam alguma informação relevante para os dados tratados analisados. Crie análises exploratórias dos dados.
+
+**Exemplos**: 
+
+- Qual a proporção entre jogadores destros e canhotos? Quais os seus nomes?
+- Qual o nome do time com maior saldo de gols.
+
+**Questão 4 - Utilize SQL**
+
+Encontre uma relação de dados entre as tabelas League, Country, Team_Attributes e Player, crie uma nova tabela chamada ‘04_**Relations’**
+
+Esquematize uma relação entre a **altura** e **peso** dos jogadores de forma isolada, com seu rendimento. 
+
+***Dica***: Criar 3 intervalos entre os 6 valores com maiores contagens para estes dois parâmetros.
+
+Questão 5 **- CTE**
+[https://www.sqlshack.com/sql-server-common-table-expressions-cte/](https://www.sqlshack.com/sql-server-common-table-expressions-cte/)
+
+Semanalmente o gerente de Fifa solicita a média de gols dos times mandantes. Como você faria, em SQL, para salvar ou automatizar essa query? Envie-nos seu código.
+
+**Bônus**: realize a criação de um projeto no DBT e faça análises exploratórias mais aprofundadas
