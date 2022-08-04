@@ -21,7 +21,7 @@ O que você precisará para completar este desafio está armazenado na pasta **
 5. (🔎) Player_Attributes.csv (*Arquivo de dados*)
 6. (🔎) Team.csv (*Arquivo de dados*)
 7. (🔎) Team_Attributes.csv (*Arquivo de dados*)
-8. (📋) **Description** (*Arquivo de informações*)
+
 
 Sua tarefa é realizar uma análise exploratória dos dados presentes nos datasets fornecidos e ter dados que comprovem suas respostas para algumas questões. O teste é composto de cinco questões obrigatórias e duas questões bônus. Deixar de responder as questões bônus não lhe trará nenhum prejuízo na avaliação do teste. Para que ocorra tudo bem com esse teste é fundamental que:
 
