@@ -41,4 +41,4 @@ Esquematize uma relação entre a **altura** e **peso** dos jogadores de forma i
 Semanalmente o gerente da Fifa solicita a média de gols dos times mandantes, porém como você gosta de entregar mais do que lhe pedem, você resolveu montar uma CTE para entregar outras métricas para seu gerente. Como você faria, em SQL, para salvar ou automatizar essa query? Envie-nos seu código.
 
 
-**Bônus**: realize a criação de um projeto no DBT e faça análises exploratórias mais aprofundadas
+**Bônus**: realize a criação de um projeto no DBT e faça análises exploratórias mais aprofundadas.
