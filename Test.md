@@ -1,8 +1,8 @@
-De posse do link, entenda o repositório e se atente ao contexto em que está envolvido. No repositório você encontrará dentro do diretório data, em um data.rar os arquivos .CSV disponiblizados com sample de dados, bem como as descrições necessárias para resolver as questões.
+De posse do link, entenda o repositório e se atente ao contexto em que está envolvido. No repositório você encontrará dentro do diretório data, em um arquivo compactados data.rar os arquivos .csv disponiblizados como sample de dados, esses são os únicos e exclusivos dados para a realização desse teste. Boa sorte!
 
 **Questão 1 - Utilize Python**
 
-Como primeiro passo do desafio, faça a leitura desses arquivos CSVs via python e realize o upload/carregamento desses dados em um banco **SQLite**.
+Como primeiro passo do desafio, faça a leitura/importação desses arquivos via python e realize o upload/carregamento desses dados em um banco **SQLite**.
 
 - Crie um schema chamado: **test_analytics_engineer**
 - Crie as tabelas com os mesmos nomes dos arquivos .csv
@@ -12,7 +12,7 @@ Como primeiro passo do desafio, faça a leitura desses arquivos CSVs via python 
 
 Estabeleça uma relação entre as tabelas **Player** e  **Player_Attributes** em uma nova tabela, chamada **‘Player_Attributes_Modified’**, onde cada key do json é uma nova coluna. Faça o mesmo para a relação **Team** e **Team_Attributes**, como o nome para a tabela **‘Team_Attributes_Modified’**
 
-Crie uma tabela chamada **Match_Modified** cuja coluna seja representada como JSON, onde as chaves precisam ser referentes às colunas da tabela Match, sendo elas : i**d,match_api_id, home_team_api_id, away_team_api_id .**
+Crie uma tabela chamada **Match_Modified** cuja coluna seja representada como JSON, onde as chaves precisam ser referentes às colunas da tabela Match, sendo elas : **id,match_api_id, home_team_api_id, away_team_api_id .**
 
 **Questão 3 - Utilize SQL ou Python**
 
