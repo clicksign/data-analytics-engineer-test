@@ -12,7 +12,7 @@ Temporadas 2008 a 2016;
 
 # **Informações dos dados:**
 
-O que você precisará para completar este desafio está armazenado na pasta **data** deste repositório. Este diretório contém os seguintes arquivos:
+Os dados que você precisará para completar este desafio está armazenado na pasta **data** deste repositório. Este diretório contém os seguintes arquivos:
 
 1. (🔎) Country.csv(*Arquivo de dados*)
 2. (🔎) League.csv (*Arquivo de dados*)
@@ -22,10 +22,15 @@ O que você precisará para completar este desafio está armazenado na pasta **
 6. (🔎) Team.csv (*Arquivo de dados*)
 7. (🔎) Team_Attributes.csv (*Arquivo de dados*)
 
+Também encontrará os arquivos:
+1. (🔎) Test.md(*Arquivo com as questões do teste)
+2. (🔎) README.md (*Arquivo informações*)
+3. (🔎)LICENSE.md (*Arquivo de informações*)
 
-Sua tarefa é realizar uma análise exploratória dos dados presentes nos datasets fornecidos e ter dados que comprovem suas respostas para algumas questões. O teste é composto de cinco questões obrigatórias e duas questões bônus. Deixar de responder as questões bônus não lhe trará nenhum prejuízo na avaliação do teste. Para que ocorra tudo bem com esse teste é fundamental que:
 
-1. Suas **únicas e exclusivas** fonte de dados devem ser os datasets fornecidos neste repositório;
+Sua tarefa é realizar as questões disponíveis no arquivo Test.md, que bassicamente é realizar uma análise exploratória dos dados presentes nos datasets fornecidos e ter dados que comprovem suas respostas para algumas questões. O teste é composto de cinco questões obrigatórias e umas questão bônus. Deixar de responder as questões bônus não lhe trará nenhum prejuízo na avaliação do teste. Para que ocorra tudo bem com esse teste é fundamental que:
+
+1. Suas **únicas e exclusivas** fonte de dados devem ser os datasets fornecidos neste repositório, disponíveis em data;
 2. Você deve processar **todos** os arquivos de dados fornecidos;
 3. Seu script em python deve fazer o upload dos arquivos.csv para um banco SQLite;
 4. Aplique todas as transformações e limpeza de dados que julgar necessária (*Tenha em mente que precisamos acessar dados úteis que possibilitem a extração de insights!*) e ;
