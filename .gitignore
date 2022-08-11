@@ -1,0 +1,15 @@
+#Ignorando o diretório Secrets
+data-analytics-engineer-test/RAW/*
+
+
+#Igonorando o pycache
+__pycache__
+
+#Ignorando arquivos
+*.pyc
+
+#Ignorando arquivos .idea
+*.idea
+
+#Ignorando arquvios .vscode
+*.vscode
