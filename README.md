@@ -1,76 +1,51 @@
-# **Desafio - Analytics Engineer**
-
-Este repositório possui um teste que visa avaliar sua curiosidade, seus conhecimentos em SQL / Python, análise e limpeza de dados, Storytelling e conceitos relacionados a processos ETL/ELT. O teste possui seu próprio conjunto de arquivos, parâmetros, instruções e estratégias para ser resolvido. Portanto, estude cada detalhe com sabedoria.
-
-# **Datasets**
-
-- O banco de dados de futebol definitivo para análise de dados e aprendizado conta com +25.000 partidas,+10.000 jogadores, 11 países europeus com seu campeonato líder
-Temporadas 2008 a 2016;
-- Atributos de jogadores e equipes provenientes da série de videogames FIFA da EA Sports, incluindo as atualizações semanais;
-- Alinhamento da equipe com a formação do esquadrão (coordenadas X, Y).Probabilidades de apostas de até 10 provedores e ;
-- Eventos detalhados da partida (tipos de gol, posse de bola, escanteio, cruzamento, faltas, cartões etc…) para +10.000 partidas
+# **Introdução:**
+Olá pessoal, tudo bem? Aqui vou fazer alguns comentários pertinentes às resoluções e dificuldades obtidas durante o processo de realização do teste.
 
 # **Informações dos dados:**
 
-Os dados que você precisará para completar este desafio está armazenado na pasta **data** deste repositório. Este diretório contém os seguintes arquivos:
+Os dados que você precisará para completar este desafio está armazenado na pasta **data** deste repositório. Assim como na realização do teste, será necessário fazer a extração do arquivo comprimido "Data.rar". O código utilizado para a resolução do teste está presente no notebook 'Analytic Engineer Test'
 
-1. (🔎) Country.csv(*Arquivo de dados*)
-2. (🔎) League.csv (*Arquivo de dados*)
-3. (🔎) Match.csv (*Arquivo de dados*)
-4. (🔎) Player.csv (*Arquivo de dados*)
-5. (🔎) Player_Attributes.csv (*Arquivo de dados*)
-6. (🔎) Team.csv (*Arquivo de dados*)
-7. (🔎) Team_Attributes.csv (*Arquivo de dados*)
+# **Questão 1 - Utilize Python**
 
-Também encontrará os arquivos:
-1. (🔎) Test.md(*Arquivo com as questões do teste)
-2. (🔎) README.md (*Arquivo informações*)
-3. (🔎)LICENSE.md (*Arquivo de informações*)
+Como primeiro passo do desafio, faça a leitura/importação desses arquivos via python e realize o upload/carregamento desses dados em um banco SQLite.
 
+Crie um schema chamado: test_analytics_engineer
+Crie as tabelas com os mesmos nomes dos arquivos .csv
+Respeite a tipagem e os nomes das colunas dos arquivos .csv
 
-Sua tarefa é realizar as questões disponíveis no arquivo Test.md, que basicamente é realizar uma análise exploratória dos dados presentes nos datasets fornecidos e ter dados que comprovem suas respostas para algumas questões. O teste é composto de cinco questões obrigatórias e umas questão bônus. Deixar de responder as questões bônus não lhe trará nenhum prejuízo na avaliação do teste. Para que ocorra tudo bem com esse teste é fundamental que:
+## **Considerações:**
 
-1. Suas **únicas e exclusivas** fonte de dados devem ser os datasets fornecidos neste repositório, disponíveis em data;
-2. Você deve processar **todos** os arquivos de dados fornecidos;
-3. Seu script em python deve fazer o upload dos arquivos.csv para um banco SQLite;
-4. Aplique todas as transformações e limpeza de dados que julgar necessária (*Tenha em mente que precisamos acessar dados úteis que possibilitem a extração de insights!*) e ;
-5. Ao criar sua tabela no banco de dados, respeite a **tipagem dos dados e o nome das colunas** fornecidas no arquivo de descrição.
+Foi uma questão tranquila de ser executada, para ela utilizei somente a biblioteca sqlite3 no python para a criação do banco e da conexão com ele.
 
-# **Instruções**
+Questão 2 - Utilize SQL
 
-Por favor, desenvolva um script ou programa de computador utilizando a linguagem de programação **SQL** / **Python** para resolver os problemas propostos. Estamos cientes da dificuldade associadas às tarefas, mas toda criatividade, estratégia de raciocínio, detalhes na documentação do código, estrutura e precisão do código serão usados para avaliar o desempenho do candidato. Portanto, certifique-se de que o código apresentado reflita o seu conhecimento tanto quanto possível!
+Estabeleça uma relação entre as tabelas Player e Player_Attributes em uma nova tabela, chamada ‘Player_Attributes_Modified’, onde cada key do json é uma nova coluna. Faça o mesmo para a relação Team e Team_Attributes, como o nome para a tabela ‘Team_Attributes_Modified’
 
-Esperamos que uma solução possa ser alcançada dentro de um período de tempo razoável, considerando alguns dias, portanto, fique à vontade para usar o tempo da melhor forma possível. Entendemos que você pode ter uma agenda apertada, portanto, não hesite em nos contatar para qualquer solicitação adicional👍.
+Crie uma tabela chamada Match_Modified cuja coluna seja representada como JSON, onde as chaves precisam ser referentes às colunas da tabela Match, sendo elas : id,match_api_id, home_team_api_id, away_team_api_id .
 
-# Motivação
+## **Considerações:**
 
-Resolver problemas complexos usando conhecimentos de programação faz parte do cotidiano de Analytics Engineers. Por isso, é essencial para um candidato ter habilidade suficiente para dominar essas tecnologias.
+Foi uma questão que tive um pouco de dificuldade no começo por nunca ter utilizado funções de extração de JSON dentro do SQL, como pedia a questão, então foi necessário consultar e pesquisar pela documentação do SQLite para usar a função 'json_extract'. Ainda assim, quando usava a função ela retornava um erro de 'malformed JSON' e após investigar, percebia que devido ao fato de algumas linhas do JSON serem 'NaN' então utilizei a função 'json_extract' junto com a 'replace' e a partir daí não houve mais nenhum problema na execução do código para realizar o join entre as tabelas.
 
-Na fase de avaliação técnica você receberá um link com o diretório onde encontra-se todo material necessário para realizar o teste, que envolve a escrita de consultas SQL e alguns outros exercícios de programação.
+Questão 3 - Utilize SQL ou Python
 
-As linguagens utilizadas serão **Python e/ou SQL**, e saiba que a escolha da linguagem não interfere na sua avaliação. Nós prestamos atenção em aspectos como um código limpo, organizado e documentado, na linha de raciocínio utilizada e se o resultado final foi atingido.
-****
+Faça uma análise exploratória dos dados no sentido de validar a qualidade dos dados destes datasets. Use sua criatividade e imaginação para buscar “sujeiras” na base de dados.
 
-# **Enviando sua solução**
+Lembre-se que queremos gerar insights com dados, então realize relações com tabelas que nos forneçam alguma informação relevante para os dados tratados analisados. Crie análises exploratórias dos dados.
 
-Faça um fork deste projeto, e crie um branch com sua conta no Github, utilizando seu nome e sobrenome nele. Por exemplo, um branch com o nome *"Franklin Ferreira"* definirá que o candidato com o mesmo nome está fazendo o upload do código com a solução para o teste. Por favor, coloque os scripts e o código em pastas separadas (com o mesmo nome das pastas de arquivo fornecidas) para facilitar nossa análise.
+## **Considerações:**
+Essa questão foi bem legal de ser feita, queria ter entregado ainda mais, mas não tinha certeza do que significava cada atributo dos datasets ('Match.csv') não aprofundei a análise, como exemplo eu não sabia em qual parte das tags HTML deveria ser feita a extração das colunas **'goal','shoton','shotoff','foulcommit','card', 'cross', 'corner', 'possession'**
 
-Se desejar, crie um arquivo PDF com imagens nos indicando todo o processo que executou para gerar sua solução. Prezamos muito por bons *Storytellings*.
+Questão 4 - Utilize SQL
 
-Além disso, esperamos que o candidato possa explicar o procedimento e a estratégia adotadas usando muitos, muitos e muitos comentários ou até mesmo um arquivo README separado. Esta parte da descrição é muito importante para facilitar nosso entendimento de sua solução! Lembre-se que o primeiro contato técnico com o candidato é por meio deste teste de codificação. Apesar de reforçarmos a importância da documentação e explicação do código, somos muito flexíveis para permitir a liberdade de escolher qual será o tipo de comunicação (por exemplo, arquivos README, comentários de código, etc).
+Encontre uma relação de dados entre as tabelas League, Country, Team_Attributes e Player, crie uma nova tabela chamada 'Relations'
 
-Outra boa dica a seguir é o conceito geral de engenharia de software que também é avaliado neste teste. Espera-se que o candidato tenha um conhecimento sólido de tópicos como **Test-Driven Development (TDD)**, e paradigmas de código limpo em geral. Em resumo, é uma boa ideia prestar atenção tanto ao código quanto às habilidades dos engenheiros analíticos.
+## **Considerações:**
 
-Depois de todas as análises e codificação serem feitas, crie uma solicitação de pull (PR) neste repositório.
+Para essa questão fiz um join direto entre as tabelas Team, League, Country com a Match e para fazer a relação de cada Player, eu precisava criar uma tabela virtual para cada jogador. Na questão fiz para 3 e expliquei em comentários que se necessário para os 22 jogadores (time da casa e time de fora) era só seguir o padrão.
 
+Questão 5 - Utiize SQL-CTE
 
-Como uma ajuda extra, use a seguinte lista de verificação para se certificar de que todas as etapas do desafio foram concluídas:
-- [ ] Baixe todos os arquivos do teste neste repositório e descompacte-os.
-- [ ] Crie uma solução adequada usando scripts, bibliotecas de código aberto, soluções de código próprio, etc. Considere que seguiremos suas instruções para executar seu código e ver o resultado.
-- [ ] Certifique-se de que a saída para o teste esteja de acordo com a saída necessária explicada aqui no arquivo README.md.
-- [ ] Se você está entusiasmado, pode nos enviar uma análise exploratória dos dados! 👌.
-- [ ] Faça comentários ou arquivos de documentação auxiliar (por exemplo, arquivos README) para auxiliar na interpretação de suas soluções. Lembre-se: adoramos ler seus comentários e explicações!
-- [ ] Salve o código resultante, scripts, documentação, etc. em pastas compatíveis com o mesmo nome do conjunto de dados de entrada (Apenas para nos ajudar! 👍)
-- [ ] Prepare os commits em branchs separados usando o padrão de nomeação: nome + sobrenome.
-- [ ] Envie o P.R.! (Dedos cruzados!😎)
+Semanalmente o gerente da Fifa solicita a média de gols dos times mandantes, porém como você gosta de entregar mais do que lhe pedem, você resolveu montar uma CTE para entregar outras métricas para seu gerente. Como você faria, em SQL, para salvar ou automatizar essa query? Envie-nos seu código.
+
 
