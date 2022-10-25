@@ -3,7 +3,7 @@ Olá pessoal, tudo bem? Aqui vou fazer alguns comentários pertinentes às resol
 
 # **Informações dos dados:**
 
-Os dados que você precisará para completar este desafio está armazenado na pasta **data** deste repositório. Assim como na realização do teste, será necessário fazer a extração do arquivo comprimido "Data.rar". O código utilizado para a resolução do teste está presente no notebook 'Analytic Engineer Test'
+Os dados que você precisará para completar este desafio está armazenado na pasta **data** deste repositório. Assim como na realização do teste, será necessário fazer a extração do arquivo comprimido "Data.rar". O código utilizado para a resolução do teste está presente no notebook 'Analytic Engineer Final', porém os gráficos contidos no arquivo .ipynb não apareceram no visualizador do GitHub.
 
 # **Questão 1 - Utilize Python**
 
