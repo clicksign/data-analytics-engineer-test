@@ -17,7 +17,7 @@ Respeite a tipagem e os nomes das colunas dos arquivos .csv
 
 Foi uma questão tranquila de ser executada, para ela utilizei somente a biblioteca sqlite3 no python para a criação do banco e da conexão com ele.
 
-#**Questão 2 - Utilize SQL**
+# **Questão 2 - Utilize SQL**
 
 Estabeleça uma relação entre as tabelas Player e Player_Attributes em uma nova tabela, chamada ‘Player_Attributes_Modified’, onde cada key do json é uma nova coluna. Faça o mesmo para a relação Team e Team_Attributes, como o nome para a tabela ‘Team_Attributes_Modified’
 
