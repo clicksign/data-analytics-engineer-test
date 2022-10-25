@@ -48,4 +48,5 @@ Para essa questão fiz um join direto entre as tabelas Team, League, Country com
 
 Semanalmente o gerente da Fifa solicita a média de gols dos times mandantes, porém como você gosta de entregar mais do que lhe pedem, você resolveu montar uma CTE para entregar outras métricas para seu gerente. Como você faria, em SQL, para salvar ou automatizar essa query? Envie-nos seu código.
 
-
+# **Considerações sobre questão Bônus:**
+Não realizei a questão bônus. A máquina que tive para realizar o teste era um pouco limitada e tive problemas na instalação do DBT e para evitar um trabalho que não fosse bom e focado (pois também não tinha conhecimento da ferramenta), preferi **no momento** não fazer essa questão. Mas o aprendizado sobre o DBT vai continuar
