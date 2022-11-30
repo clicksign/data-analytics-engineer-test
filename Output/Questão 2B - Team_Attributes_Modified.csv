@@ -1,0 +1,490 @@
+id;team_fifa_api_id;team_api_id;date;buildUpPlaySpeed;buildUpPlaySpeedClass;buildUpPlayDribbling;buildUpPlayDribblingClass;buildUpPlayPassing;buildUpPlayPassingClass;buildUpPlayPositioningClass;chanceCreationPassing;chanceCreationPassingClass;chanceCreationCrossing;chanceCreationCrossingClass;chanceCreationShooting;chanceCreationShootingClass;chanceCreationPositioningClass;defencePressure;defencePressureClass;defenceAggression;defenceAggressionClass;defenceTeamWidth;defenceTeamWidthClass;defenceDefenderLineClass
+2;434;9930;2014-09-19 00:00:00;52;Balanced;48;Normal;56;Mixed;Organised;54;Normal;63;Normal;64;Normal;Organised;47;Medium;44;Press;54;Normal;Cover
+3;434;9930;2015-09-10 00:00:00;47;Balanced;41;Normal;54;Mixed;Organised;54;Normal;63;Normal;64;Normal;Organised;47;Medium;44;Press;54;Normal;Cover
+8;77;8485;2014-09-19 00:00:00;58;Balanced;64;Normal;62;Mixed;Organised;56;Normal;68;Lots;57;Normal;Organised;41;Medium;42;Press;60;Normal;Cover
+9;77;8485;2015-09-10 00:00:00;59;Balanced;64;Normal;53;Mixed;Organised;51;Normal;72;Lots;63;Normal;Free Form;49;Medium;45;Press;63;Normal;Cover
+14;614;8576;2014-09-19 00:00:00;59;Balanced;57;Normal;52;Mixed;Organised;48;Normal;38;Normal;52;Normal;Organised;38;Medium;47;Press;53;Normal;Cover
+15;614;8576;2015-09-10 00:00:00;59;Balanced;57;Normal;52;Mixed;Organised;48;Normal;38;Normal;52;Normal;Organised;38;Medium;47;Press;53;Normal;Cover
+20;47;8564;2014-09-19 00:00:00;48;Balanced;70;Lots;52;Mixed;Organised;66;Normal;36;Normal;75;Lots;Organised;58;Medium;57;Press;49;Normal;Cover
+21;47;8564;2015-09-10 00:00:00;48;Balanced;70;Lots;52;Mixed;Organised;66;Normal;36;Normal;69;Lots;Organised;58;Medium;57;Press;49;Normal;Cover
+26;1901;10215;2014-09-19 00:00:00;52;Balanced;53;Normal;44;Mixed;Organised;55;Normal;51;Normal;60;Normal;Organised;39;Medium;38;Press;61;Normal;Cover
+27;1901;10215;2015-09-10 00:00:00;53;Balanced;53;Normal;44;Mixed;Organised;55;Normal;51;Normal;60;Normal;Organised;39;Medium;38;Press;61;Normal;Cover
+32;650;10217;2014-09-19 00:00:00;58;Balanced;47;Normal;55;Mixed;Organised;55;Normal;52;Normal;44;Normal;Organised;57;Medium;50;Press;52;Normal;Cover
+33;650;10217;2015-09-10 00:00:00;56;Balanced;40;Normal;66;Mixed;Organised;55;Normal;52;Normal;38;Normal;Organised;40;Medium;50;Press;52;Normal;Cover
+38;245;8593;2014-09-19 00:00:00;40;Balanced;40;Normal;30;Short;Organised;51;Normal;55;Normal;39;Normal;Free Form;64;Medium;53;Press;64;Normal;Cover
+39;245;8593;2015-09-10 00:00:00;35;Balanced;43;Normal;39;Mixed;Organised;58;Normal;55;Normal;30;Little;Free Form;64;Medium;53;Press;59;Normal;Cover
+44;1861;9865;2014-09-19 00:00:00;46;Balanced;41;Normal;65;Mixed;Organised;57;Normal;54;Normal;40;Normal;Organised;37;Medium;53;Press;45;Normal;Cover
+45;1861;9865;2015-09-10 00:00:00;46;Balanced;41;Normal;65;Mixed;Organised;57;Normal;54;Normal;40;Normal;Organised;37;Medium;53;Press;45;Normal;Cover
+50;229;8635;2014-09-19 00:00:00;52;Balanced;46;Normal;51;Mixed;Organised;60;Normal;53;Normal;47;Normal;Organised;60;Medium;50;Press;65;Normal;Cover
+51;229;8635;2015-09-10 00:00:00;52;Balanced;46;Normal;51;Mixed;Organised;60;Normal;53;Normal;47;Normal;Organised;53;Medium;50;Press;61;Normal;Cover
+56;1530;8121;2014-09-19 00:00:00;48;Balanced;61;Normal;50;Mixed;Organised;40;Normal;52;Normal;48;Normal;Organised;44;Medium;44;Press;51;Normal;Cover
+57;1530;8121;2015-09-10 00:00:00;48;Balanced;61;Normal;50;Mixed;Organised;40;Normal;52;Normal;48;Normal;Organised;44;Medium;44;Press;51;Normal;Cover
+64;111989;108893;2014-09-19 00:00:00;39;Balanced;48;Normal;54;Mixed;Organised;49;Normal;40;Normal;43;Normal;Organised;44;Medium;53;Press;57;Normal;Cover
+65;111989;108893;2015-09-10 00:00:00;56;Balanced;46;Normal;54;Mixed;Organised;55;Normal;40;Normal;43;Normal;Organised;48;Medium;53;Press;57;Normal;Cover
+68;159;9912;2014-09-19 00:00:00;62;Balanced;49;Normal;55;Mixed;Organised;56;Normal;51;Normal;52;Normal;Organised;36;Medium;54;Press;48;Normal;Cover
+69;112513;158085;2014-09-19 00:00:00;69;Fast;66;Normal;39;Mixed;Organised;55;Normal;59;Normal;46;Normal;Organised;35;Medium;37;Press;37;Normal;Cover
+70;112513;158085;2015-09-10 00:00:00;65;Balanced;66;Normal;39;Mixed;Organised;55;Normal;59;Normal;46;Normal;Organised;37;Medium;39;Press;37;Normal;Cover
+75;1;9825;2014-09-19 00:00:00;59;Balanced;51;Normal;26;Short;Organised;28;Safe;55;Normal;64;Normal;Free Form;51;Medium;44;Press;52;Normal;Cover
+76;1;9825;2015-09-10 00:00:00;59;Balanced;51;Normal;30;Short;Organised;28;Safe;44;Normal;46;Normal;Free Form;51;Medium;44;Press;52;Normal;Cover
+81;2;10252;2014-09-19 00:00:00;66;Balanced;32;Little;72;Long;Organised;63;Normal;48;Normal;56;Normal;Organised;39;Medium;42;Press;52;Normal;Cover
+82;2;10252;2015-09-10 00:00:00;63;Balanced;37;Normal;54;Mixed;Organised;60;Normal;48;Normal;38;Normal;Organised;35;Medium;44;Press;54;Normal;Cover
+87;39;8524;2014-09-19 00:00:00;64;Balanced;45;Normal;37;Mixed;Organised;38;Normal;49;Normal;51;Normal;Organised;36;Medium;66;Press;49;Normal;Cover
+88;39;8524;2015-09-10 00:00:00;64;Balanced;45;Normal;37;Mixed;Organised;38;Normal;49;Normal;51;Normal;Organised;36;Medium;63;Press;49;Normal;Cover
+93;448;8315;2014-09-19 00:00:00;46;Balanced;41;Normal;38;Mixed;Organised;52;Normal;68;Lots;37;Normal;Organised;37;Medium;60;Press;65;Normal;Cover
+94;448;8315;2015-09-10 00:00:00;46;Balanced;46;Normal;39;Mixed;Organised;50;Normal;60;Normal;36;Normal;Free Form;49;Medium;57;Press;50;Normal;Cover
+99;240;9906;2014-09-19 00:00:00;47;Balanced;52;Normal;51;Mixed;Organised;67;Risky;67;Lots;54;Normal;Organised;52;Medium;37;Press;55;Normal;Cover
+100;240;9906;2015-09-10 00:00:00;57;Balanced;50;Normal;50;Mixed;Organised;61;Normal;62;Normal;49;Normal;Organised;49;Medium;42;Press;52;Normal;Cover
+105;100409;8406;2014-09-19 00:00:00;62;Balanced;38;Normal;69;Long;Organised;41;Normal;63;Normal;56;Normal;Organised;47;Medium;55;Press;52;Normal;Cover
+106;100409;8406;2015-09-10 00:00:00;59;Balanced;51;Normal;55;Mixed;Organised;49;Normal;62;Normal;55;Normal;Organised;34;Medium;50;Press;59;Normal;Cover
+111;57;8583;2014-09-19 00:00:00;64;Balanced;55;Normal;49;Mixed;Organised;51;Normal;63;Normal;50;Normal;Organised;34;Medium;45;Press;36;Normal;Cover
+112;57;8583;2015-09-10 00:00:00;64;Balanced;55;Normal;49;Mixed;Organised;51;Normal;63;Normal;50;Normal;Organised;34;Medium;45;Press;40;Normal;Cover
+117;1906;10229;2014-09-19 00:00:00;52;Balanced;38;Normal;46;Mixed;Organised;60;Normal;56;Normal;52;Normal;Free Form;50;Medium;61;Press;55;Normal;Cover
+118;1906;10229;2015-09-10 00:00:00;50;Balanced;46;Normal;58;Mixed;Organised;67;Risky;56;Normal;50;Normal;Organised;50;Medium;61;Press;55;Normal;Cover
+123;241;8634;2014-09-19 00:00:00;35;Balanced;35;Normal;32;Short;Free Form;37;Normal;31;Little;35;Normal;Free Form;61;Medium;63;Press;65;Normal;Cover
+124;241;8634;2015-09-10 00:00:00;36;Balanced;35;Normal;51;Mixed;Free Form;36;Normal;49;Normal;56;Normal;Free Form;61;Medium;65;Press;65;Normal;Cover
+129;1848;9976;2014-09-19 00:00:00;55;Balanced;40;Normal;57;Mixed;Organised;54;Normal;44;Normal;56;Normal;Organised;49;Medium;51;Press;53;Normal;Cover
+130;1848;9976;2015-09-10 00:00:00;52;Balanced;40;Normal;65;Mixed;Organised;40;Normal;55;Normal;48;Normal;Organised;50;Medium;51;Press;55;Normal;Cover
+135;896;9931;2014-09-19 00:00:00;61;Balanced;63;Normal;46;Mixed;Organised;66;Normal;66;Normal;54;Normal;Organised;47;Medium;58;Press;53;Normal;Cover
+136;896;9931;2015-09-10 00:00:00;61;Balanced;63;Normal;46;Mixed;Organised;66;Normal;66;Normal;54;Normal;Organised;47;Medium;58;Press;53;Normal;Cover
+141;32;8178;2014-09-19 00:00:00;69;Fast;30;Little;55;Mixed;Organised;52;Normal;55;Normal;39;Normal;Organised;50;Medium;46;Press;54;Normal;Cover
+142;32;8178;2015-09-10 00:00:00;73;Fast;29;Little;55;Mixed;Organised;77;Risky;54;Normal;61;Normal;Organised;61;Medium;72;Double;50;Normal;Cover
+147;21;9823;2014-09-19 00:00:00;37;Balanced;34;Normal;22;Short;Free Form;21;Safe;38;Normal;40;Normal;Free Form;61;Medium;59;Press;40;Normal;Cover
+148;21;9823;2015-09-10 00:00:00;45;Balanced;24;Little;28;Short;Free Form;37;Normal;31;Little;22;Little;Free Form;72;High;53;Press;59;Normal;Cover
+157;1889;9807;2014-09-19 00:00:00;52;Balanced;53;Normal;52;Mixed;Organised;40;Normal;37;Normal;48;Normal;Organised;38;Medium;48;Press;49;Normal;Cover
+158;1889;9807;2015-09-10 00:00:00;51;Balanced;53;Normal;52;Mixed;Organised;43;Normal;37;Normal;48;Normal;Organised;38;Medium;48;Press;49;Normal;Cover
+165;234;9772;2014-09-19 00:00:00;70;Fast;55;Normal;53;Mixed;Organised;65;Normal;66;Normal;54;Normal;Organised;60;Medium;57;Press;54;Normal;Cover
+166;234;9772;2015-09-10 00:00:00;69;Fast;55;Normal;53;Mixed;Organised;65;Normal;66;Normal;54;Normal;Organised;60;Medium;57;Press;54;Normal;Cover
+171;88;8658;2014-09-19 00:00:00;56;Balanced;39;Normal;79;Long;Organised;77;Risky;71;Lots;56;Normal;Organised;42;Medium;48;Press;54;Normal;Cover
+172;88;8658;2015-09-10 00:00:00;56;Balanced;32;Little;75;Long;Organised;77;Risky;62;Normal;64;Normal;Organised;42;Medium;47;Press;54;Normal;Cover
+177;3;8655;2014-09-19 00:00:00;44;Balanced;31;Little;62;Mixed;Organised;63;Normal;61;Normal;40;Normal;Organised;50;Medium;50;Press;47;Normal;Cover
+178;3;8655;2015-09-10 00:00:00;60;Balanced;60;Normal;65;Mixed;Organised;59;Normal;58;Normal;42;Normal;Organised;50;Medium;50;Press;57;Normal;Cover
+183;1926;8483;2014-09-19 00:00:00;67;Fast;44;Normal;72;Long;Organised;70;Risky;48;Normal;58;Normal;Organised;39;Medium;38;Press;54;Normal;Cover
+184;1926;8483;2015-09-10 00:00:00;62;Balanced;36;Normal;64;Mixed;Organised;59;Normal;43;Normal;64;Normal;Organised;39;Medium;38;Press;54;Normal;Cover
+185;1898;8613;2015-09-10 00:00:00;47;Balanced;56;Normal;50;Mixed;Organised;37;Normal;38;Normal;53;Normal;Organised;32;Deep;62;Press;54;Normal;Cover
+190;160;9911;2014-09-19 00:00:00;38;Balanced;54;Normal;48;Mixed;Organised;51;Normal;54;Normal;36;Normal;Organised;34;Medium;53;Press;49;Normal;Cover
+191;160;9911;2015-09-10 00:00:00;69;Fast;38;Normal;57;Mixed;Organised;66;Normal;40;Normal;66;Normal;Organised;58;Medium;47;Press;67;Wide;Cover
+196;189;9857;2014-09-19 00:00:00;63;Balanced;53;Normal;48;Mixed;Organised;32;Safe;48;Normal;52;Normal;Organised;28;Deep;54;Press;48;Normal;Cover
+197;189;9857;2015-09-10 00:00:00;63;Balanced;53;Normal;48;Mixed;Organised;32;Safe;48;Normal;52;Normal;Organised;30;Deep;54;Press;48;Normal;Cover
+202;4;8559;2014-09-19 00:00:00;57;Balanced;37;Normal;73;Long;Organised;72;Risky;43;Normal;56;Normal;Organised;39;Medium;48;Press;58;Normal;Cover
+203;4;8559;2015-09-10 00:00:00;57;Balanced;34;Normal;61;Mixed;Organised;72;Risky;60;Normal;38;Normal;Organised;39;Medium;48;Press;58;Normal;Cover
+208;59;9827;2014-09-19 00:00:00;38;Balanced;49;Normal;36;Mixed;Organised;49;Normal;55;Normal;51;Normal;Organised;37;Medium;33;Contain;49;Normal;Cover
+209;59;9827;2015-09-10 00:00:00;51;Balanced;40;Normal;48;Mixed;Organised;49;Normal;63;Normal;44;Normal;Organised;57;Medium;52;Press;49;Normal;Cover
+214;22;9789;2014-09-19 00:00:00;76;Fast;33;Little;61;Mixed;Organised;53;Normal;44;Normal;73;Lots;Free Form;60;Medium;68;Double;43;Normal;Cover
+215;22;9789;2015-09-10 00:00:00;71;Fast;37;Normal;40;Mixed;Organised;70;Risky;44;Normal;49;Normal;Free Form;65;Medium;71;Double;40;Normal;Cover
+220;23;9788;2014-09-19 00:00:00;31;Slow;53;Normal;32;Short;Organised;38;Normal;26;Little;49;Normal;Free Form;43;Medium;50;Press;41;Normal;Cover
+221;23;9788;2015-09-10 00:00:00;31;Slow;53;Normal;32;Short;Organised;38;Normal;26;Little;49;Normal;Free Form;41;Medium;48;Press;39;Normal;Cover
+229;1943;8678;2014-09-19 00:00:00;47;Balanced;44;Normal;48;Mixed;Organised;46;Normal;48;Normal;41;Normal;Organised;48;Medium;50;Press;62;Normal;Cover
+230;1943;8678;2015-09-10 00:00:00;47;Balanced;36;Normal;47;Mixed;Organised;49;Normal;45;Normal;47;Normal;Organised;48;Medium;50;Press;62;Normal;Cover
+235;1896;10264;2014-09-19 00:00:00;53;Balanced;35;Normal;55;Mixed;Organised;53;Normal;65;Normal;39;Normal;Organised;25;Deep;56;Press;39;Normal;Cover
+236;1896;10264;2015-09-10 00:00:00;55;Balanced;35;Normal;55;Mixed;Organised;62;Normal;65;Normal;39;Normal;Organised;25;Deep;56;Press;39;Normal;Cover
+241;190;9858;2014-09-19 00:00:00;42;Balanced;56;Normal;27;Short;Organised;54;Normal;25;Little;75;Lots;Organised;41;Medium;52;Press;57;Normal;Cover
+242;190;9858;2015-09-10 00:00:00;42;Balanced;56;Normal;43;Mixed;Organised;41;Normal;48;Normal;69;Lots;Organised;41;Medium;52;Press;57;Normal;Cover
+247;378;8521;2014-09-19 00:00:00;59;Balanced;48;Normal;54;Mixed;Organised;49;Normal;53;Normal;66;Normal;Organised;44;Medium;34;Press;51;Normal;Cover
+248;378;8521;2015-09-10 00:00:00;59;Balanced;48;Normal;54;Mixed;Organised;49;Normal;53;Normal;66;Normal;Organised;44;Medium;34;Press;51;Normal;Cover
+253;1796;8191;2014-09-19 00:00:00;48;Balanced;32;Little;74;Long;Organised;72;Risky;59;Normal;58;Normal;Organised;54;Medium;57;Press;58;Normal;Cover
+254;1796;8191;2015-09-10 00:00:00;54;Balanced;32;Little;67;Long;Organised;72;Risky;57;Normal;47;Normal;Organised;63;Medium;62;Press;58;Normal;Cover
+259;210;7819;2014-09-19 00:00:00;62;Balanced;50;Normal;45;Mixed;Organised;48;Normal;54;Normal;53;Normal;Organised;43;Medium;42;Press;51;Normal;Cover
+260;210;7819;2015-09-10 00:00:00;62;Balanced;50;Normal;45;Mixed;Organised;48;Normal;54;Normal;53;Normal;Organised;43;Medium;42;Press;51;Normal;Cover
+265;1842;8529;2014-09-19 00:00:00;63;Balanced;51;Normal;53;Mixed;Organised;33;Safe;51;Normal;68;Lots;Organised;37;Medium;56;Press;51;Normal;Cover
+266;1842;8529;2015-09-10 00:00:00;67;Fast;32;Little;35;Mixed;Organised;69;Risky;58;Normal;69;Lots;Free Form;65;Medium;65;Press;57;Normal;Offside Trap
+267;647;7788;2014-09-19 00:00:00;45;Balanced;39;Normal;42;Mixed;Organised;46;Normal;56;Normal;57;Normal;Organised;42;Medium;49;Press;47;Normal;Cover
+268;647;7788;2015-09-10 00:00:00;43;Balanced;36;Normal;57;Mixed;Organised;46;Normal;50;Normal;38;Normal;Organised;42;Medium;49;Press;47;Normal;Cover
+273;1961;8344;2014-09-19 00:00:00;60;Balanced;29;Little;54;Mixed;Organised;52;Normal;46;Normal;41;Normal;Organised;33;Deep;41;Press;39;Normal;Cover
+274;1961;8344;2015-09-10 00:00:00;60;Balanced;41;Normal;67;Long;Organised;52;Normal;56;Normal;46;Normal;Organised;33;Deep;41;Press;39;Normal;Cover
+275;112409;208931;2014-09-19 00:00:00;32;Slow;46;Normal;31;Short;Organised;47;Normal;36;Normal;54;Normal;Organised;46;Medium;44;Press;51;Normal;Cover
+276;112409;208931;2015-09-10 00:00:00;80;Fast;45;Normal;65;Mixed;Organised;70;Risky;40;Normal;50;Normal;Organised;25;Deep;55;Press;35;Normal;Cover
+281;110364;8530;2014-09-19 00:00:00;75;Fast;52;Normal;48;Mixed;Organised;53;Normal;52;Normal;36;Normal;Organised;28;Deep;67;Double;52;Normal;Cover
+282;110364;8530;2015-09-10 00:00:00;70;Fast;52;Normal;48;Mixed;Organised;53;Normal;52;Normal;36;Normal;Organised;31;Deep;64;Press;52;Normal;Cover
+287;450;9910;2014-09-19 00:00:00;53;Balanced;54;Normal;62;Mixed;Organised;59;Normal;68;Lots;52;Normal;Organised;42;Medium;52;Press;65;Normal;Cover
+288;450;9910;2015-09-10 00:00:00;55;Balanced;59;Normal;38;Mixed;Organised;41;Normal;48;Normal;50;Normal;Free Form;55;Medium;55;Press;59;Normal;Cover
+293;78;9925;2014-09-19 00:00:00;70;Fast;52;Normal;58;Mixed;Organised;55;Normal;61;Normal;62;Normal;Organised;51;Medium;54;Press;60;Normal;Cover
+294;78;9925;2015-09-10 00:00:00;54;Balanced;49;Normal;53;Mixed;Organised;51;Normal;51;Normal;62;Normal;Organised;58;Medium;55;Press;56;Normal;Cover
+299;1750;9984;2014-09-19 00:00:00;53;Balanced;49;Normal;43;Mixed;Organised;52;Normal;58;Normal;42;Normal;Organised;59;Medium;47;Press;62;Normal;Cover
+300;1750;9984;2015-09-10 00:00:00;53;Balanced;49;Normal;43;Mixed;Organised;52;Normal;58;Normal;42;Normal;Organised;59;Medium;47;Press;62;Normal;Cover
+305;110915;9880;2014-09-19 00:00:00;73;Fast;29;Little;41;Mixed;Organised;53;Normal;44;Normal;73;Lots;Organised;39;Medium;49;Press;57;Normal;Cover
+306;110915;9880;2015-09-10 00:00:00;66;Balanced;31;Little;41;Mixed;Organised;53;Normal;44;Normal;66;Normal;Organised;39;Medium;49;Press;57;Normal;Cover
+311;5;8455;2014-09-19 00:00:00;67;Fast;52;Normal;38;Mixed;Organised;41;Normal;61;Normal;68;Lots;Organised;39;Medium;41;Press;46;Normal;Cover
+312;5;8455;2015-09-10 00:00:00;67;Fast;41;Normal;36;Mixed;Organised;41;Normal;34;Normal;44;Normal;Organised;39;Medium;41;Press;46;Normal;Cover
+317;192;8533;2014-09-19 00:00:00;66;Balanced;54;Normal;67;Long;Organised;52;Normal;66;Normal;52;Normal;Organised;46;Medium;59;Press;51;Normal;Cover
+318;192;8533;2015-09-10 00:00:00;66;Balanced;54;Normal;67;Long;Organised;52;Normal;66;Normal;52;Normal;Organised;46;Medium;59;Press;51;Normal;Cover
+323;231;8342;2014-09-19 00:00:00;42;Balanced;52;Normal;45;Mixed;Organised;42;Normal;57;Normal;47;Normal;Organised;51;Medium;50;Press;57;Normal;Cover
+324;231;8342;2015-09-10 00:00:00;42;Balanced;52;Normal;45;Mixed;Organised;42;Normal;57;Normal;47;Normal;Organised;51;Medium;50;Press;57;Normal;Cover
+329;1867;7869;2014-09-19 00:00:00;40;Balanced;53;Normal;53;Mixed;Organised;40;Normal;66;Normal;48;Normal;Organised;36;Medium;41;Press;52;Normal;Cover
+330;1867;7869;2015-09-10 00:00:00;53;Balanced;40;Normal;48;Mixed;Organised;55;Normal;59;Normal;57;Normal;Organised;38;Medium;39;Press;52;Normal;Cover
+334;110747;2186;2014-09-19 00:00:00;37;Balanced;50;Normal;38;Mixed;Organised;66;Normal;66;Normal;33;Little;Organised;59;Medium;34;Press;64;Normal;Cover
+335;110747;2186;2015-09-10 00:00:00;37;Balanced;50;Normal;38;Mixed;Organised;66;Normal;66;Normal;33;Little;Organised;59;Medium;34;Press;64;Normal;Cover
+340;1799;9826;2014-09-19 00:00:00;61;Balanced;36;Normal;68;Long;Organised;67;Risky;62;Normal;52;Normal;Organised;36;Medium;34;Press;48;Normal;Cover
+341;1799;9826;2015-09-10 00:00:00;61;Balanced;45;Normal;67;Long;Organised;67;Risky;69;Lots;50;Normal;Organised;36;Medium;34;Press;41;Normal;Cover
+342;110502;8262;2015-09-10 00:00:00;59;Balanced;43;Normal;77;Long;Organised;52;Normal;77;Lots;45;Normal;Organised;32;Deep;56;Press;41;Normal;Cover
+349;242;9783;2014-09-19 00:00:00;56;Balanced;55;Normal;46;Mixed;Organised;38;Normal;52;Normal;68;Lots;Organised;45;Medium;50;Press;59;Normal;Cover
+350;242;9783;2015-09-10 00:00:00;53;Balanced;55;Normal;47;Mixed;Organised;38;Normal;52;Normal;55;Normal;Organised;45;Medium;50;Press;59;Normal;Offside Trap
+355;110569;9836;2014-09-19 00:00:00;51;Balanced;54;Normal;49;Mixed;Organised;49;Normal;52;Normal;52;Normal;Organised;45;Medium;46;Press;58;Normal;Cover
+356;110569;9836;2015-09-10 00:00:00;51;Balanced;54;Normal;49;Mixed;Organised;49;Normal;52;Normal;52;Normal;Organised;45;Medium;46;Press;58;Normal;Cover
+358;180;8284;2015-09-10 00:00:00;47;Balanced;47;Normal;48;Mixed;Organised;32;Safe;61;Normal;65;Normal;Organised;50;Medium;44;Press;52;Normal;Cover
+363;181;9938;2014-09-19 00:00:00;60;Balanced;51;Normal;60;Mixed;Organised;52;Normal;55;Normal;38;Normal;Organised;41;Medium;40;Press;52;Normal;Cover
+364;181;9938;2015-09-10 00:00:00;60;Balanced;58;Normal;53;Mixed;Organised;55;Normal;49;Normal;45;Normal;Organised;48;Medium;42;Press;53;Normal;Cover
+366;467;8372;2014-09-19 00:00:00;62;Balanced;51;Normal;52;Mixed;Organised;60;Normal;55;Normal;64;Normal;Organised;37;Medium;56;Press;49;Normal;Cover
+367;467;8372;2015-09-10 00:00:00;62;Balanced;51;Normal;52;Mixed;Organised;59;Normal;55;Normal;52;Normal;Organised;37;Medium;56;Press;49;Normal;Cover
+370;110500;9776;2014-09-19 00:00:00;61;Balanced;60;Normal;62;Mixed;Organised;59;Normal;43;Normal;55;Normal;Organised;30;Deep;40;Press;39;Normal;Cover
+371;110500;9776;2015-09-10 00:00:00;66;Balanced;44;Normal;54;Mixed;Organised;62;Normal;59;Normal;51;Normal;Free Form;57;Medium;47;Press;53;Normal;Cover
+376;1824;9810;2014-09-19 00:00:00;63;Balanced;48;Normal;42;Mixed;Organised;57;Normal;50;Normal;52;Normal;Organised;43;Medium;46;Press;55;Normal;Cover
+377;1824;9810;2015-09-10 00:00:00;51;Balanced;41;Normal;38;Mixed;Organised;47;Normal;58;Normal;40;Normal;Organised;48;Medium;42;Press;55;Normal;Cover
+382;468;10268;2014-09-19 00:00:00;55;Balanced;47;Normal;69;Long;Organised;53;Normal;54;Normal;57;Normal;Organised;49;Medium;51;Press;58;Normal;Cover
+383;468;10268;2015-09-10 00:00:00;51;Balanced;52;Normal;48;Mixed;Organised;53;Normal;54;Normal;57;Normal;Organised;49;Medium;51;Press;58;Normal;Cover
+388;1746;8534;2014-09-19 00:00:00;63;Balanced;43;Normal;39;Mixed;Organised;66;Normal;67;Lots;51;Normal;Organised;53;Medium;57;Press;54;Normal;Cover
+389;1746;8534;2015-09-10 00:00:00;66;Balanced;43;Normal;36;Mixed;Organised;59;Normal;64;Normal;63;Normal;Organised;46;Medium;66;Press;48;Normal;Cover
+394;162;8398;2014-09-19 00:00:00;39;Balanced;47;Normal;40;Mixed;Organised;52;Normal;67;Lots;56;Normal;Organised;47;Medium;55;Press;52;Normal;Cover
+399;452;8558;2014-09-19 00:00:00;50;Balanced;52;Normal;44;Mixed;Organised;52;Normal;60;Normal;40;Normal;Organised;37;Medium;40;Press;45;Normal;Cover
+400;452;8558;2015-09-10 00:00:00;50;Balanced;52;Normal;44;Mixed;Organised;52;Normal;60;Normal;40;Normal;Free Form;37;Medium;40;Press;45;Normal;Cover
+402;10020;7842;2014-09-19 00:00:00;66;Balanced;56;Normal;52;Mixed;Organised;47;Normal;53;Normal;39;Normal;Organised;46;Medium;49;Press;55;Normal;Cover
+403;10020;7842;2015-09-10 00:00:00;59;Balanced;56;Normal;52;Mixed;Organised;47;Normal;53;Normal;39;Normal;Organised;46;Medium;49;Press;55;Normal;Cover
+409;7;8668;2014-09-19 00:00:00;61;Balanced;34;Normal;42;Mixed;Organised;39;Normal;59;Normal;48;Normal;Organised;52;Medium;58;Press;60;Normal;Cover
+410;7;8668;2015-09-10 00:00:00;43;Balanced;45;Normal;40;Mixed;Organised;39;Normal;33;Little;63;Normal;Organised;52;Medium;58;Press;59;Normal;Cover
+414;111271;4087;2014-09-19 00:00:00;61;Balanced;51;Normal;44;Mixed;Organised;52;Normal;61;Normal;48;Normal;Organised;47;Medium;56;Press;50;Normal;Cover
+415;111271;4087;2015-09-10 00:00:00;58;Balanced;35;Normal;56;Mixed;Organised;52;Normal;61;Normal;51;Normal;Organised;47;Medium;43;Press;50;Normal;Cover
+418;1971;10218;2015-09-10 00:00:00;53;Balanced;41;Normal;69;Long;Organised;48;Normal;45;Normal;43;Normal;Organised;29;Deep;41;Press;36;Normal;Cover
+424;31;8722;2014-09-19 00:00:00;59;Balanced;53;Normal;57;Mixed;Organised;53;Normal;47;Normal;59;Normal;Organised;57;Medium;46;Press;54;Normal;Cover
+425;31;8722;2015-09-10 00:00:00;59;Balanced;47;Normal;65;Mixed;Organised;57;Normal;36;Normal;71;Lots;Organised;42;Medium;56;Press;51;Normal;Cover
+426;100626;6631;2015-09-10 00:00:00;39;Balanced;33;Little;62;Mixed;Organised;62;Normal;66;Normal;48;Normal;Organised;51;Medium;58;Press;55;Normal;Cover
+431;1915;8674;2014-09-19 00:00:00;48;Balanced;42;Normal;38;Mixed;Organised;57;Normal;59;Normal;45;Normal;Organised;49;Medium;47;Press;53;Normal;Cover
+432;1915;8674;2015-09-10 00:00:00;55;Balanced;32;Little;55;Mixed;Organised;57;Normal;59;Normal;54;Normal;Organised;49;Medium;47;Press;53;Normal;Cover
+437;236;9773;2014-09-19 00:00:00;52;Balanced;50;Normal;53;Mixed;Organised;56;Normal;66;Normal;68;Lots;Organised;58;Medium;60;Press;60;Normal;Cover
+438;236;9773;2015-09-10 00:00:00;70;Fast;50;Normal;53;Mixed;Organised;56;Normal;66;Normal;68;Lots;Organised;58;Medium;60;Press;60;Normal;Cover
+443;1903;9908;2014-09-19 00:00:00;50;Balanced;50;Normal;52;Mixed;Organised;55;Normal;49;Normal;52;Normal;Organised;45;Medium;49;Press;47;Normal;Cover
+444;1903;9908;2015-09-10 00:00:00;50;Balanced;39;Normal;54;Mixed;Organised;55;Normal;64;Normal;28;Little;Organised;54;Medium;58;Press;47;Normal;Cover
+445;286;9824;2015-09-10 00:00:00;53;Balanced;32;Little;56;Mixed;Organised;38;Normal;53;Normal;46;Normal;Organised;42;Medium;33;Contain;58;Normal;Cover
+450;894;10243;2014-09-19 00:00:00;62;Balanced;49;Normal;46;Mixed;Organised;47;Normal;50;Normal;54;Normal;Organised;47;Medium;43;Press;56;Normal;Cover
+451;894;10243;2015-09-10 00:00:00;62;Balanced;49;Normal;46;Mixed;Organised;47;Normal;50;Normal;54;Normal;Organised;47;Medium;43;Press;56;Normal;Cover
+456;246;10235;2014-09-19 00:00:00;54;Balanced;40;Normal;60;Mixed;Organised;48;Normal;67;Lots;50;Normal;Organised;43;Medium;43;Press;40;Normal;Cover
+457;246;10235;2015-09-10 00:00:00;50;Balanced;33;Little;48;Mixed;Organised;48;Normal;67;Lots;31;Little;Organised;43;Medium;46;Press;40;Normal;Cover
+462;110374;8535;2014-09-19 00:00:00;34;Balanced;54;Normal;33;Short;Organised;68;Risky;51;Normal;53;Normal;Organised;58;Medium;59;Press;67;Wide;Cover
+463;110374;8535;2015-09-10 00:00:00;34;Balanced;54;Normal;33;Short;Organised;68;Risky;51;Normal;53;Normal;Organised;58;Medium;59;Press;61;Normal;Cover
+468;110636;8194;2014-09-19 00:00:00;72;Fast;69;Lots;57;Mixed;Organised;55;Normal;49;Normal;37;Normal;Organised;47;Medium;48;Press;50;Normal;Cover
+469;110636;8194;2015-09-10 00:00:00;47;Balanced;62;Normal;47;Mixed;Organised;55;Normal;68;Lots;55;Normal;Organised;56;Medium;57;Press;52;Normal;Cover
+474;25;8358;2014-09-19 00:00:00;39;Balanced;58;Normal;48;Mixed;Organised;55;Normal;33;Little;44;Normal;Free Form;59;Medium;60;Press;39;Normal;Cover
+475;25;8358;2015-09-10 00:00:00;59;Balanced;54;Normal;38;Mixed;Organised;55;Normal;44;Normal;45;Normal;Free Form;53;Medium;62;Press;29;Narrow;Cover
+478;111657;9891;2015-09-10 00:00:00;63;Balanced;48;Normal;46;Mixed;Organised;51;Normal;50;Normal;50;Normal;Organised;55;Medium;57;Press;47;Normal;Cover
+483;144;9879;2014-09-19 00:00:00;52;Balanced;34;Normal;56;Mixed;Organised;58;Normal;41;Normal;54;Normal;Organised;29;Deep;28;Contain;39;Normal;Cover
+484;144;9879;2015-09-10 00:00:00;52;Balanced;34;Normal;48;Mixed;Organised;39;Normal;54;Normal;59;Normal;Organised;29;Deep;30;Contain;39;Normal;Cover
+489;673;9987;2014-09-19 00:00:00;58;Balanced;52;Normal;38;Mixed;Organised;67;Risky;48;Normal;56;Normal;Organised;47;Medium;45;Press;55;Normal;Cover
+490;673;9987;2015-09-10 00:00:00;58;Balanced;52;Normal;38;Mixed;Organised;30;Safe;69;Lots;56;Normal;Organised;36;Medium;57;Press;70;Wide;Cover
+495;110556;10233;2014-09-19 00:00:00;64;Balanced;52;Normal;68;Long;Organised;66;Normal;53;Normal;49;Normal;Organised;23;Deep;47;Press;53;Normal;Cover
+496;110556;10233;2015-09-10 00:00:00;64;Balanced;52;Normal;68;Long;Organised;66;Normal;45;Normal;23;Little;Organised;27;Deep;47;Press;53;Normal;Cover
+501;674;9991;2014-09-19 00:00:00;50;Balanced;55;Normal;37;Mixed;Organised;28;Safe;66;Normal;34;Normal;Organised;55;Medium;59;Press;52;Normal;Cover
+502;674;9991;2015-09-10 00:00:00;50;Balanced;55;Normal;37;Mixed;Organised;42;Normal;66;Normal;34;Normal;Organised;49;Medium;54;Press;52;Normal;Cover
+507;1860;8305;2014-09-19 00:00:00;35;Balanced;42;Normal;40;Mixed;Organised;58;Normal;42;Normal;52;Normal;Organised;49;Medium;45;Press;47;Normal;Cover
+508;1860;8305;2015-09-10 00:00:00;34;Balanced;41;Normal;38;Mixed;Organised;55;Normal;39;Normal;49;Normal;Organised;43;Medium;42;Press;49;Normal;Cover
+510;110316;6391;2015-09-10 00:00:00;48;Balanced;53;Normal;52;Mixed;Organised;55;Normal;53;Normal;55;Normal;Organised;42;Medium;46;Press;53;Normal;Cover
+513;1888;9764;2014-09-19 00:00:00;65;Balanced;67;Lots;41;Mixed;Organised;54;Normal;47;Normal;46;Normal;Free Form;39;Medium;40;Press;53;Normal;Cover
+514;1888;9764;2015-09-10 00:00:00;68;Fast;67;Lots;41;Mixed;Organised;54;Normal;47;Normal;46;Normal;Free Form;39;Medium;40;Press;53;Normal;Cover
+519;110744;8569;2015-09-10 00:00:00;52;Balanced;48;Normal;43;Mixed;Organised;52;Normal;37;Normal;50;Normal;Organised;47;Medium;45;Press;40;Normal;Cover
+520;100632;6433;2014-09-19 00:00:00;55;Balanced;47;Normal;42;Mixed;Organised;37;Normal;42;Normal;53;Normal;Organised;43;Medium;47;Press;51;Normal;Cover
+521;100632;6433;2015-09-10 00:00:00;58;Balanced;38;Normal;64;Mixed;Organised;37;Normal;42;Normal;52;Normal;Organised;43;Medium;47;Press;51;Normal;Cover
+522;110565;8019;2015-09-10 00:00:00;41;Balanced;40;Normal;59;Mixed;Organised;41;Normal;44;Normal;54;Normal;Organised;52;Medium;47;Press;50;Normal;Cover
+528;110832;7878;2014-09-19 00:00:00;52;Balanced;62;Normal;37;Mixed;Organised;67;Risky;68;Lots;52;Normal;Organised;49;Medium;45;Press;64;Normal;Cover
+529;110832;7878;2015-09-10 00:00:00;57;Balanced;50;Normal;59;Mixed;Organised;61;Normal;63;Normal;51;Normal;Organised;48;Medium;45;Press;62;Normal;Cover
+534;322;9956;2014-09-19 00:00:00;50;Balanced;60;Normal;54;Mixed;Organised;52;Normal;54;Normal;46;Normal;Organised;36;Medium;43;Press;47;Normal;Cover
+535;322;9956;2015-09-10 00:00:00;50;Balanced;60;Normal;54;Mixed;Organised;52;Normal;54;Normal;46;Normal;Organised;36;Medium;43;Press;47;Normal;Cover
+542;165;8357;2014-09-19 00:00:00;66;Balanced;60;Normal;38;Mixed;Organised;56;Normal;40;Normal;52;Normal;Organised;49;Medium;48;Press;62;Normal;Cover
+543;165;8357;2015-09-10 00:00:00;54;Balanced;60;Normal;53;Mixed;Organised;54;Normal;49;Normal;46;Normal;Organised;48;Medium;56;Press;66;Normal;Cover
+547;62;9747;2014-09-19 00:00:00;63;Balanced;58;Normal;48;Mixed;Organised;53;Normal;49;Normal;48;Normal;Organised;43;Medium;47;Press;49;Normal;Cover
+548;62;9747;2015-09-10 00:00:00;63;Balanced;37;Normal;58;Mixed;Organised;42;Normal;56;Normal;36;Normal;Organised;49;Medium;47;Press;49;Normal;Cover
+553;28;9790;2014-09-19 00:00:00;45;Balanced;61;Normal;58;Mixed;Organised;60;Normal;73;Lots;62;Normal;Organised;45;Medium;32;Contain;63;Normal;Cover
+554;28;9790;2015-09-10 00:00:00;42;Balanced;56;Normal;52;Mixed;Organised;62;Normal;58;Normal;47;Normal;Organised;44;Medium;41;Press;49;Normal;Cover
+557;184;8429;2015-09-10 00:00:00;48;Balanced;48;Normal;47;Mixed;Free Form;73;Risky;53;Normal;71;Lots;Organised;55;Medium;48;Press;52;Normal;Cover
+562;485;9904;2014-09-19 00:00:00;48;Balanced;55;Normal;38;Mixed;Organised;38;Normal;51;Normal;40;Normal;Organised;37;Medium;48;Press;56;Normal;Cover
+563;485;9904;2015-09-10 00:00:00;48;Balanced;55;Normal;41;Mixed;Organised;38;Normal;51;Normal;40;Normal;Organised;35;Medium;50;Press;61;Normal;Cover
+568;80;9860;2014-09-19 00:00:00;55;Balanced;51;Normal;62;Mixed;Organised;55;Normal;61;Normal;60;Normal;Organised;49;Medium;52;Press;57;Normal;Cover
+573;100634;9791;2014-09-19 00:00:00;46;Balanced;55;Normal;32;Short;Organised;48;Normal;58;Normal;59;Normal;Organised;60;Medium;62;Press;47;Normal;Cover
+574;100634;9791;2015-09-10 00:00:00;50;Balanced;36;Normal;61;Mixed;Organised;48;Normal;58;Normal;59;Normal;Organised;60;Medium;62;Press;47;Normal;Cover
+579;100879;10278;2014-09-19 00:00:00;53;Balanced;47;Normal;54;Mixed;Organised;60;Normal;58;Normal;60;Normal;Organised;50;Medium;52;Press;58;Normal;Cover
+584;166;8177;2014-09-19 00:00:00;68;Fast;52;Normal;55;Mixed;Organised;51;Normal;59;Normal;59;Normal;Organised;41;Medium;60;Press;51;Normal;Cover
+585;166;8177;2015-09-10 00:00:00;47;Balanced;44;Normal;55;Mixed;Organised;59;Normal;68;Lots;45;Normal;Organised;50;Medium;45;Press;57;Normal;Cover
+590;81;10251;2014-09-19 00:00:00;55;Balanced;49;Normal;44;Mixed;Organised;47;Normal;43;Normal;49;Normal;Organised;43;Medium;41;Press;40;Normal;Cover
+595;10029;8226;2014-09-19 00:00:00;68;Fast;49;Normal;63;Mixed;Organised;68;Risky;38;Normal;55;Normal;Free Form;56;Medium;57;Press;54;Normal;Cover
+596;10029;8226;2015-09-10 00:00:00;69;Fast;49;Normal;53;Mixed;Organised;66;Normal;62;Normal;59;Normal;Organised;63;Medium;61;Press;38;Normal;Cover
+601;1952;8667;2014-09-19 00:00:00;56;Balanced;35;Normal;51;Mixed;Organised;54;Normal;60;Normal;48;Normal;Organised;38;Medium;37;Press;46;Normal;Cover
+602;1952;8667;2015-09-10 00:00:00;56;Balanced;40;Normal;55;Mixed;Organised;54;Normal;49;Normal;56;Normal;Organised;38;Medium;37;Press;46;Normal;Cover
+606;111239;8234;2014-09-19 00:00:00;54;Balanced;59;Normal;47;Mixed;Organised;53;Normal;33;Little;52;Normal;Organised;42;Medium;36;Press;49;Normal;Cover
+607;111239;8234;2015-09-10 00:00:00;55;Balanced;51;Normal;46;Mixed;Organised;47;Normal;53;Normal;51;Normal;Organised;37;Medium;48;Press;49;Normal;Cover
+612;44;8636;2014-09-19 00:00:00;67;Fast;48;Normal;67;Long;Organised;68;Risky;69;Lots;66;Normal;Organised;23;Deep;57;Press;34;Normal;Cover
+613;44;8636;2015-09-10 00:00:00;58;Balanced;69;Lots;54;Mixed;Organised;56;Normal;60;Normal;53;Normal;Organised;47;Medium;49;Press;63;Normal;Cover
+617;620;8066;2014-09-19 00:00:00;61;Balanced;49;Normal;59;Mixed;Organised;50;Normal;57;Normal;55;Normal;Organised;43;Medium;41;Press;46;Normal;Cover
+618;620;8066;2015-09-10 00:00:00;48;Balanced;47;Normal;32;Short;Organised;57;Normal;48;Normal;69;Lots;Free Form;44;Medium;44;Press;51;Normal;Cover
+623;110745;1957;2014-09-19 00:00:00;38;Balanced;54;Normal;38;Mixed;Organised;53;Normal;27;Little;66;Normal;Organised;57;Medium;56;Press;49;Normal;Cover
+624;110745;1957;2015-09-10 00:00:00;66;Balanced;54;Normal;38;Mixed;Organised;53;Normal;33;Little;66;Normal;Organised;57;Medium;56;Press;49;Normal;Cover
+629;45;9885;2014-09-19 00:00:00;26;Slow;47;Normal;24;Short;Organised;64;Normal;53;Normal;72;Lots;Organised;23;Deep;67;Double;36;Normal;Cover
+630;45;9885;2015-09-10 00:00:00;50;Balanced;35;Normal;20;Short;Organised;65;Normal;50;Normal;80;Lots;Organised;35;Medium;65;Press;35;Normal;Cover
+635;29;8350;2014-09-19 00:00:00;66;Balanced;48;Normal;53;Mixed;Organised;54;Normal;69;Lots;51;Normal;Organised;47;Medium;47;Press;49;Normal;Cover
+636;29;8350;2015-09-10 00:00:00;49;Balanced;54;Normal;52;Mixed;Organised;49;Normal;54;Normal;64;Normal;Organised;41;Medium;51;Press;53;Normal;Cover
+640;1832;8295;2014-09-19 00:00:00;56;Balanced;55;Normal;53;Mixed;Organised;53;Normal;46;Normal;49;Normal;Organised;32;Deep;46;Press;37;Normal;Cover
+641;1832;8295;2015-09-10 00:00:00;54;Balanced;52;Normal;47;Mixed;Organised;53;Normal;44;Normal;49;Normal;Organised;34;Medium;46;Press;39;Normal;Cover
+646;82;8597;2014-09-19 00:00:00;56;Balanced;50;Normal;61;Mixed;Organised;56;Normal;48;Normal;46;Normal;Organised;44;Medium;44;Press;52;Normal;Cover
+647;82;8597;2015-09-10 00:00:00;50;Balanced;48;Normal;60;Mixed;Organised;49;Normal;62;Normal;47;Normal;Organised;46;Medium;46;Press;52;Normal;Cover
+652;111083;8245;2014-09-19 00:00:00;73;Fast;69;Lots;50;Mixed;Organised;64;Normal;53;Normal;36;Normal;Organised;30;Deep;43;Press;62;Normal;Cover
+653;111083;8245;2015-09-10 00:00:00;59;Balanced;69;Lots;50;Mixed;Organised;64;Normal;53;Normal;36;Normal;Organised;30;Deep;43;Press;62;Normal;Cover
+658;100081;8571;2014-09-19 00:00:00;42;Balanced;40;Normal;47;Mixed;Organised;37;Normal;67;Lots;30;Little;Organised;46;Medium;45;Press;52;Normal;Cover
+659;100081;8571;2015-09-10 00:00:00;42;Balanced;40;Normal;47;Mixed;Organised;37;Normal;67;Lots;30;Little;Organised;46;Medium;45;Press;52;Normal;Cover
+664;110724;8203;2014-09-19 00:00:00;52;Balanced;42;Normal;40;Mixed;Organised;47;Normal;53;Normal;50;Normal;Organised;42;Medium;51;Press;52;Normal;Cover
+665;110724;8203;2015-09-10 00:00:00;52;Balanced;42;Normal;40;Mixed;Organised;47;Normal;53;Normal;50;Normal;Organised;42;Medium;51;Press;52;Normal;Cover
+670;472;8306;2014-09-19 00:00:00;48;Balanced;55;Normal;44;Mixed;Organised;53;Normal;42;Normal;53;Normal;Organised;53;Medium;39;Press;57;Normal;Cover
+671;472;8306;2015-09-10 00:00:00;48;Balanced;55;Normal;44;Mixed;Organised;53;Normal;42;Normal;53;Normal;Organised;53;Medium;39;Press;57;Normal;Cover
+675;1862;7730;2014-09-19 00:00:00;37;Balanced;55;Normal;49;Mixed;Organised;52;Normal;60;Normal;52;Normal;Organised;46;Medium;44;Press;55;Normal;Cover
+680;46;8543;2014-09-19 00:00:00;49;Balanced;69;Lots;54;Mixed;Organised;68;Risky;63;Normal;69;Lots;Organised;59;Medium;53;Press;54;Normal;Cover
+681;46;8543;2015-09-10 00:00:00;68;Fast;65;Normal;55;Mixed;Organised;68;Risky;80;Lots;72;Lots;Free Form;59;Medium;66;Press;65;Normal;Cover
+686;1738;9746;2014-09-19 00:00:00;46;Balanced;56;Normal;52;Mixed;Organised;49;Normal;54;Normal;52;Normal;Organised;47;Medium;55;Press;52;Normal;Cover
+687;1738;9746;2015-09-10 00:00:00;46;Balanced;56;Normal;52;Mixed;Organised;49;Normal;54;Normal;52;Normal;Organised;47;Medium;55;Press;52;Normal;Cover
+699;873;2182;2014-09-19 00:00:00;67;Fast;55;Normal;54;Mixed;Organised;56;Normal;62;Normal;67;Lots;Organised;47;Medium;47;Press;63;Normal;Cover
+700;873;2182;2015-09-10 00:00:00;57;Balanced;50;Normal;40;Mixed;Free Form;59;Normal;70;Lots;67;Lots;Free Form;50;Medium;58;Press;45;Normal;Cover
+705;111091;8030;2014-09-19 00:00:00;62;Balanced;48;Normal;52;Mixed;Organised;50;Normal;63;Normal;52;Normal;Organised;37;Medium;58;Press;63;Normal;Cover
+706;111091;8030;2015-09-10 00:00:00;62;Balanced;48;Normal;52;Mixed;Free Form;66;Normal;59;Normal;58;Normal;Organised;51;Medium;58;Press;40;Normal;Cover
+711;1871;8673;2014-09-19 00:00:00;54;Balanced;51;Normal;36;Mixed;Free Form;52;Normal;51;Normal;64;Normal;Organised;47;Medium;46;Press;66;Normal;Cover
+712;1871;8673;2015-09-10 00:00:00;54;Balanced;47;Normal;36;Mixed;Organised;52;Normal;51;Normal;64;Normal;Free Form;50;Medium;60;Press;58;Normal;Cover
+717;95;8197;2014-09-19 00:00:00;63;Balanced;36;Normal;48;Mixed;Organised;47;Normal;62;Normal;69;Lots;Organised;58;Medium;62;Press;54;Normal;Cover
+718;95;8197;2015-09-10 00:00:00;63;Balanced;41;Normal;60;Mixed;Organised;47;Normal;64;Normal;46;Normal;Organised;58;Medium;65;Press;55;Normal;Cover
+724;64;8588;2014-09-19 00:00:00;64;Balanced;52;Normal;49;Mixed;Organised;49;Normal;53;Normal;34;Normal;Organised;46;Medium;44;Press;49;Normal;Cover
+725;64;8588;2015-09-10 00:00:00;64;Balanced;44;Normal;50;Mixed;Organised;49;Normal;53;Normal;46;Normal;Organised;46;Medium;44;Press;49;Normal;Cover
+730;1853;8581;2014-09-19 00:00:00;57;Balanced;51;Normal;63;Mixed;Organised;55;Normal;61;Normal;52;Normal;Organised;47;Medium;52;Press;56;Normal;Cover
+731;1853;8581;2015-09-10 00:00:00;62;Balanced;36;Normal;65;Mixed;Organised;71;Risky;42;Normal;65;Normal;Organised;36;Medium;33;Contain;42;Normal;Cover
+735;239;9989;2014-09-19 00:00:00;69;Fast;44;Normal;58;Mixed;Organised;56;Normal;52;Normal;61;Normal;Organised;38;Medium;49;Press;65;Normal;Cover
+736;239;9989;2015-09-10 00:00:00;69;Fast;44;Normal;58;Mixed;Organised;56;Normal;52;Normal;61;Normal;Organised;38;Medium;49;Press;65;Normal;Cover
+741;65;8639;2014-09-19 00:00:00;45;Balanced;65;Normal;42;Mixed;Organised;68;Risky;52;Normal;49;Normal;Organised;59;Medium;42;Press;48;Normal;Cover
+742;65;8639;2015-09-10 00:00:00;45;Balanced;36;Normal;43;Mixed;Organised;68;Risky;52;Normal;64;Normal;Organised;59;Medium;42;Press;48;Normal;Cover
+747;9;8650;2014-09-19 00:00:00;71;Fast;48;Normal;32;Short;Organised;34;Normal;41;Normal;61;Normal;Organised;51;Medium;48;Press;62;Normal;Cover
+748;9;8650;2015-09-10 00:00:00;66;Balanced;60;Normal;45;Mixed;Organised;34;Normal;34;Normal;46;Normal;Organised;51;Medium;52;Press;61;Normal;Cover
+753;1844;8537;2014-09-19 00:00:00;58;Balanced;58;Normal;67;Long;Organised;38;Normal;23;Little;77;Lots;Organised;29;Deep;57;Press;32;Narrow;Cover
+754;1844;8537;2015-09-10 00:00:00;58;Balanced;58;Normal;67;Long;Organised;38;Normal;27;Little;69;Lots;Organised;31;Deep;57;Press;38;Normal;Cover
+758;301;8244;2014-09-19 00:00:00;66;Balanced;52;Normal;72;Long;Organised;66;Normal;67;Lots;51;Normal;Organised;36;Medium;38;Press;65;Normal;Cover
+763;2007;9994;2014-09-19 00:00:00;62;Balanced;45;Normal;52;Mixed;Organised;42;Normal;50;Normal;62;Normal;Organised;45;Medium;52;Press;52;Normal;Cover
+764;2007;9994;2015-09-10 00:00:00;62;Balanced;45;Normal;52;Mixed;Organised;42;Normal;50;Normal;62;Normal;Organised;45;Medium;52;Press;52;Normal;Cover
+769;217;8689;2014-09-19 00:00:00;60;Balanced;56;Normal;42;Mixed;Organised;48;Normal;53;Normal;64;Normal;Organised;43;Medium;47;Press;48;Normal;Cover
+770;217;8689;2015-09-10 00:00:00;57;Balanced;42;Normal;50;Mixed;Organised;48;Normal;53;Normal;46;Normal;Organised;51;Medium;56;Press;55;Normal;Cover
+775;897;10199;2014-09-19 00:00:00;63;Balanced;51;Normal;51;Mixed;Organised;54;Normal;40;Normal;66;Normal;Organised;48;Medium;53;Press;50;Normal;Cover
+776;897;10199;2015-09-10 00:00:00;63;Balanced;51;Normal;51;Mixed;Organised;54;Normal;40;Normal;66;Normal;Organised;48;Medium;53;Press;50;Normal;Cover
+781;66;9748;2014-09-19 00:00:00;49;Balanced;60;Normal;52;Mixed;Organised;49;Normal;54;Normal;67;Lots;Organised;46;Medium;47;Press;47;Normal;Cover
+782;66;9748;2015-09-10 00:00:00;49;Balanced;60;Normal;52;Mixed;Organised;49;Normal;54;Normal;67;Lots;Organised;46;Medium;47;Press;47;Normal;Cover
+787;169;9905;2014-09-19 00:00:00;67;Fast;54;Normal;57;Mixed;Organised;55;Normal;38;Normal;44;Normal;Organised;53;Medium;60;Press;52;Normal;Cover
+788;169;9905;2015-09-10 00:00:00;60;Balanced;43;Normal;53;Mixed;Organised;49;Normal;40;Normal;44;Normal;Organised;55;Medium;62;Press;47;Normal;Cover
+793;573;9864;2014-09-19 00:00:00;45;Balanced;42;Normal;36;Mixed;Organised;69;Risky;69;Lots;50;Normal;Organised;64;Medium;58;Press;42;Normal;Cover
+794;573;9864;2015-09-10 00:00:00;42;Balanced;51;Normal;36;Mixed;Organised;41;Normal;40;Normal;50;Normal;Organised;47;Medium;37;Press;52;Normal;Offside Trap
+799;453;8661;2014-09-19 00:00:00;62;Balanced;53;Normal;57;Mixed;Organised;53;Normal;57;Normal;53;Normal;Organised;59;Medium;41;Press;56;Normal;Cover
+800;453;8661;2015-09-10 00:00:00;62;Balanced;53;Normal;57;Mixed;Organised;53;Normal;57;Normal;53;Normal;Organised;59;Medium;41;Press;56;Normal;Cover
+805;10;8456;2014-09-19 00:00:00;59;Balanced;35;Normal;29;Short;Organised;32;Safe;49;Normal;62;Normal;Organised;42;Medium;44;Press;54;Normal;Cover
+806;10;8456;2015-09-10 00:00:00;59;Balanced;35;Normal;29;Short;Free Form;38;Normal;36;Normal;24;Little;Free Form;48;Medium;47;Press;54;Normal;Cover
+811;11;10260;2014-09-19 00:00:00;46;Balanced;34;Normal;54;Mixed;Organised;49;Normal;72;Lots;56;Normal;Organised;42;Medium;41;Press;56;Normal;Cover
+812;11;10260;2015-09-10 00:00:00;38;Balanced;42;Normal;44;Mixed;Organised;49;Normal;44;Normal;40;Normal;Organised;54;Medium;53;Press;56;Normal;Cover
+817;1893;10212;2014-09-19 00:00:00;67;Fast;49;Normal;66;Mixed;Free Form;67;Risky;64;Normal;55;Normal;Organised;37;Medium;45;Press;44;Normal;Cover
+818;1893;10212;2015-09-10 00:00:00;61;Balanced;49;Normal;66;Mixed;Organised;67;Risky;64;Normal;55;Normal;Organised;38;Medium;49;Press;46;Normal;Cover
+823;219;8592;2014-09-19 00:00:00;51;Balanced;62;Normal;50;Mixed;Organised;49;Normal;69;Lots;68;Lots;Organised;48;Medium;48;Press;60;Normal;Cover
+824;219;8592;2015-09-10 00:00:00;51;Balanced;77;Lots;41;Mixed;Organised;49;Normal;69;Lots;31;Little;Organised;48;Medium;48;Press;60;Normal;Cover
+828;68;8550;2014-09-19 00:00:00;55;Balanced;42;Normal;49;Mixed;Organised;49;Normal;54;Normal;53;Normal;Organised;46;Medium;54;Press;50;Normal;Cover
+829;68;8550;2015-09-10 00:00:00;55;Balanced;48;Normal;49;Mixed;Organised;46;Normal;54;Normal;53;Normal;Organised;39;Medium;46;Press;42;Normal;Cover
+834;12;8549;2014-09-19 00:00:00;60;Balanced;28;Little;56;Mixed;Organised;49;Normal;56;Normal;72;Lots;Organised;38;Medium;42;Press;42;Normal;Cover
+835;12;8549;2015-09-10 00:00:00;60;Balanced;32;Little;46;Mixed;Organised;43;Normal;55;Normal;37;Normal;Organised;38;Medium;42;Press;42;Normal;Cover
+840;69;9829;2014-09-19 00:00:00;52;Balanced;68;Lots;48;Mixed;Organised;37;Normal;37;Normal;37;Normal;Organised;35;Medium;34;Press;51;Normal;Cover
+841;69;9829;2015-09-10 00:00:00;52;Balanced;42;Normal;43;Mixed;Organised;54;Normal;56;Normal;23;Little;Organised;56;Medium;62;Press;51;Normal;Cover
+844;1747;9998;2014-09-19 00:00:00;55;Balanced;50;Normal;55;Mixed;Organised;55;Normal;67;Lots;46;Normal;Organised;46;Medium;45;Press;47;Normal;Cover
+849;70;10249;2014-09-19 00:00:00;52;Balanced;58;Normal;47;Mixed;Organised;48;Normal;49;Normal;52;Normal;Organised;53;Medium;56;Press;48;Normal;Cover
+850;70;10249;2015-09-10 00:00:00;54;Balanced;43;Normal;65;Mixed;Organised;48;Normal;49;Normal;45;Normal;Organised;53;Medium;56;Press;48;Normal;Cover
+852;1900;8348;2015-09-10 00:00:00;38;Balanced;58;Normal;43;Mixed;Organised;51;Normal;54;Normal;39;Normal;Organised;44;Medium;46;Press;48;Normal;Cover
+857;83;9927;2014-09-19 00:00:00;70;Fast;47;Normal;55;Mixed;Organised;42;Normal;47;Normal;60;Normal;Organised;41;Medium;43;Press;62;Normal;Cover
+858;83;9927;2015-09-10 00:00:00;64;Balanced;46;Normal;55;Mixed;Organised;44;Normal;45;Normal;27;Little;Organised;37;Medium;44;Press;51;Normal;Cover
+859;111560;274581;2015-09-10 00:00:00;50;Balanced;50;Normal;50;Mixed;Organised;50;Normal;50;Normal;50;Normal;Organised;45;Medium;45;Press;50;Normal;Cover
+860;111560;9996;2015-09-10 00:00:00;50;Balanced;50;Normal;50;Mixed;Organised;50;Normal;50;Normal;50;Normal;Organised;45;Medium;45;Press;50;Normal;Cover
+861;111560;9996;2015-09-10 00:00:00;50;Balanced;50;Normal;50;Mixed;Organised;50;Normal;50;Normal;50;Normal;Organised;45;Medium;45;Press;50;Normal;Cover
+866;1904;9761;2014-09-19 00:00:00;46;Balanced;44;Normal;54;Mixed;Organised;32;Safe;42;Normal;42;Normal;Organised;43;Medium;39;Press;50;Normal;Cover
+867;1904;9761;2015-09-10 00:00:00;45;Balanced;49;Normal;59;Mixed;Organised;32;Safe;42;Normal;54;Normal;Organised;36;Medium;39;Press;40;Normal;Cover
+872;1891;10214;2014-09-19 00:00:00;41;Balanced;59;Normal;43;Mixed;Organised;53;Normal;44;Normal;53;Normal;Organised;42;Medium;42;Press;57;Normal;Cover
+873;1891;10214;2015-09-10 00:00:00;65;Balanced;59;Normal;43;Mixed;Organised;53;Normal;44;Normal;53;Normal;Organised;42;Medium;42;Press;57;Normal;Cover
+878;1823;8481;2014-09-19 00:00:00;49;Balanced;48;Normal;49;Mixed;Organised;52;Normal;53;Normal;67;Lots;Organised;43;Medium;46;Press;50;Normal;Cover
+879;1823;8481;2015-09-10 00:00:00;49;Balanced;48;Normal;49;Mixed;Organised;52;Normal;53;Normal;67;Lots;Organised;43;Medium;46;Press;50;Normal;Cover
+884;71;9830;2014-09-19 00:00:00;63;Balanced;53;Normal;48;Mixed;Organised;52;Normal;55;Normal;49;Normal;Organised;47;Medium;51;Press;54;Normal;Cover
+885;71;9830;2015-09-10 00:00:00;63;Balanced;70;Lots;56;Mixed;Organised;52;Normal;55;Normal;46;Normal;Organised;39;Medium;41;Press;52;Normal;Cover
+892;1910;8464;2014-09-19 00:00:00;49;Balanced;42;Normal;59;Mixed;Organised;52;Normal;49;Normal;55;Normal;Organised;40;Medium;48;Press;53;Normal;Cover
+897;13;10261;2014-09-19 00:00:00;54;Balanced;33;Little;47;Mixed;Organised;47;Normal;51;Normal;39;Normal;Organised;56;Medium;54;Press;51;Normal;Cover
+898;13;10261;2015-09-10 00:00:00;58;Balanced;45;Normal;49;Mixed;Organised;47;Normal;54;Normal;46;Normal;Organised;41;Medium;39;Press;51;Normal;Cover
+903;72;9831;2014-09-19 00:00:00;48;Balanced;61;Normal;66;Mixed;Organised;49;Normal;66;Normal;34;Normal;Organised;56;Medium;47;Press;64;Normal;Cover
+904;72;9831;2015-09-10 00:00:00;48;Balanced;55;Normal;53;Mixed;Organised;49;Normal;66;Normal;38;Normal;Organised;57;Medium;47;Press;61;Normal;Cover
+909;1792;9850;2014-09-19 00:00:00;45;Balanced;28;Little;64;Mixed;Organised;55;Normal;67;Lots;42;Normal;Organised;40;Medium;43;Press;51;Normal;Cover
+910;1792;9850;2015-09-10 00:00:00;45;Balanced;38;Normal;55;Mixed;Organised;46;Normal;54;Normal;47;Normal;Organised;38;Medium;39;Press;51;Normal;Cover
+914;112225;6269;2014-09-19 00:00:00;66;Balanced;57;Normal;56;Mixed;Organised;56;Normal;55;Normal;57;Normal;Organised;36;Medium;49;Press;53;Normal;Cover
+919;171;8165;2014-09-19 00:00:00;46;Balanced;62;Normal;38;Mixed;Organised;58;Normal;48;Normal;55;Normal;Organised;51;Medium;50;Press;47;Normal;Cover
+920;171;8165;2015-09-10 00:00:00;46;Balanced;58;Normal;49;Mixed;Organised;51;Normal;52;Normal;59;Normal;Organised;30;Deep;40;Press;44;Normal;Cover
+925;477;8388;2014-09-19 00:00:00;44;Balanced;48;Normal;45;Mixed;Organised;54;Normal;41;Normal;57;Normal;Organised;50;Medium;46;Press;62;Normal;Cover
+926;477;8388;2015-09-10 00:00:00;44;Balanced;48;Normal;45;Mixed;Organised;54;Normal;41;Normal;57;Normal;Organised;50;Medium;46;Press;62;Normal;Cover
+932;111540;2033;2014-09-19 00:00:00;45;Balanced;62;Normal;40;Mixed;Organised;53;Normal;37;Normal;44;Normal;Organised;37;Medium;24;Contain;44;Normal;Cover
+933;682;8573;2014-09-19 00:00:00;52;Balanced;49;Normal;54;Mixed;Organised;45;Normal;42;Normal;53;Normal;Organised;42;Medium;47;Press;44;Normal;Cover
+934;682;8573;2015-09-10 00:00:00;52;Balanced;49;Normal;54;Mixed;Organised;45;Normal;42;Normal;53;Normal;Organised;42;Medium;47;Press;44;Normal;Cover
+939;479;8371;2014-09-19 00:00:00;38;Balanced;53;Normal;52;Mixed;Organised;55;Normal;59;Normal;54;Normal;Organised;47;Medium;52;Press;65;Normal;Cover
+940;479;8371;2015-09-10 00:00:00;38;Balanced;53;Normal;52;Mixed;Organised;55;Normal;59;Normal;54;Normal;Organised;47;Medium;52;Press;69;Wide;Cover
+943;100087;1773;2014-09-19 00:00:00;52;Balanced;51;Normal;50;Mixed;Organised;50;Normal;53;Normal;54;Normal;Organised;43;Medium;44;Press;50;Normal;Cover
+948;1892;6403;2014-09-19 00:00:00;38;Balanced;40;Normal;39;Mixed;Organised;52;Normal;53;Normal;52;Normal;Organised;36;Medium;39;Press;64;Normal;Cover
+949;1892;6403;2015-09-10 00:00:00;63;Balanced;40;Normal;39;Mixed;Organised;64;Normal;53;Normal;52;Normal;Organised;36;Medium;39;Press;64;Normal;Cover
+954;10030;8460;2014-09-19 00:00:00;73;Fast;46;Normal;55;Mixed;Organised;52;Normal;48;Normal;63;Normal;Organised;33;Deep;55;Press;53;Normal;Cover
+955;10030;8460;2015-09-10 00:00:00;67;Fast;46;Normal;62;Mixed;Organised;56;Normal;48;Normal;56;Normal;Organised;25;Deep;29;Contain;54;Normal;Cover
+960;1843;8540;2014-09-19 00:00:00;66;Balanced;55;Normal;37;Mixed;Organised;56;Normal;34;Normal;63;Normal;Organised;43;Medium;42;Press;48;Normal;Cover
+961;1843;8540;2015-09-10 00:00:00;66;Balanced;66;Normal;36;Mixed;Organised;60;Normal;34;Normal;64;Normal;Organised;44;Medium;58;Press;50;Normal;Cover
+966;73;9847;2014-09-19 00:00:00;49;Balanced;70;Lots;55;Mixed;Organised;62;Normal;61;Normal;68;Lots;Organised;57;Medium;53;Press;56;Normal;Cover
+967;73;9847;2015-09-10 00:00:00;49;Balanced;47;Normal;34;Mixed;Organised;62;Normal;61;Normal;35;Normal;Organised;57;Medium;53;Press;56;Normal;Cover
+972;50;10167;2014-09-19 00:00:00;48;Balanced;71;Lots;33;Short;Organised;69;Risky;62;Normal;45;Normal;Organised;54;Medium;66;Press;46;Normal;Offside Trap
+973;50;10167;2015-09-10 00:00:00;48;Balanced;66;Normal;33;Short;Organised;69;Risky;62;Normal;45;Normal;Organised;43;Medium;43;Press;46;Normal;Cover
+974;1754;8426;2014-09-19 00:00:00;48;Balanced;50;Normal;37;Mixed;Organised;49;Normal;50;Normal;52;Normal;Organised;47;Medium;44;Press;52;Normal;Cover
+975;1754;8426;2015-09-10 00:00:00;48;Balanced;48;Normal;47;Mixed;Organised;47;Normal;53;Normal;60;Normal;Organised;46;Medium;46;Press;49;Normal;Cover
+977;1914;6413;2014-09-19 00:00:00;57;Balanced;41;Normal;39;Mixed;Organised;57;Normal;50;Normal;54;Normal;Organised;58;Medium;60;Press;63;Normal;Cover
+978;1914;6413;2015-09-10 00:00:00;45;Balanced;35;Normal;56;Mixed;Organised;57;Normal;50;Normal;58;Normal;Organised;58;Medium;60;Press;63;Normal;Cover
+979;100741;6547;2015-09-10 00:00:00;54;Balanced;54;Normal;39;Mixed;Organised;52;Normal;56;Normal;38;Normal;Organised;40;Medium;35;Press;46;Normal;Cover
+983;200;9878;2014-09-19 00:00:00;64;Balanced;52;Normal;36;Mixed;Organised;51;Normal;64;Normal;54;Normal;Organised;26;Deep;46;Press;48;Normal;Cover
+984;200;9878;2015-09-10 00:00:00;64;Balanced;31;Little;53;Mixed;Organised;41;Normal;49;Normal;41;Normal;Organised;39;Medium;46;Press;43;Normal;Cover
+987;111086;8028;2014-09-19 00:00:00;64;Balanced;52;Normal;67;Long;Organised;64;Normal;66;Normal;39;Normal;Organised;36;Medium;45;Press;48;Normal;Cover
+988;111086;8028;2015-09-10 00:00:00;64;Balanced;52;Normal;67;Long;Organised;64;Normal;66;Normal;39;Normal;Organised;36;Medium;45;Press;48;Normal;Cover
+991;111087;8033;2014-09-19 00:00:00;72;Fast;55;Normal;66;Mixed;Organised;66;Normal;51;Normal;49;Normal;Organised;29;Deep;35;Press;38;Normal;Cover
+992;111087;8033;2015-09-10 00:00:00;68;Fast;55;Normal;66;Mixed;Organised;66;Normal;51;Normal;49;Normal;Organised;29;Deep;35;Press;38;Normal;Cover
+994;110746;8023;2014-09-19 00:00:00;50;Balanced;48;Normal;36;Mixed;Free Form;52;Normal;36;Normal;52;Normal;Organised;50;Medium;60;Press;47;Normal;Cover
+995;110746;8023;2015-09-10 00:00:00;50;Balanced;33;Little;36;Mixed;Organised;52;Normal;40;Normal;52;Normal;Organised;57;Medium;54;Press;47;Normal;Cover
+1006;1790;8462;2014-09-19 00:00:00;59;Balanced;32;Little;57;Mixed;Organised;49;Normal;47;Normal;53;Normal;Organised;39;Medium;40;Press;44;Normal;Cover
+1007;1790;8462;2015-09-10 00:00:00;59;Balanced;32;Little;57;Mixed;Organised;49;Normal;47;Normal;53;Normal;Organised;39;Medium;40;Press;44;Normal;Cover
+1012;247;8640;2014-09-19 00:00:00;67;Fast;35;Normal;40;Mixed;Organised;53;Normal;53;Normal;55;Normal;Organised;50;Medium;62;Press;55;Normal;Cover
+1013;247;8640;2015-09-10 00:00:00;67;Fast;43;Normal;43;Mixed;Organised;53;Normal;44;Normal;28;Little;Organised;40;Medium;40;Press;48;Normal;Cover
+1018;15;10172;2014-09-19 00:00:00;52;Balanced;36;Normal;53;Mixed;Organised;53;Normal;54;Normal;54;Normal;Organised;50;Medium;44;Press;54;Normal;Cover
+1019;15;10172;2015-09-10 00:00:00;30;Slow;39;Normal;61;Mixed;Organised;53;Normal;53;Normal;60;Normal;Organised;50;Medium;44;Press;54;Normal;Cover
+1024;456;8696;2015-09-10 00:00:00;48;Balanced;52;Normal;47;Mixed;Organised;53;Normal;53;Normal;53;Normal;Organised;51;Medium;47;Press;53;Normal;Cover
+1029;86;8548;2014-09-19 00:00:00;45;Balanced;49;Normal;45;Mixed;Organised;38;Normal;62;Normal;60;Normal;Organised;48;Medium;48;Press;62;Normal;Cover
+1030;86;8548;2015-09-10 00:00:00;45;Balanced;53;Normal;55;Mixed;Organised;38;Normal;62;Normal;53;Normal;Organised;48;Medium;48;Press;55;Normal;Cover
+1035;480;8370;2014-09-19 00:00:00;45;Balanced;52;Normal;44;Mixed;Organised;44;Normal;44;Normal;47;Normal;Organised;63;Medium;51;Press;59;Normal;Cover
+1036;480;8370;2015-09-10 00:00:00;29;Slow;52;Normal;44;Mixed;Organised;44;Normal;44;Normal;47;Normal;Organised;54;Medium;52;Press;63;Normal;Cover
+1041;1793;9798;2014-09-19 00:00:00;44;Balanced;26;Little;72;Long;Organised;71;Risky;39;Normal;37;Normal;Organised;58;Medium;52;Press;52;Normal;Cover
+1042;1793;9798;2015-09-10 00:00:00;44;Balanced;36;Normal;64;Mixed;Organised;62;Normal;65;Normal;42;Normal;Organised;51;Medium;47;Press;52;Normal;Cover
+1047;449;8603;2014-09-19 00:00:00;59;Balanced;49;Normal;37;Mixed;Organised;59;Normal;43;Normal;53;Normal;Organised;58;Medium;49;Press;58;Normal;Cover
+1048;449;8603;2015-09-10 00:00:00;59;Balanced;49;Normal;37;Mixed;Organised;59;Normal;43;Normal;53;Normal;Organised;58;Medium;49;Press;58;Normal;Cover
+1053;243;8633;2014-09-19 00:00:00;50;Balanced;54;Normal;41;Mixed;Organised;68;Risky;54;Normal;69;Lots;Free Form;39;Medium;49;Press;65;Normal;Cover
+1054;243;8633;2015-09-10 00:00:00;50;Balanced;57;Normal;46;Mixed;Free Form;61;Normal;41;Normal;63;Normal;Free Form;52;Medium;60;Press;63;Normal;Cover
+1059;457;8560;2014-09-19 00:00:00;35;Balanced;52;Normal;36;Mixed;Organised;60;Normal;52;Normal;59;Normal;Organised;48;Medium;53;Press;65;Normal;Cover
+1060;457;8560;2015-09-10 00:00:00;60;Balanced;52;Normal;50;Mixed;Organised;54;Normal;60;Normal;52;Normal;Organised;49;Medium;53;Press;53;Normal;Cover
+1065;571;8479;2014-09-19 00:00:00;41;Balanced;53;Normal;54;Mixed;Organised;45;Normal;50;Normal;35;Normal;Organised;40;Medium;49;Press;62;Normal;Cover
+1066;571;8479;2015-09-10 00:00:00;37;Balanced;38;Normal;43;Mixed;Organised;30;Safe;42;Normal;37;Normal;Organised;40;Medium;49;Press;54;Normal;Cover
+1071;203;8690;2014-09-19 00:00:00;52;Balanced;55;Normal;56;Mixed;Organised;57;Normal;74;Lots;53;Normal;Organised;38;Medium;48;Press;52;Normal;Cover
+1075;379;9837;2014-09-19 00:00:00;48;Balanced;58;Normal;48;Mixed;Organised;48;Normal;52;Normal;50;Normal;Organised;33;Deep;44;Press;50;Normal;Cover
+1076;379;9837;2015-09-10 00:00:00;48;Balanced;37;Normal;49;Mixed;Organised;48;Normal;52;Normal;58;Normal;Organised;33;Deep;44;Press;50;Normal;Cover
+1081;74;9851;2014-09-19 00:00:00;64;Balanced;62;Normal;41;Mixed;Organised;49;Normal;52;Normal;64;Normal;Organised;46;Medium;44;Press;51;Normal;Cover
+1082;74;9851;2015-09-10 00:00:00;64;Balanced;62;Normal;41;Mixed;Organised;49;Normal;52;Normal;64;Normal;Organised;46;Medium;44;Press;51;Normal;Cover
+1087;744;7841;2014-09-19 00:00:00;66;Balanced;47;Normal;44;Mixed;Organised;58;Normal;65;Normal;54;Normal;Organised;39;Medium;48;Press;66;Normal;Cover
+1088;744;7841;2015-09-10 00:00:00;66;Balanced;47;Normal;44;Mixed;Organised;58;Normal;65;Normal;54;Normal;Organised;39;Medium;48;Press;66;Normal;Cover
+1092;1905;10219;2014-09-19 00:00:00;57;Balanced;30;Little;55;Mixed;Organised;42;Normal;36;Normal;55;Normal;Organised;31;Deep;30;Contain;38;Normal;Cover
+1097;1838;8551;2014-09-19 00:00:00;47;Balanced;49;Normal;48;Mixed;Organised;64;Normal;67;Lots;52;Normal;Organised;44;Medium;49;Press;51;Normal;Cover
+1102;1902;9803;2014-09-19 00:00:00;43;Balanced;46;Normal;44;Mixed;Organised;59;Normal;45;Normal;42;Normal;Organised;39;Medium;37;Press;42;Normal;Cover
+1108;52;8686;2014-09-19 00:00:00;67;Fast;48;Normal;38;Mixed;Organised;73;Risky;64;Normal;56;Normal;Free Form;36;Medium;57;Press;34;Normal;Cover
+1109;52;8686;2015-09-10 00:00:00;68;Fast;27;Little;47;Mixed;Organised;71;Risky;54;Normal;66;Normal;Free Form;36;Medium;57;Press;48;Normal;Cover
+1111;631;8649;2014-09-19 00:00:00;34;Balanced;50;Normal;34;Mixed;Organised;44;Normal;38;Normal;38;Normal;Organised;39;Medium;51;Press;44;Normal;Cover
+1112;631;8649;2015-09-10 00:00:00;45;Balanced;48;Normal;60;Mixed;Organised;46;Normal;49;Normal;58;Normal;Organised;36;Medium;53;Press;34;Normal;Cover
+1117;874;1601;2014-09-19 00:00:00;53;Balanced;48;Normal;38;Mixed;Organised;66;Normal;65;Normal;50;Normal;Organised;43;Medium;44;Press;49;Normal;Cover
+1118;874;1601;2015-09-10 00:00:00;47;Balanced;48;Normal;38;Mixed;Organised;61;Normal;65;Normal;50;Normal;Organised;43;Medium;44;Press;49;Normal;Cover
+1123;1819;9853;2014-09-19 00:00:00;58;Balanced;55;Normal;52;Mixed;Organised;48;Normal;52;Normal;52;Normal;Organised;35;Medium;44;Press;50;Normal;Cover
+1124;1819;9853;2015-09-10 00:00:00;58;Balanced;55;Normal;52;Mixed;Organised;48;Normal;64;Normal;52;Normal;Organised;48;Medium;51;Press;49;Normal;Cover
+1129;1837;9882;2014-09-19 00:00:00;36;Balanced;56;Normal;38;Mixed;Organised;49;Normal;52;Normal;62;Normal;Organised;54;Medium;57;Press;64;Normal;Offside Trap
+1130;1837;9882;2015-09-10 00:00:00;36;Balanced;56;Normal;38;Mixed;Organised;49;Normal;52;Normal;29;Little;Organised;50;Medium;51;Press;53;Normal;Cover
+1135;111974;7943;2014-09-19 00:00:00;57;Balanced;71;Lots;60;Mixed;Organised;66;Normal;57;Normal;63;Normal;Organised;54;Medium;47;Press;36;Normal;Offside Trap
+1136;111974;7943;2015-09-10 00:00:00;57;Balanced;65;Normal;60;Mixed;Organised;56;Normal;57;Normal;56;Normal;Organised;38;Medium;47;Press;53;Normal;Cover
+1140;58;7794;2014-09-19 00:00:00;67;Fast;61;Normal;43;Mixed;Organised;56;Normal;51;Normal;49;Normal;Organised;39;Medium;47;Press;48;Normal;Cover
+1141;58;7794;2015-09-10 00:00:00;61;Balanced;61;Normal;52;Mixed;Organised;56;Normal;51;Normal;49;Normal;Organised;44;Medium;55;Press;48;Normal;Cover
+1146;1913;10228;2014-09-19 00:00:00;53;Balanced;48;Normal;46;Mixed;Organised;65;Normal;43;Normal;46;Normal;Organised;46;Medium;44;Press;48;Normal;Cover
+1147;1913;10228;2015-09-10 00:00:00;54;Balanced;40;Normal;56;Mixed;Organised;65;Normal;43;Normal;44;Normal;Organised;46;Medium;44;Press;48;Normal;Cover
+1152;34;10189;2014-09-19 00:00:00;39;Balanced;54;Normal;45;Mixed;Organised;42;Normal;56;Normal;41;Normal;Organised;51;Medium;51;Press;40;Normal;Cover
+1153;34;10189;2015-09-10 00:00:00;58;Balanced;43;Normal;42;Mixed;Organised;64;Normal;61;Normal;37;Normal;Organised;55;Medium;59;Press;56;Normal;Cover
+1161;481;8302;2014-09-19 00:00:00;65;Balanced;53;Normal;65;Mixed;Organised;53;Normal;57;Normal;38;Normal;Organised;38;Medium;49;Press;55;Normal;Cover
+1162;481;8302;2015-09-10 00:00:00;53;Balanced;53;Normal;53;Mixed;Organised;53;Normal;52;Normal;60;Normal;Organised;42;Medium;48;Press;59;Normal;Cover
+1167;110770;10179;2014-09-19 00:00:00;61;Balanced;57;Normal;37;Mixed;Organised;62;Normal;50;Normal;53;Normal;Organised;45;Medium;47;Press;54;Normal;Cover
+1168;110770;10179;2015-09-10 00:00:00;61;Balanced;57;Normal;37;Mixed;Organised;62;Normal;50;Normal;53;Normal;Organised;45;Medium;47;Press;54;Normal;Cover
+1173;111092;8025;2014-09-19 00:00:00;47;Balanced;53;Normal;34;Mixed;Organised;38;Normal;36;Normal;68;Lots;Organised;37;Medium;37;Press;39;Normal;Cover
+1174;111092;8025;2015-09-10 00:00:00;50;Balanced;55;Normal;35;Mixed;Organised;51;Normal;51;Normal;55;Normal;Organised;45;Medium;55;Press;39;Normal;Cover
+1179;226;9874;2014-09-19 00:00:00;63;Balanced;62;Normal;39;Mixed;Organised;63;Normal;64;Normal;49;Normal;Organised;54;Medium;43;Press;49;Normal;Cover
+1180;226;9874;2015-09-10 00:00:00;63;Balanced;62;Normal;39;Mixed;Organised;63;Normal;64;Normal;49;Normal;Organised;54;Medium;43;Press;49;Normal;Cover
+1185;17;8466;2014-09-19 00:00:00;47;Balanced;41;Normal;40;Mixed;Organised;42;Normal;56;Normal;51;Normal;Free Form;62;Medium;64;Press;44;Normal;Cover
+1186;17;8466;2015-09-10 00:00:00;52;Balanced;31;Little;46;Mixed;Organised;42;Normal;54;Normal;30;Little;Organised;50;Medium;65;Press;44;Normal;Cover
+1191;670;9986;2014-09-19 00:00:00;60;Balanced;47;Normal;53;Mixed;Organised;48;Normal;50;Normal;48;Normal;Organised;42;Medium;48;Press;49;Normal;Cover
+1192;670;9986;2015-09-10 00:00:00;60;Balanced;47;Normal;53;Mixed;Organised;48;Normal;50;Normal;48;Normal;Organised;39;Medium;48;Press;49;Normal;Cover
+1197;237;9768;2014-09-19 00:00:00;55;Balanced;65;Normal;56;Mixed;Organised;42;Normal;50;Normal;55;Normal;Organised;60;Medium;60;Press;54;Normal;Cover
+1198;237;9768;2015-09-10 00:00:00;57;Balanced;65;Normal;56;Mixed;Organised;42;Normal;50;Normal;55;Normal;Organised;60;Medium;60;Press;54;Normal;Cover
+1203;459;9869;2014-09-19 00:00:00;55;Balanced;48;Normal;43;Mixed;Organised;68;Risky;61;Normal;44;Normal;Organised;36;Medium;60;Press;39;Normal;Cover
+1204;459;9869;2015-09-10 00:00:00;55;Balanced;48;Normal;50;Mixed;Organised;62;Normal;59;Normal;38;Normal;Organised;45;Medium;54;Press;41;Normal;Cover
+1209;48;9875;2014-09-19 00:00:00;72;Fast;74;Lots;34;Mixed;Organised;76;Risky;66;Normal;73;Lots;Organised;61;Medium;59;Press;39;Normal;Cover
+1210;48;9875;2015-09-10 00:00:00;53;Balanced;70;Lots;37;Mixed;Organised;68;Risky;54;Normal;67;Lots;Organised;47;Medium;57;Press;53;Normal;Offside Trap
+1214;898;10190;2014-09-19 00:00:00;52;Balanced;46;Normal;48;Mixed;Organised;39;Normal;39;Normal;37;Normal;Organised;40;Medium;41;Press;52;Normal;Cover
+1215;898;10190;2015-09-10 00:00:00;52;Balanced;46;Normal;48;Mixed;Organised;39;Normal;39;Normal;37;Normal;Organised;40;Medium;36;Press;52;Normal;Cover
+1220;100805;9800;2014-09-19 00:00:00;58;Balanced;50;Normal;70;Long;Organised;62;Normal;56;Normal;61;Normal;Organised;50;Medium;49;Press;41;Normal;Cover
+1221;100805;9800;2015-09-10 00:00:00;38;Balanced;53;Normal;33;Short;Organised;53;Normal;58;Normal;53;Normal;Organised;60;Medium;58;Press;48;Normal;Cover
+1226;110329;8152;2014-09-19 00:00:00;53;Balanced;52;Normal;56;Mixed;Organised;68;Risky;53;Normal;34;Normal;Organised;46;Medium;44;Press;54;Normal;Cover
+1227;110329;8152;2015-09-10 00:00:00;52;Balanced;52;Normal;56;Mixed;Organised;62;Normal;53;Normal;38;Normal;Organised;39;Medium;44;Press;57;Normal;Cover
+1232;100804;8467;2014-09-19 00:00:00;56;Balanced;48;Normal;57;Mixed;Organised;47;Normal;49;Normal;40;Normal;Organised;40;Medium;40;Press;52;Normal;Cover
+1233;100804;8467;2015-09-10 00:00:00;62;Balanced;52;Normal;48;Mixed;Organised;47;Normal;49;Normal;40;Normal;Organised;37;Medium;48;Press;55;Normal;Cover
+1241;232;9985;2014-09-19 00:00:00;54;Balanced;45;Normal;62;Mixed;Organised;55;Normal;58;Normal;60;Normal;Organised;45;Medium;54;Press;52;Normal;Cover
+1242;232;9985;2015-09-10 00:00:00;54;Balanced;45;Normal;62;Mixed;Organised;55;Normal;58;Normal;60;Normal;Organised;45;Medium;54;Press;52;Normal;Cover
+1247;1806;10194;2014-09-19 00:00:00;48;Balanced;24;Little;55;Mixed;Organised;51;Normal;57;Normal;37;Normal;Organised;38;Medium;40;Press;41;Normal;Cover
+1248;1806;10194;2015-09-10 00:00:00;48;Balanced;41;Normal;49;Mixed;Organised;51;Normal;59;Normal;49;Normal;Organised;44;Medium;37;Press;51;Normal;Cover
+1253;106;8472;2014-09-19 00:00:00;60;Balanced;33;Little;61;Mixed;Organised;56;Normal;44;Normal;58;Normal;Organised;41;Medium;38;Press;53;Normal;Cover
+1254;106;8472;2015-09-10 00:00:00;43;Balanced;43;Normal;51;Mixed;Organised;59;Normal;50;Normal;55;Normal;Organised;47;Medium;45;Press;49;Normal;Cover
+1259;1960;10003;2014-09-19 00:00:00;63;Balanced;34;Normal;34;Mixed;Organised;34;Normal;51;Normal;36;Normal;Free Form;51;Medium;58;Press;54;Normal;Cover
+1260;1960;10003;2015-09-10 00:00:00;45;Balanced;44;Normal;42;Mixed;Organised;34;Normal;36;Normal;55;Normal;Free Form;31;Deep;47;Press;42;Normal;Cover
+1263;260;9867;2014-09-19 00:00:00;56;Balanced;50;Normal;57;Mixed;Organised;56;Normal;51;Normal;54;Normal;Organised;52;Medium;50;Press;65;Normal;Cover
+1264;260;9867;2015-09-10 00:00:00;56;Balanced;50;Normal;57;Mixed;Organised;56;Normal;51;Normal;54;Normal;Organised;52;Medium;50;Press;69;Wide;Cover
+1268;1715;10191;2014-09-19 00:00:00;58;Balanced;59;Normal;35;Mixed;Organised;64;Normal;36;Normal;66;Normal;Organised;47;Medium;45;Press;53;Normal;Cover
+1269;1715;10191;2015-09-10 00:00:00;58;Balanced;59;Normal;35;Mixed;Organised;64;Normal;36;Normal;66;Normal;Organised;47;Medium;45;Press;53;Normal;Cover
+1274;54;9804;2014-09-19 00:00:00;76;Fast;69;Lots;64;Mixed;Organised;64;Normal;72;Lots;53;Normal;Organised;39;Medium;34;Press;52;Normal;Cover
+1275;54;9804;2015-09-10 00:00:00;69;Fast;69;Lots;36;Mixed;Organised;37;Normal;69;Lots;53;Normal;Organised;39;Medium;46;Press;52;Normal;Cover
+1280;18;8586;2014-09-19 00:00:00;41;Balanced;35;Normal;38;Mixed;Organised;41;Normal;59;Normal;62;Normal;Organised;58;Medium;51;Press;56;Normal;Cover
+1281;18;8586;2015-09-10 00:00:00;47;Balanced;46;Normal;40;Mixed;Organised;41;Normal;41;Normal;63;Normal;Organised;63;Medium;54;Press;56;Normal;Cover
+1286;1809;9941;2014-09-19 00:00:00;49;Balanced;56;Normal;53;Mixed;Organised;52;Normal;34;Normal;57;Normal;Organised;36;Medium;52;Press;49;Normal;Cover
+1287;1809;9941;2015-09-10 00:00:00;49;Balanced;56;Normal;53;Mixed;Organised;52;Normal;34;Normal;36;Normal;Organised;36;Medium;45;Press;49;Normal;Cover
+1291;294;10242;2014-09-19 00:00:00;49;Balanced;48;Normal;51;Mixed;Organised;52;Normal;49;Normal;46;Normal;Organised;43;Medium;42;Press;52;Normal;Cover
+1292;294;10242;2015-09-10 00:00:00;49;Balanced;48;Normal;51;Mixed;Organised;52;Normal;49;Normal;46;Normal;Organised;43;Medium;42;Press;52;Normal;Cover
+1297;1908;8611;2014-09-19 00:00:00;38;Balanced;39;Normal;34;Mixed;Organised;63;Normal;65;Normal;37;Normal;Organised;44;Medium;41;Press;55;Normal;Cover
+1298;1908;8611;2015-09-10 00:00:00;48;Balanced;40;Normal;43;Mixed;Organised;43;Normal;58;Normal;39;Normal;Organised;44;Medium;41;Press;55;Normal;Cover
+1303;55;8600;2014-09-19 00:00:00;71;Fast;71;Lots;63;Mixed;Organised;69;Risky;78;Lots;52;Normal;Organised;40;Medium;46;Press;57;Normal;Cover
+1304;55;8600;2015-09-10 00:00:00;68;Fast;54;Normal;63;Mixed;Organised;69;Risky;68;Lots;52;Normal;Organised;40;Medium;57;Press;57;Normal;Cover
+1312;461;10267;2014-09-19 00:00:00;30;Slow;45;Normal;35;Mixed;Organised;38;Normal;56;Normal;55;Normal;Organised;51;Medium;38;Press;59;Normal;Cover
+1313;461;10267;2015-09-10 00:00:00;35;Balanced;46;Normal;35;Mixed;Organised;37;Normal;51;Normal;58;Normal;Organised;49;Medium;45;Press;53;Normal;Cover
+1318;110456;9873;2014-09-19 00:00:00;49;Balanced;59;Normal;52;Mixed;Organised;51;Normal;67;Lots;56;Normal;Organised;47;Medium;51;Press;46;Normal;Cover
+1319;110456;9873;2015-09-10 00:00:00;49;Balanced;59;Normal;52;Mixed;Organised;51;Normal;67;Lots;56;Normal;Organised;47;Medium;51;Press;46;Normal;Cover
+1324;462;10281;2014-09-19 00:00:00;55;Balanced;44;Normal;54;Mixed;Organised;58;Normal;68;Lots;41;Normal;Organised;51;Medium;50;Press;60;Normal;Cover
+1325;462;10281;2015-09-10 00:00:00;43;Balanced;40;Normal;65;Mixed;Organised;39;Normal;51;Normal;57;Normal;Organised;47;Medium;40;Press;47;Normal;Cover
+1328;206;9876;2014-09-19 00:00:00;63;Balanced;46;Normal;48;Mixed;Organised;39;Normal;54;Normal;55;Normal;Organised;31;Deep;47;Press;37;Normal;Cover
+1329;206;9876;2015-09-10 00:00:00;57;Balanced;29;Little;38;Mixed;Organised;39;Normal;54;Normal;55;Normal;Organised;47;Medium;59;Press;52;Normal;Cover
+1334;36;10269;2014-09-19 00:00:00;54;Balanced;61;Normal;53;Mixed;Organised;60;Normal;56;Normal;48;Normal;Organised;46;Medium;54;Press;40;Normal;Cover
+1335;36;10269;2015-09-10 00:00:00;59;Balanced;55;Normal;41;Mixed;Organised;58;Normal;66;Normal;48;Normal;Organised;41;Medium;44;Press;32;Narrow;Cover
+1340;483;10205;2014-09-19 00:00:00;35;Balanced;42;Normal;35;Mixed;Organised;43;Normal;57;Normal;58;Normal;Organised;51;Medium;51;Press;56;Normal;Cover
+1341;483;10205;2015-09-10 00:00:00;48;Balanced;42;Normal;36;Mixed;Free Form;36;Normal;52;Normal;55;Normal;Free Form;47;Medium;48;Press;44;Normal;Cover
+1346;1909;8277;2014-09-19 00:00:00;53;Balanced;55;Normal;32;Short;Organised;53;Normal;54;Normal;56;Normal;Organised;42;Medium;54;Press;62;Normal;Cover
+1347;1909;8277;2015-09-10 00:00:00;57;Balanced;40;Normal;48;Mixed;Free Form;53;Normal;37;Normal;71;Lots;Free Form;60;Medium;58;Press;62;Normal;Cover
+1352;1887;7844;2014-09-19 00:00:00;40;Balanced;52;Normal;39;Mixed;Organised;53;Normal;62;Normal;58;Normal;Organised;37;Medium;40;Press;64;Normal;Cover
+1353;1887;7844;2015-09-10 00:00:00;40;Balanced;52;Normal;39;Mixed;Organised;53;Normal;62;Normal;58;Normal;Organised;37;Medium;40;Press;64;Normal;Cover
+1358;665;10238;2014-09-19 00:00:00;56;Balanced;49;Normal;42;Mixed;Organised;54;Normal;52;Normal;52;Normal;Organised;37;Medium;37;Press;58;Normal;Cover
+1359;665;10238;2015-09-10 00:00:00;58;Balanced;49;Normal;42;Mixed;Organised;54;Normal;52;Normal;52;Normal;Organised;37;Medium;37;Press;58;Normal;Cover
+1365;110913;8475;2014-09-19 00:00:00;38;Balanced;45;Normal;39;Mixed;Organised;29;Safe;30;Little;39;Normal;Organised;25;Deep;37;Press;35;Normal;Cover
+1366;110913;8475;2015-09-10 00:00:00;38;Balanced;45;Normal;49;Mixed;Organised;45;Normal;42;Normal;53;Normal;Organised;27;Deep;32;Contain;35;Normal;Cover
+1371;1795;9817;2014-09-19 00:00:00;61;Balanced;43;Normal;56;Mixed;Organised;54;Normal;44;Normal;55;Normal;Free Form;38;Medium;52;Press;45;Normal;Cover
+1372;1795;9817;2015-09-10 00:00:00;61;Balanced;32;Little;52;Mixed;Organised;54;Normal;42;Normal;45;Normal;Free Form;38;Medium;52;Press;45;Normal;Cover
+1377;38;8697;2014-09-19 00:00:00;40;Balanced;55;Normal;47;Mixed;Organised;37;Normal;40;Normal;51;Normal;Organised;40;Medium;50;Press;45;Normal;Cover
+1378;38;8697;2015-09-10 00:00:00;56;Balanced;55;Normal;63;Mixed;Organised;68;Risky;66;Normal;58;Normal;Organised;63;Medium;47;Press;73;Wide;Cover
+1383;109;8659;2014-09-19 00:00:00;55;Balanced;34;Normal;51;Mixed;Organised;53;Normal;53;Normal;57;Normal;Organised;41;Medium;40;Press;49;Normal;Cover
+1384;109;8659;2015-09-10 00:00:00;62;Balanced;32;Little;51;Mixed;Organised;53;Normal;50;Normal;60;Normal;Organised;41;Medium;40;Press;49;Normal;Cover
+1389;19;8654;2014-09-19 00:00:00;72;Fast;39;Normal;73;Long;Organised;68;Risky;71;Lots;32;Little;Organised;30;Deep;34;Press;41;Normal;Cover
+1390;19;8654;2015-09-10 00:00:00;77;Fast;37;Normal;57;Mixed;Organised;68;Risky;73;Lots;29;Little;Organised;30;Deep;37;Press;41;Normal;Cover
+1394;681;10001;2015-09-10 00:00:00;52;Balanced;46;Normal;50;Mixed;Organised;57;Normal;55;Normal;32;Little;Organised;48;Medium;45;Press;53;Normal;Cover
+1398;301;8024;2014-09-19 00:00:00;66;Balanced;52;Normal;72;Long;Organised;66;Normal;67;Lots;51;Normal;Organised;36;Medium;38;Press;65;Normal;Cover
+1403;1917;8528;2014-09-19 00:00:00;51;Balanced;36;Normal;51;Mixed;Organised;52;Normal;55;Normal;57;Normal;Organised;62;Medium;57;Press;44;Normal;Cover
+1404;1917;8528;2015-09-10 00:00:00;51;Balanced;37;Normal;56;Mixed;Organised;52;Normal;59;Normal;40;Normal;Organised;62;Medium;48;Press;44;Normal;Cover
+1408;1907;8525;2015-09-10 00:00:00;51;Balanced;36;Normal;63;Mixed;Organised;48;Normal;53;Normal;52;Normal;Organised;43;Medium;45;Press;47;Normal;Cover
+1413;1873;10265;2014-09-19 00:00:00;47;Balanced;52;Normal;36;Mixed;Organised;36;Normal;53;Normal;66;Normal;Organised;60;Medium;66;Press;53;Normal;Cover
+1414;1873;10265;2015-09-10 00:00:00;33;Slow;49;Normal;37;Mixed;Free Form;33;Safe;37;Normal;31;Little;Free Form;62;Medium;58;Press;37;Normal;Cover
+1419;175;8721;2014-09-19 00:00:00;58;Balanced;67;Lots;45;Mixed;Organised;68;Risky;60;Normal;54;Normal;Organised;59;Medium;48;Press;47;Normal;Cover
+1420;175;8721;2015-09-10 00:00:00;68;Fast;45;Normal;57;Mixed;Organised;69;Risky;66;Normal;50;Normal;Organised;66;Medium;46;Press;55;Normal;Cover
+1425;110;8602;2014-09-19 00:00:00;47;Balanced;28;Little;58;Mixed;Organised;55;Normal;64;Normal;56;Normal;Organised;47;Medium;48;Press;52;Normal;Cover
+1426;110;8602;2015-09-10 00:00:00;46;Balanced;36;Normal;54;Mixed;Organised;55;Normal;47;Normal;48;Normal;Organised;47;Medium;48;Press;55;Normal;Cover
+1438;900;10192;2014-09-19 00:00:00;52;Balanced;56;Normal;64;Mixed;Organised;39;Normal;66;Normal;46;Normal;Organised;44;Medium;34;Press;50;Normal;Cover
+1439;900;10192;2015-09-10 00:00:00;52;Balanced;56;Normal;64;Mixed;Organised;39;Normal;66;Normal;46;Normal;Organised;44;Medium;34;Press;50;Normal;Cover
+1444;110749;8021;2014-09-19 00:00:00;33;Slow;49;Normal;51;Mixed;Organised;38;Normal;63;Normal;48;Normal;Organised;58;Medium;38;Press;52;Normal;Cover
+1449;244;8394;2014-09-19 00:00:00;38;Balanced;48;Normal;35;Mixed;Organised;53;Normal;56;Normal;57;Normal;Organised;51;Medium;46;Press;61;Normal;Cover
+1450;244;8394;2015-09-10 00:00:00;52;Balanced;52;Normal;50;Mixed;Organised;52;Normal;56;Normal;57;Normal;Organised;48;Medium;43;Press;49;Normal;Cover
+1451;112512;8027;2014-09-19 00:00:00;54;Balanced;51;Normal;40;Mixed;Organised;67;Risky;49;Normal;52;Normal;Organised;44;Medium;47;Press;52;Normal;Cover
+1452;112512;8027;2015-09-10 00:00:00;54;Balanced;51;Normal;40;Mixed;Organised;46;Normal;49;Normal;52;Normal;Organised;44;Medium;47;Press;52;Normal;Cover
+1457;15005;10000;2014-09-19 00:00:00;54;Balanced;42;Normal;51;Mixed;Organised;47;Normal;52;Normal;32;Little;Organised;44;Medium;58;Press;37;Normal;Cover
+1458;15005;10000;2015-09-10 00:00:00;54;Balanced;42;Normal;51;Mixed;Organised;47;Normal;52;Normal;32;Little;Organised;44;Medium;58;Press;37;Normal;Cover
