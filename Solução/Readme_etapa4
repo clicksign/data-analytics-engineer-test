@@ -1,1 +1,55 @@
+PROPOSTA DE SOLUÇAO – QUESTÃO 04:
+
+
+-- Criacao da tabela test_analytics_engineer_Relations
+
+CREATE TABLE test_analytics_engineer_Relations AS
+SELECT p.player_name, p.height, p.weight, pa.overall_rating
+FROM test_analytics_engineer_Player p
+JOIN test_analytics_engineer_Player_Attributes_Modified pa ON p.player_api_id = pa.player_api_id;
+
+
+-- Análise exploratória com três intervalos
+SELECT
+  CASE
+    WHEN weight >= 126 AND weight <= 154 THEN 'Intervalo 1 - 126_154'
+    WHEN weight > 154 AND weight <= 183 THEN 'Intervalo 2 - 155_183'
+    WHEN weight > 183 THEN 'Intervalo 3 - 184...'
+  END AS aging_weight,
+  CASE
+    WHEN height >= 165.1 AND height <= 175.26 THEN 'Intervalo 1 - 165.1_175.26'
+    WHEN height > 175.26 AND height <= 187.96 THEN 'Intervalo 2 - 175.27_187.96'
+    WHEN height > 187.96  THEN 'Intervalo 3 - 187.97...'
+  END AS aging_height,
+  AVG(overall_rating) AS avg_rating
+FROM test_analytics_engineer_Relations
+GROUP BY aging_weight, aging_height;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
