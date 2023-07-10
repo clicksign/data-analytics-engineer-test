@@ -1,1 +1,204 @@
+PROPOSTA DE SOLUÇAO – QUESTÃO 02:
+
+
+#Importação das bibliotecas necessárias
+import json
+import sqlite3
+
+# Definição do banco de dados SQLite contendo o caminho completo
+banco_dados = '/Users/matheussilva/Banco_SQLITE/BANCO_SQLITE'
+
+# Realizando a conexão com o banco de dados
+conexao = sqlite3.connect(banco_dados)
+cursor = conexao.cursor()
+
+# Realizando a criação da tabela no banco de dados
+cursor.execute('CREATE TABLE IF NOT EXISTS test_analytics_engineer_Player_Attributes_Modified (coluna1 INTEGER PRIMARY KEY, '
+               'id INTEGER, player_fifa_api_id INTEGER, player_api_id INT, date DATE, overall_rating NUMERIC, potential NUMERIC, preferred_foot TEXT, attacking_work_rate TEXT, defensive_work_rate TEXT, crossing NUMERIC, finishing NUMERIC, heading_accuracy NUMERIC, short_passing NUMERIC, volleys NUMERIC, dribbling NUMERIC, curve NUMERIC, free_kick_accuracy NUMERIC, long_passing NUMERIC, ball_control NUMERIC, acceleration NUMERIC, sprint_speed NUMERIC, agility NUMERIC, reactions NUMERIC, balance NUMERIC, shot_power NUMERIC, jumping NUMERIC, stamina NUMERIC, strength NUMERIC, long_shots NUMERIC, aggression NUMERIC, interceptions NUMERIC, positioning NUMERIC, vision NUMERIC, penalties NUMERIC, marking NUMERIC, standing_tackle NUMERIC, sliding_tackle NUMERIC, gk_diving NUMERIC, gk_handling NUMERIC, gk_kicking NUMERIC, gk_positioning NUMERIC, gk_reflexes NUMERIC)')
+
+# Selecionando os dados da tabela test_analytics_engineer_Player_Attributes e inserindo na tabela test_analytics_engineer_Player_Attributes_Modified
+
+cursor.execute('SELECT A.id, B.player_attributes FROM test_analytics_engineer_Player A INNER JOIN test_analytics_engineer_Player_Attributes B ON A.id = B.coluna1')
+rows = cursor.fetchall()
+for row in rows:
+    coluna1 = row[0]
+    attributes_json = row[1]
+    
+    attributes = json.loads(attributes_json)
+    
+    id= attributes.get('id')
+    player_fifa_api_id= attributes.get('player_fifa_api_id')
+    player_api_id= attributes.get('player_api_id')
+    date= attributes.get('date')
+    overall_rating= attributes.get('overall_rating')
+    potential= attributes.get('potential')
+    preferred_foot= attributes.get('preferred_foot')
+    attacking_work_rate= attributes.get('attacking_work_rate')
+    defensive_work_rate= attributes.get('defensive_work_rate')
+    crossing= attributes.get('crossing')
+    finishing= attributes.get('finishing')
+    heading_accuracy= attributes.get('heading_accuracy')
+    short_passing= attributes.get('short_passing')
+    volleys= attributes.get('volleys')
+    dribbling= attributes.get('dribbling')
+    curve= attributes.get('curve')
+    free_kick_accuracy= attributes.get('free_kick_accuracy')
+    long_passing= attributes.get('long_passing')
+    ball_control= attributes.get('ball_control')
+    acceleration= attributes.get('acceleration')
+    sprint_speed= attributes.get('sprint_speed')
+    agility= attributes.get('agility')
+    reactions= attributes.get('reactions')
+    balance= attributes.get('balance')
+    shot_power= attributes.get('shot_power')
+    jumping= attributes.get('jumping')
+    stamina= attributes.get('stamina')
+    strength= attributes.get('strength')
+    long_shots= attributes.get('long_shots')
+    aggression= attributes.get('aggression')
+    interceptions= attributes.get('interceptions')
+    positioning= attributes.get('positioning')
+    vision= attributes.get('vision')
+    penalties= attributes.get('penalties')
+    marking= attributes.get('marking')
+    standing_tackle= attributes.get('standing_tackle')
+    sliding_tackle= attributes.get('sliding_tackle')
+    gk_diving= attributes.get('gk_diving')
+    gk_handling= attributes.get('gk_handling')
+    gk_kicking= attributes.get('gk_kicking')
+    gk_positioning= attributes.get('gk_positioning')
+    gk_reflexes= attributes.get('gk_reflexes')
+    
+    
+    
+    
+    cursor.execute('INSERT INTO test_analytics_engineer_Player_Attributes_Modified (coluna1,id,player_fifa_api_id,player_api_id,date,overall_rating,potential,preferred_foot,attacking_work_rate,defensive_work_rate,crossing,finishing,heading_accuracy,short_passing,volleys,dribbling,curve,free_kick_accuracy,long_passing,ball_control,acceleration,sprint_speed,agility,reactions,balance,shot_power,jumping,stamina,strength,long_shots,aggression,interceptions,positioning,vision,penalties,marking,standing_tackle,sliding_tackle,gk_diving,gk_handling,gk_kicking,gk_positioning,gk_reflexes) '
+                   'VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)', (coluna1,id,player_fifa_api_id,player_api_id,date,overall_rating,potential,preferred_foot,attacking_work_rate,defensive_work_rate,crossing,finishing,heading_accuracy,short_passing,volleys,dribbling,curve,free_kick_accuracy,long_passing,ball_control,acceleration,sprint_speed,agility,reactions,balance,shot_power,jumping,stamina,strength,long_shots,aggression,interceptions,positioning,vision,penalties,marking,standing_tackle,sliding_tackle,gk_diving,gk_handling,gk_kicking,gk_positioning,gk_reflexes))
+
+# Realizando a confirmação das alterações, fechamento da conexão e uma mensagem informando o sucesso da importação
+conexao.commit()
+conexao.close()
+
+print('Relação estabelecida entre as tabelas. Tabela test_analytics_engineer_Player_Attributes_Modified criada com sucesso.')
+
+------------------------------------------------------------------------------------------------------------------------------------
+
+#Importação das bibliotecas necessárias
+
+import json
+import sqlite3
+
+# Definição do banco de dados SQLite contendo o caminho completo
+banco_dados = '/Users/matheussilva/Banco_SQLITE/BANCO_SQLITE'
+
+# Realizando a conexão com o banco de dados
+conexao = sqlite3.connect(banco_dados)
+cursor = conexao.cursor()
+
+# Realizando a criação da tabela no banco de dados
+cursor.execute('CREATE TABLE IF NOT EXISTS test_analytics_engineer_Team_Attributes_Modified (coluna1 INTEGER PRIMARY KEY, '
+               'id INT,team_fifa_api_id INT,team_api_id INT,date DATE,buildUpPlaySpeed INT,buildUpPlaySpeedClass TEXT,buildUpPlayDribbling TEXT,buildUpPlayDribblingClass TEXT,buildUpPlayPassing INT,buildUpPlayPassingClass TEXT,buildUpPlayPositioningClass TEXT,chanceCreationPassing INT,chanceCreationPassingClass TEXT,chanceCreationCrossing INT,chanceCreationCrossingClass TEXT,chanceCreationShooting INT,chanceCreationShootingClass TEXT,chanceCreationPositioningClass TEXT,defencePressure INT,defencePressureClass TEXT,defenceAggression INT,defenceAggressionClass TEXT,defenceTeamWidth INT,defenceTeamWidthClass TEXT,defenceDefenderLineClass TEXT)')
+
+# Selecionando os dados da tabela test_analytics_engineer_Team e test_analytics_engineer_Team_Attributes para inserirmos na tabela test_analytics_engineer_Team_Attributes_Modified
+
+cursor.execute('SELECT A.id, B.team_attributes FROM test_analytics_engineer_Team A INNER JOIN test_analytics_engineer_Team_Attributes B ON A.id = B.coluna1')
+rows = cursor.fetchall()
+for row in rows:
+    coluna1 = row[0]
+    attributes_json = row[1]
+    
+    attributes = json.loads(attributes_json)
+    
+    id=attributes.get('id')
+    team_fifa_api_id=attributes.get('team_fifa_api_id')
+    team_api_id=attributes.get('team_api_id')
+    date=attributes.get('date')
+    buildUpPlaySpeed=attributes.get('buildUpPlaySpeed')
+    buildUpPlaySpeedClass=attributes.get('buildUpPlaySpeedClass')
+    buildUpPlayDribbling=attributes.get('buildUpPlayDribbling')
+    buildUpPlayDribblingClass=attributes.get('buildUpPlayDribblingClass')
+    buildUpPlayPassing=attributes.get('buildUpPlayPassing')
+    buildUpPlayPassingClass=attributes.get('buildUpPlayPassingClass')
+    buildUpPlayPositioningClass=attributes.get('buildUpPlayPositioningClass')
+    chanceCreationPassing=attributes.get('chanceCreationPassing')
+    chanceCreationPassingClass=attributes.get('chanceCreationPassingClass')
+    chanceCreationCrossing=attributes.get('chanceCreationCrossing')
+    chanceCreationCrossingClass=attributes.get('chanceCreationCrossingClass')
+    chanceCreationShooting=attributes.get('chanceCreationShooting')
+    chanceCreationShootingClass=attributes.get('chanceCreationShootingClass')
+    chanceCreationPositioningClass=attributes.get('chanceCreationPositioningClass')
+    defencePressure=attributes.get('defencePressure')
+    defencePressureClass=attributes.get('defencePressureClass')
+    defenceAggression=attributes.get('defenceAggression')
+    defenceAggressionClass=attributes.get('defenceAggressionClass')
+    defenceTeamWidth=attributes.get('defenceTeamWidth')
+    defenceTeamWidthClass=attributes.get('defenceTeamWidthClass')
+    defenceDefenderLineClass=attributes.get('defenceDefenderLineClass')
+    
+    
+    
+    
+    cursor.execute('INSERT INTO test_analytics_engineer_Team_Attributes_Modified (coluna1,id,team_fifa_api_id,team_api_id,date,buildUpPlaySpeed,buildUpPlaySpeedClass,buildUpPlayDribbling,buildUpPlayDribblingClass,buildUpPlayPassing,buildUpPlayPassingClass,buildUpPlayPositioningClass,chanceCreationPassing,chanceCreationPassingClass,chanceCreationCrossing,chanceCreationCrossingClass,chanceCreationShooting,chanceCreationShootingClass,chanceCreationPositioningClass,defencePressure,defencePressureClass,defenceAggression,defenceAggressionClass,defenceTeamWidth,defenceTeamWidthClass,defenceDefenderLineClass) '
+                   'VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)', (coluna1,id,team_fifa_api_id,team_api_id,date,buildUpPlaySpeed,buildUpPlaySpeedClass,buildUpPlayDribbling,buildUpPlayDribblingClass,buildUpPlayPassing,buildUpPlayPassingClass,buildUpPlayPositioningClass,chanceCreationPassing,chanceCreationPassingClass,chanceCreationCrossing,chanceCreationCrossingClass,chanceCreationShooting,chanceCreationShootingClass,chanceCreationPositioningClass,defencePressure,defencePressureClass,defenceAggression,defenceAggressionClass,defenceTeamWidth,defenceTeamWidthClass,defenceDefenderLineClass))
+
+# Realizando a confirmação das alterações, fechamento da conexão e uma mensagem informando o sucesso da importação
+conexao.commit()
+conexao.close()
+
+print('Relação estabelecida entre as tabelas. Tabela test_analytics_engineer_Team_Attributes_Modified foi criada com sucesso.')
+
+------------------------------------------------------------------------------------------------------------------------------------
+
+
+#Importação das bibliotecas necessárias
+import sqlite3
+import json
+
+# Definição do banco de dados SQLite contendo o caminho completo
+banco_dados = '/Users/matheussilva/Banco_SQLITE/BANCO_SQLITE'
+
+# Realizando a conexão com o banco de dados
+conexao = sqlite3.connect(banco_dados)
+cursor = conexao.cursor()
+
+# Realizando a criação da tabela no banco de dados
+cursor.execute('CREATE TABLE IF NOT EXISTS test_analytics_engineer_Match_Modified (id INTEGER PRIMARY KEY AUTOINCREMENT, match_json TEXT)')
+
+# Selecionando os dados da tabela Match
+cursor.execute('SELECT  id,match_api_id, home_team_api_id, away_team_api_id FROM test_analytics_engineer_Match')
+matches = cursor.fetchall()
+
+# Inserindo os dados na tabela test_analytics_engineer_Match_Modified
+for match in matches:
+    match_dict = {
+        'id': match[0],
+        'match_api_id': match[1],
+        'home_team_api_id': match[2],
+        'away_team_api_id': match[3]
+    }
+    match_json = json.dumps(match_dict)
+    
+    cursor.execute('INSERT INTO test_analytics_engineer_Match_Modified (match_json) VALUES (?)', (match_json,))
+    
+# Realizando a confirmação das alterações, fechamento da conexão e uma mensagem informando o sucesso da importação
+conexao.commit()
+conexao.close()
+
+print('Criação das colunas como JSON na tabela test_analytics_engineer_Match_Modified realizada com sucesso.')
+
+------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
