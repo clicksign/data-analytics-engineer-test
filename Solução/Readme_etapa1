@@ -1,1 +1,260 @@
+PROPOSTA DE SOLUÇAO – QUESTÃO 01:
+
+#Importação das bibliotecas necessárias
+import csv
+import sqlite3
+
+# Definição do arquivo .CSV contendo o caminho completo
+arquivo_csv = '/Users/matheussilva/Bases/Country.csv'
+
+# Definição do banco de dados SQLite contendo o caminho completo
+banco_dados = '/Users/matheussilva/Banco_SQLITE/BANCO_SQLITE'
+
+# Realizando a conexão com o banco de dados
+conexao = sqlite3.connect(banco_dados)
+cursor = conexao.cursor()
+
+# Realizando a criação da tabela no banco de dados
+cursor.execute('CREATE TABLE IF NOT EXISTS test_analytics_engineer_Country (id NUMBER, name TEXT)')
+
+# Realizando a leitura do arquivo e em seguida realizando a inserção dos dados na tabela criada anteriormente
+with open(arquivo_csv, 'r') as arquivo:
+    # Ignorar a primeira linha (cabeçalho)
+    next(arquivo)
+    leitor_csv = csv.reader(arquivo)
+    for linha in leitor_csv:
+        cursor.execute('INSERT INTO test_analytics_engineer_Country (id, name) VALUES (?, ?)', linha)
+
+# Realizando a confirmação das alterações, fechamento da conexão e uma mensagem informando o sucesso da importação
+conexao.commit()
+conexao.close()
+
+print('Dados importados com sucesso para o banco de dados SQLite.')
+
+-----------------------------------------------------------------------------------------------------------------------------------
+
+#Importação das bibliotecas necessárias
+import csv
+import sqlite3
+
+# Definição do arquivo .CSV contendo o caminho completo
+arquivo_csv = '/Users/matheussilva/Bases/League.csv'
+
+# Definição do banco de dados SQLite contendo o caminho completo
+banco_dados = '/Users/matheussilva/Banco_SQLITE/BANCO_SQLITE'
+
+# Realizando a conexão com o banco de dados
+conexao = sqlite3.connect(banco_dados)
+cursor = conexao.cursor()
+
+# Realizando a criação da tabela no banco de dados
+cursor.execute('CREATE TABLE IF NOT EXISTS test_analytics_engineer_League (id INT, country_id INT, name TEXT)')
+
+# Realizando a leitura do arquivo e em seguida realizando a inserção dos dados na tabela criada anteriormente
+with open(arquivo_csv, 'r') as arquivo:
+    # Ignorar a primeira linha (cabeçalho)
+    next(arquivo)
+    leitor_csv = csv.reader(arquivo)
+    for linha in leitor_csv:
+        cursor.execute('INSERT INTO test_analytics_engineer_League (id, country_id, name) VALUES (?,?,?)', linha)
+
+# Realizando a confirmação das alterações, fechamento da conexão e uma mensagem informando o sucesso da importação
+conexao.commit()
+conexao.close()
+
+print('Dados importados com sucesso para o banco de dados SQLite.')
+
+------------------------------------------------------------------------------------------------------------------------------------
+
+#Importação das bibliotecas necessárias
+import csv
+import sqlite3
+
+# Definição do arquivo .CSV contendo o caminho completo
+arquivo_csv = '/Users/matheussilva/Bases/Match.csv'
+
+# Definição do banco de dados SQLite contendo o caminho completo
+banco_dados = '/Users/matheussilva/Banco_SQLITE/BANCO_SQLITE'
+
+# Realizando a conexão com o banco de dados
+conexao = sqlite3.connect(banco_dados)
+cursor = conexao.cursor()
+
+# Realizando a criação da tabela no banco de dados
+cursor.execute('CREATE TABLE IF NOT EXISTS test_analytics_engineer_Match (id INT,country_id INT,league_id INT,season TEXT,stage INT,date DATE,match_api_id INT,home_team_api_id INT,away_team_api_id INT,home_team_goal INT,away_team_goal INT,home_player_X1 INT,home_player_X2 INT,home_player_X3 INT,home_player_X4 INT,home_player_X5 INT,home_player_X6 INT,home_player_X7 INT,home_player_X8 INT,home_player_X9 INT,home_player_X10 INT,home_player_X11 INT,away_player_X1 INT,away_player_X2 INT,away_player_X3 INT,away_player_X4 INT,away_player_X5 INT,away_player_X6 INT,away_player_X7 INT,away_player_X8 INT,away_player_X9 INT,away_player_X10 INT,away_player_X11 INT,home_player_Y1 INT,home_player_Y2 INT,home_player_Y3 INT,home_player_Y4 INT,home_player_Y5 INT,home_player_Y6 INT,home_player_Y7 INT,home_player_Y8 INT,home_player_Y9 INT,home_player_Y10 INT,home_player_Y11 INT,away_player_Y1 INT,away_player_Y2 INT,away_player_Y3 INT,away_player_Y4 INT,away_player_Y5 INT,away_player_Y6 INT,away_player_Y7 INT,away_player_Y8 INT,away_player_Y9 INT,away_player_Y10 INT,away_player_Y11 INT,home_player_1 INT,home_player_2 INT,home_player_3 INT,home_player_4 INT,home_player_5 INT,home_player_6 INT,home_player_7 INT,home_player_8 INT,home_player_9 INT,home_player_10 INT,home_player_11 INT,away_player_1 INT,away_player_2 INT,away_player_3 INT,away_player_4 INT,away_player_5 INT,away_player_6 INT,away_player_7 INT,away_player_8 INT,away_player_9 INT,away_player_10 INT,away_player_11 INT,goal TEXT,shoton TEXT,shotoff TEXT,foulcommit TEXT,card TEXT,cross TEXT,corner TEXT,possession TEXT,B365H NUMERIC,B365D NUMERIC,B365A NUMERIC,BWH NUMERIC,BWD NUMERIC,BWA NUMERIC,IWH NUMERIC,IWD NUMERIC,IWA NUMERIC,LBH NUMERIC,LBD NUMERIC,LBA NUMERIC,PSH NUMERIC,PSD NUMERIC,PSA NUMERIC,WHH NUMERIC,WHD NUMERIC,WHA NUMERIC,SJH NUMERIC,SJD NUMERIC,SJA NUMERIC,VCH NUMERIC,VCD NUMERIC,VCA NUMERIC,GBH NUMERIC,GBD NUMERIC,GBA NUMERIC,BSH NUMERIC,BSD NUMERIC,BSA NUMERIC)')
+
+# Realizando a leitura do arquivo e em seguida realizando a inserção dos dados na tabela criada anteriormente
+with open(arquivo_csv, 'r') as arquivo:
+    # Ignorar a primeira linha (cabeçalho)
+    next(arquivo)
+    leitor_csv = csv.reader(arquivo)
+    for linha in leitor_csv:
+        cursor.execute('INSERT INTO test_analytics_engineer_Match (id,country_id,league_id,season,stage,date,match_api_id,home_team_api_id,away_team_api_id,home_team_goal,away_team_goal,home_player_X1,home_player_X2,home_player_X3,home_player_X4,home_player_X5,home_player_X6,home_player_X7,home_player_X8,home_player_X9,home_player_X10,home_player_X11,away_player_X1,away_player_X2,away_player_X3,away_player_X4,away_player_X5,away_player_X6,away_player_X7,away_player_X8,away_player_X9,away_player_X10,away_player_X11,home_player_Y1,home_player_Y2,home_player_Y3,home_player_Y4,home_player_Y5,home_player_Y6,home_player_Y7,home_player_Y8,home_player_Y9,home_player_Y10,home_player_Y11,away_player_Y1,away_player_Y2,away_player_Y3,away_player_Y4,away_player_Y5,away_player_Y6,away_player_Y7,away_player_Y8,away_player_Y9,away_player_Y10,away_player_Y11,home_player_1,home_player_2,home_player_3,home_player_4,home_player_5,home_player_6,home_player_7,home_player_8,home_player_9,home_player_10,home_player_11,away_player_1,away_player_2,away_player_3,away_player_4,away_player_5,away_player_6,away_player_7,away_player_8,away_player_9,away_player_10,away_player_11,goal,shoton,shotoff,foulcommit,card,cross,corner,possession,B365H,B365D,B365A,BWH,BWD,BWA,IWH,IWD,IWA,LBH,LBD,LBA,PSH,PSD,PSA,WHH,WHD,WHA,SJH,SJD,SJA,VCH,VCD,VCA,GBH,GBD,GBA,BSH,BSD,BSA) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)', linha)
+
+# Realizando a confirmação das alterações, fechamento da conexão e uma mensagem informando o sucesso da importação
+conexao.commit()
+conexao.close()
+
+print('Dados importados com sucesso para o banco de dados SQLite.')
+
+
+------------------------------------------------------------------------------------------------------------------------------------
+
+#Importação das bibliotecas necessárias
+import csv
+import sqlite3
+
+# Definição do arquivo .CSV contendo o caminho completo
+arquivo_csv = '/Users/matheussilva/Bases/Player_Attributes.csv'
+
+# Definição do banco de dados SQLite contendo o caminho completo
+banco_dados = '/Users/matheussilva/Banco_SQLITE/BANCO_SQLITE'
+
+# Realizando a conexão com o banco de dados
+conexao = sqlite3.connect(banco_dados)
+cursor = conexao.cursor()
+
+# Realizando a criação da tabela no banco de dados
+cursor.execute('CREATE TABLE IF NOT EXISTS test_analytics_engineer_Player_Attributes (coluna1 INTEGER, player_attributes TEXT)')
+
+# Realizando a leitura do arquivo e em seguida realizando a inserção dos dados na tabela criada anteriormente
+with open(arquivo_csv, 'r') as arquivo:
+    leitor_csv = csv.reader(arquivo)
+    next(leitor_csv)  # Pular a primeira linha (cabeçalho)
+    
+    for linha in leitor_csv:
+        coluna1 = int(linha[0])  # Valor da primeira coluna (inteiro)
+        player_attributes = linha[1].split(',')  # Separar os valores por vírgula
+        
+        cursor.execute('INSERT INTO test_analytics_engineer_Player_Attributes (coluna1, player_attributes) VALUES (?, ?)', (coluna1, ','.join(player_attributes)))
+
+# Realizando a confirmação das alterações, fechamento da conexão e uma mensagem informando o sucesso da importação
+conexao.commit()
+conexao.close()
+
+print('Dados importados com sucesso para o banco de dados SQLite.')
+
+------------------------------------------------------------------------------------------------------------------------------------
+
+#Importação das bibliotecas necessárias
+import csv
+import sqlite3
+
+# Definição do arquivo .CSV contendo o caminho completo
+arquivo_csv = '/Users/matheussilva/Bases/Player.csv'
+
+# Definição do banco de dados SQLite contendo o caminho completo
+banco_dados = '/Users/matheussilva/Banco_SQLITE/BANCO_SQLITE'
+
+# Realizando a conexão com o banco de dados
+conexao = sqlite3.connect(banco_dados)
+cursor = conexao.cursor()
+
+# Realizando a criação da tabela no banco de dados
+cursor.execute('CREATE TABLE IF NOT EXISTS test_analytics_engineer_Player (id INT, player_api_id INT, player_name TEXT, player_fifa_api_id INT, birthday DATE, height NUMBER, weight INT)')
+
+# Realizando a leitura do arquivo e em seguida realizando a inserção dos dados na tabela criada anteriormente
+with open(arquivo_csv, 'r') as arquivo:
+    # Ignorar a primeira linha (cabeçalho)
+    next(arquivo)
+    leitor_csv = csv.reader(arquivo)
+    for linha in leitor_csv:
+        cursor.execute('INSERT INTO test_analytics_engineer_Player (id, player_api_id, player_name, player_fifa_api_id, birthday, height, weight) VALUES (?, ?, ?, ?, ?, ?, ?)', linha)
+
+# Realizando a confirmação das alterações, fechamento da conexão e uma mensagem informando o sucesso da importação
+conexao.commit()
+conexao.close()
+
+print('Dados importados com sucesso para o banco de dados SQLite.')
+
+
+------------------------------------------------------------------------------------------------------------------------------------
+
+#Importação das bibliotecas necessárias
+import csv
+import sqlite3
+
+# Definição do arquivo .CSV contendo o caminho completo
+arquivo_csv = '/Users/matheussilva/Bases/Team_Attributes.csv'
+
+# Definição do banco de dados SQLite contendo o caminho completo
+banco_dados = '/Users/matheussilva/Banco_SQLITE/BANCO_SQLITE'
+
+# Realizando a conexão com o banco de dados
+conexao = sqlite3.connect(banco_dados)
+cursor = conexao.cursor()
+
+# Realizando a criação da tabela no banco de dados
+cursor.execute('CREATE TABLE IF NOT EXISTS test_analytics_engineer_Team_Attributes (coluna1 INTEGER, team_attributes TEXT)')
+
+# Realizando a leitura do arquivo e em seguida realizando a inserção dos dados na tabela criada anteriormente
+with open(arquivo_csv, 'r') as arquivo:
+    leitor_csv = csv.reader(arquivo)
+    next(leitor_csv)  # Pular a primeira linha (cabeçalho)
+    
+    for linha in leitor_csv:
+        coluna1 = int(linha[0])  # Valor da primeira coluna (inteiro)
+        team_attributes = linha[1].split(',')  # Separar os valores por vírgula
+        
+        cursor.execute('INSERT INTO test_analytics_engineer_Team_Attributes (coluna1, team_attributes) VALUES (?, ?)', (coluna1, ','.join(team_attributes)))
+
+# Realizando a confirmação das alterações, fechamento da conexão e uma mensagem informando o sucesso da importação
+conexao.commit()
+conexao.close()
+
+print('Dados importados com sucesso para o banco de dados SQLite.')
+
+
+------------------------------------------------------------------------------------------------------------------------------------
+
+#Importação das bibliotecas necessárias
+import csv
+import sqlite3
+
+# Definição do arquivo .CSV contendo o caminho completo
+arquivo_csv = '/Users/matheussilva/Bases/Team.csv'
+
+# Definição do banco de dados SQLite contendo o caminho completo
+banco_dados = '/Users/matheussilva/Banco_SQLITE/BANCO_SQLITE'
+
+# Realizando a conexão com o banco de dados
+conexao = sqlite3.connect(banco_dados)
+cursor = conexao.cursor()
+
+# Realizando a criação da tabela no banco de dados
+cursor.execute('CREATE TABLE IF NOT EXISTS test_analytics_engineer_Team (id INT, team_api_id INT, team_fifa_api_id INT, team_long_name TEXT, team_Short_name TEXT)')
+
+# Realizando a leitura do arquivo e em seguida realizando a inserção dos dados na tabela criada anteriormente
+with open(arquivo_csv, 'r') as arquivo:
+    # Ignorar a primeira linha (cabeçalho)
+    next(arquivo)
+    leitor_csv = csv.reader(arquivo)
+    for linha in leitor_csv:
+        cursor.execute('INSERT INTO test_analytics_engineer_Team (id, team_api_id, team_fifa_api_id, team_long_name, team_Short_name) VALUES (?, ?, ?, ?, ?)', linha)
+
+# Realizando a confirmação das alterações, fechamento da conexão e uma mensagem informando o sucesso da importação
+conexao.commit()
+conexao.close()
+
+print('Dados importados com sucesso para o banco de dados SQLite.')
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
