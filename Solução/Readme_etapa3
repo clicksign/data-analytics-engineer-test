@@ -1,1 +1,264 @@
+PROPOSTA DE SOLUÇAO – QUESTÃO 03:
+
+
+PRINCIPAIS SUJEIRAS NAS BASES:
+
+--Campos vazios
+SELECT *
+FROM test_analytics_engineer_Country
+WHERE ID = ''
+
+--ID duplicado representando o mesmo nome porém escrito em outra língua, além de campos com nomes vazios
+SELECT id, COUNT(id) AS Repeticoes_ID
+FROM test_analytics_engineer_Country
+GROUP BY id
+HAVING COUNT(id) > 1;
+
+--Campos com nomes vazios
+
+SELECT name, COUNT(id) AS Repeticoes_ID
+FROM test_analytics_engineer_Country
+GROUP BY name
+HAVING COUNT(name) > 1;
+
+--Problemas em alguns campos no momento da importação da base da API fez com que alguns campos não possuía o valor esperado para o mesmo
+
+SELECT goal,shoton,shotoff,foulcommit,card,"cross",corner,possession,count(*)
+FROM test_analytics_engineer_Match
+group by goal,shoton,shotoff,foulcommit,card,"cross",corner,possession 
+
+--Cabeçalho faltando para a primeira coluna na base, dessa forma atribuído um nome aleatório
+
+SELECT *
+from test_analytics_engineer_Player_Attributes
+
+--Campo team_fifa_api_id com repetições 
+
+SELECT team_fifa_api_id, COUNT(team_fifa_api_id) AS Repeticoes_ID
+FROM test_analytics_engineer_Team
+GROUP BY team_fifa_api_id
+HAVING COUNT(team_fifa_api_id) > 1;
+
+--Nas tabelas utilizadas para criar as “_Modified” temos ids que constam na tabela que contém a coluna com o JSON e na tabela correspondente o id não existe
+
+SELECT A.coluna1 
+FROM test_analytics_engineer_Team_Attributes A
+LEFT JOIN test_analytics_engineer_Team B ON A.coluna1 = B.id 
+WHERE B.id IS NULL;
+
+
+
+
+
+ALGUMAS ANALISES EXPLORÁTORIAS:
+
+--Quantidade de país e ligas que compõem as bases
+
+SELECT 'Country' AS tabela, COUNT(*) AS quantidade FROM test_analytics_engineer_Country
+UNION ALL
+SELECT 'League' AS tabela, COUNT(*) AS quantidade FROM test_analytics_engineer_League;
+
+
+--Temporada mais recente que contém na tabela test_analytics_engineer_Match
+
+SELECT MAX(season) AS "Temporada mais Recente" FROM test_analytics_engineer_Match;
+
+
+--Quantidade de gols dentro de casa, fora de casa e média de gols por país
+
+SELECT sum(home_team_goal) AS QTD_HOME_TEAM_GOAL,
+sum(away_team_goal) AS QTD_AWAY_TEAM_GOAL,
+sum(goal) QTD_GOAL,
+AVG(home_team_goal + away_team_goal) AS MEDIA_GOAL,
+B.name AS NAME_COUNTRY
+
+FROM test_analytics_engineer_Match A
+LEFT JOIN (SELECT DISTINCT id, 
+CASE WHEN name = 'Bélgica' THEN 'Belgium'
+	 WHEN name = 'Inglaterra' THEN 'England'
+	 WHEN name = 'França' THEN 'France'
+	 WHEN name = 'Alemanha' THEN 'Germany'
+	 WHEN name = 'Itália' THEN 'Italy'
+ELSE name END AS name
+FROM test_analytics_engineer_Country) B ON B.id = A.country_id 
+ 
+GROUP BY B.NAME
+
+--Quantidade de gols dentro de casa, fora de casa e média de gols por liga
+
+SELECT sum(home_team_goal) AS QTD_HOME_TEAM_GOAL,
+sum(away_team_goal) AS QTD_AWAY_TEAM_GOAL,
+sum(goal) QTD_GOAL,
+AVG(home_team_goal + away_team_goal) AS MEDIA_GOAL,
+B.name AS NAME_LEAGUE
+
+FROM test_analytics_engineer_Match A
+LEFT JOIN test_analytics_engineer_League B ON A.league_id  = B.id 
+
+GROUP BY B.NAME
+
+
+
+--Quantidade de gols dentro de casa, fora de casa e média de gols por temporada
+
+SELECT sum(home_team_goal) AS QTD_HOME_TEAM_GOAL,
+sum(away_team_goal) AS QTD_AWAY_TEAM_GOAL,
+sum(goal) QTD_GOAL,
+AVG(home_team_goal + away_team_goal) AS MEDIA_GOAL,
+a.season AS SEASON
+
+FROM test_analytics_engineer_Match A
+
+GROUP BY a.season
+
+--Quantidade de gols dentro de casa, fora de casa e média de gols por ano e mês 
+
+SELECT sum(home_team_goal) AS QTD_HOME_TEAM_GOAL,
+sum(away_team_goal) AS QTD_AWAY_TEAM_GOAL,
+sum(goal) QTD_GOAL,
+AVG(home_team_goal + away_team_goal) AS MEDIA_GOAL,
+strftime('%Y-%m', a.date) AS ANO_MES
+
+FROM test_analytics_engineer_Match A
+
+GROUP BY strftime('%Y-%m', a.date)
+
+--Quantidade de jogadores pela altura ordenado em forma decrescente
+
+SELECT height AS HEIGHT_PLAYER,
+COUNT(*) AS QTD_PLAYER
+FROM test_analytics_engineer_Player
+GROUP BY height
+ORDER BY QTD_PLAYER DESC;
+
+--Quantidade de jogadores pelo peso ordenado em forma decrescente
+
+SELECT weight AS WEIGHT_PLAYER,
+COUNT(*) AS QTD_PLAYER
+FROM test_analytics_engineer_Player
+GROUP BY weight
+ORDER BY QTD_PLAYER DESC;
+
+--Média da avalição geral dos jogadores por ano
+
+SELECT strftime('%Y', date) AS YEAR, 
+AVG(overall_rating) AS AVG_RATING
+FROM test_analytics_engineer_Player_Attributes_Modified
+GROUP BY year
+ORDER BY year;
+
+
+
+
+
+
+
+
+--Média da avalição geral por jogador
+
+SELECT B.player_name AS PLAYER_NAME, 
+AVG(overall_rating) AS AVG_RATING
+FROM test_analytics_engineer_Player_Attributes_Modified A
+LEFT JOIN test_analytics_engineer_Player B ON A.player_api_id = B.player_api_id 
+GROUP BY B.player_name
+ORDER BY B.player_name;
+
+
+--Quantidade de jogadores destros e canhotos contendo também os nomes
+
+SELECT B.player_name AS PLAYER_NAME, 
+preferred_foot AS PREFERRED_FOOT,
+count(DISTINCT A.player_api_id) AS QTD_PLAYER_API_ID
+
+FROM test_analytics_engineer_Player_Attributes_Modified A
+LEFT JOIN test_analytics_engineer_Player B ON A.player_api_id = B.player_api_id 
+GROUP BY B.player_name,preferred_foot
+ORDER BY B.player_name;
+
+--Potencial médio por jogador
+
+SELECT B.player_name AS PLAYER_NAME, 
+AVG(potential) AS AVG_POTENTIAL
+FROM test_analytics_engineer_Player_Attributes_Modified A
+LEFT JOIN test_analytics_engineer_Player B ON A.player_api_id = B.player_api_id 
+GROUP BY B.player_name
+ORDER BY B.player_name;
+
+--Nível de ataque por jogador
+
+SELECT B.player_name AS PLAYER_NAME, 
+attacking_work_rate as ATTACKING_WORK_RATE
+FROM test_analytics_engineer_Player_Attributes_Modified A
+LEFT JOIN test_analytics_engineer_Player B ON A.player_api_id = B.player_api_id 
+GROUP BY B.player_name
+ORDER BY B.player_name;
+
+
+--Nível de defesa por jogador
+
+SELECT B.player_name AS PLAYER_NAME, 
+ defensive_work_rate as DEFENSIVE_WORK_RATE
+FROM test_analytics_engineer_Player_Attributes_Modified A
+LEFT JOIN test_analytics_engineer_Player B ON A.player_api_id = B.player_api_id 
+GROUP BY B.player_name
+ORDER BY B.player_name;
+
+
+
+
+--Velocidade das jogadas pelas equipes
+
+SELECT buildUpPlaySpeedClass AS BUILD_UP_PLAY_SPEED_CLASS,
+COUNT(distinct team_api_id) AS QTD
+FROM test_analytics_engineer_Team_Attributes_Modified
+GROUP BY buildUpPlaySpeedClass
+ORDER BY QTD DESC;
+
+
+--Defesa de pressão por equipes
+
+SELECT A.team_long_name AS TEAM_NAME, 
+B.defencePressure AS DEFENCE_PRESSURE
+FROM test_analytics_engineer_Team A
+LEFT JOIN test_analytics_engineer_Team_Attributes_Modified B ON A.team_api_id = B.team_api_id
+ORDER BY B.defencePressure DESC;
+
+--Agressão de defesa por equipes
+
+SELECT A.team_long_name AS TEAM_NAME, 
+B.defenceAggression AS DEFENCE_AGRESSION
+FROM test_analytics_engineer_Team A
+LEFT JOIN test_analytics_engineer_Team_Attributes_Modified B ON A.team_api_id = B.team_api_id
+ORDER BY B.defenceAggression DESC;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
