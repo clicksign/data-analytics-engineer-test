@@ -1,5 +1,11 @@
 # **Desafio - Analytics Engineer**
 
+---
+
+# **SOLUÇÃO NO ARQUIVO Solution.md**
+
+--- 
+
 Este repositório possui um teste que visa avaliar sua curiosidade, seus conhecimentos em SQL / Python, análise e limpeza de dados, Storytelling e conceitos relacionados a processos ETL/ELT. O teste possui seu próprio conjunto de arquivos, parâmetros, instruções e estratégias para ser resolvido. Portanto, estude cada detalhe com sabedoria.
 
 # **Datasets**
