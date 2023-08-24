@@ -1,0 +1,19 @@
+analytics_engineer_test:
+  outputs:
+    dev:
+      type: sqlite
+      threads: 1
+      database: 'database'
+      schema: 'main'
+      schemas_and_paths:
+        main: '/home/galvsoliveira/data-analytics-engineer-test/case_database.sqlite'
+      schema_directory: '/home/galvsoliveira/data-analytics-engineer-test/'
+    prod:
+      type: sqlite
+      threads: 1
+      database: 'database'
+      schema: 'main'
+      schemas_and_paths:
+        main: '/home/galvsoliveira/data-analytics-engineer-test/case_database.sqlite'
+      schema_directory: '/home/galvsoliveira/data-analytics-engineer-test/'
+  target: dev

@@ -5,6 +5,7 @@ sudo apt autoremove -y
 sudo apt autoclean
 
 sudo apt install sqlite3
+sudo apt install unrar
     
 echo 'Installing asdf ...'
 git clone https://github.com/asdf-vm/asdf.git ~/.asdf --branch v0.10.2

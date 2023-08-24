@@ -1,13 +1,16 @@
 fail_fast: true
 repos:
   - repo: https://github.com/sqlfluff/sqlfluff
-    rev: 2.1.3
+    rev: 2.3.0
     hooks:
       - id: sqlfluff-lint
         name: sqlfluff-lint
+        args: [--dialect, sqlite]
+        additional_dependencies:
+          ['dbt-sqlite==1.4.0', 'sqlfluff-templater-dbt==2.3.0']
   
   - repo: https://github.com/psf/black
-    rev: 23.7.0
+    rev: 22.12.0
     hooks:
       - id: black
         args: ["--check", "--skip-string-normalization"]
@@ -16,6 +19,6 @@ repos:
     hooks:
       - id: pylint
         name: pylint
-        entry: poetry run pylint ./src
+        entry: poetry run pylint python_scripts
         language: system
         types: [python]
