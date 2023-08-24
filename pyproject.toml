@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "data-analytics-engineer-test"
+version = "0.1.0"
+description = ""
+authors = ["Gustavo Oliveira <g.alvs.oliveira@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+pre-commit = "^3.3.3"
+dbt-sqlite = "^1.4.0"
+black = "^23.7.0"
+pylint = "^2.17.5"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
