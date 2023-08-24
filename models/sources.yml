@@ -1,0 +1,34 @@
+version: 2
+
+sources:
+  - name: tables_raw
+    database: database
+    schema: main
+    loader: emr # informational only (free text)
+    loaded_at_field: _loaded_at # configure for all sources
+
+    # meta fields are rendered in auto-generated documentation
+    meta:
+      contains_pii: true
+      owner: ClickSign
+
+    # Add tags to this source
+    tags:
+      - ecom
+      - pii
+
+    quoting:
+      database: false
+      schema: false
+      identifier: false
+
+    tables:
+      - name: Player_raw
+        columns:
+          - name: id
+            tests:
+              - unique
+
+          - name: player_api_id
+            tests:
+              - not_null
