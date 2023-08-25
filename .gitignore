@@ -27,3 +27,4 @@ logs/
 target/
 *.csv
 *.sqlite
+dbt_packages/

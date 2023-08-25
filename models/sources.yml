@@ -1,10 +1,10 @@
 version: 2
 
 sources:
-  - name: tables_raw
-    database: database
+  - name: Fifadata
+    database: test_analytics_engineer
     schema: main
-    loader: emr # informational only (free text)
+    loader: python # informational only (free text)
     loaded_at_field: _loaded_at # configure for all sources
 
     # meta fields are rendered in auto-generated documentation
@@ -12,18 +12,8 @@ sources:
       contains_pii: true
       owner: ClickSign
 
-    # Add tags to this source
-    tags:
-      - ecom
-      - pii
-
-    quoting:
-      database: false
-      schema: false
-      identifier: false
-
     tables:
-      - name: Player_raw
+      - name: Player
         columns:
           - name: id
             tests:
@@ -32,3 +22,9 @@ sources:
           - name: player_api_id
             tests:
               - not_null
+      - name: Player_Attributes
+      - name: Match
+      - name: League
+      - name: Country
+      - name: Team
+      - name: Team_Attributes

@@ -15,6 +15,7 @@ pandas = "^2.0.3"
 dbt-sqlite = "1.4.0"
 dbt-core = "1.4.0"
 sqlfluff-templater-dbt = "^2.3.0"
+sqlfluff = "^2.3.0"
 
 [tool.sqlfluff.core]
 dialect = "sqlite"
