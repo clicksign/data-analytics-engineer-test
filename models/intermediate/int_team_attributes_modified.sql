@@ -40,7 +40,7 @@ WITH team_attributes AS (
         CAST(JSON_EXTRACT(team_attributes, '$.{{ _column }}') AS text) AS {{ _column }},
         {%- endfor %}
         {%- for _column in team_attributes_columns_by_type['date'] %}
-        CAST(JSON_EXTRACT(team_attributes, '$.{{ _column }}') AS date) AS {{ _column }}{{ ',' if not loop.last }}
+        DATE(CAST(JSON_EXTRACT(team_attributes, '$.{{ _column }}') AS text)) AS {{ _column }}{{ ',' if not loop.last }}
         {%- endfor %}
     FROM {{ ref('stg_team_attributes') }}
 )
