@@ -48,21 +48,7 @@
                                     player_attributes_columns_by_type['date']
 %}
 
-WITH player_attributes AS (
-    SELECT
-        {%- for _column in player_attributes_columns_by_type['integer'] %}
-        CAST(JSON_EXTRACT(player_attributes, '$.{{ _column }}') AS integer) AS {{ _column }},
-        {%- endfor %}
-        {%- for _column in player_attributes_columns_by_type['text'] %}
-        CAST(JSON_EXTRACT(player_attributes, '$.{{ _column }}') AS text) AS {{ _column }},
-        {%- endfor %}
-        {%- for _column in player_attributes_columns_by_type['date'] %}
-        DATE(CAST(JSON_EXTRACT(player_attributes, '$.{{ _column }}') AS text)) AS {{ _column }}{{ ',' if not loop.last }}
-        {%- endfor %}
-    FROM {{ ref('stg_player_attributes') }}
-)
-,
-player AS (
+WITH player AS (
     SELECT
         player_api_id,
         player_name,
@@ -72,14 +58,18 @@ player AS (
         weight
     FROM {{ ref('stg_player') }}
 )
+,
+player_joined_with_player_attributes AS (
+    SELECT
+        player.player_name,
+        player.birthday,
+        player.height,
+        player.weight,
+        {%- for _column in player_attributes_columns %}
+        player_attributes.{{ _column }}{{ ',' if not loop.last }}
+        {%- endfor %}
+    FROM {{ ref('stg_player_attributes') }} AS player_attributes
+        INNER JOIN player ON player_attributes.player_api_id = player.player_api_id
+)
 
-SELECT
-    player.player_name,
-    player.birthday,
-    player.height,
-    player.weight,
-    {%- for _column in player_attributes_columns %}
-    player_attributes.{{ _column }}{{ ',' if not loop.last }}
-    {%- endfor %}
-FROM player_attributes
-    INNER JOIN player ON player_attributes.player_api_id = player.player_api_id
+SELECT * FROM player_joined_with_player_attributes

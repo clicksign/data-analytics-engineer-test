@@ -2,4 +2,26 @@ version: 2
 
 models:
   - name: stg_team_attributes
-    description: ""
+    description: "Table of the parsed JSON data from team attributes source"
+    columns:
+      - name: id
+        description: "ID of the attribute"
+        tests:
+          - not_null
+      - name: team_api_id
+        description: "ID of the team from the API"
+        tests:
+          - not_null
+          - relationships:
+              to: ref('stg_team')
+              field: team_api_id
+      - name: team_fifa_api_id
+        description: "ID of the team from the FIFA API"
+        tests:
+          - relationships:
+              to: ref('stg_team')
+              field: team_fifa_api_id
+      - name: date
+        description: "Date of the team attributes"
+        tests:
+          - not_null

@@ -1,0 +1,5 @@
+version: 2
+
+models:
+  - name: int_league_joined_with_country
+    description: "This table is a join of the stg_league and stg_country tables"

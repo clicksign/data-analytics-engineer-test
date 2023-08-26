@@ -2,21 +2,24 @@ version: 2
 
 models:
   - name: stg_league
-    unique_key: id, country_id
-    description: ""
+    unique_key: id
+    description: "Staging table for league data"
     columns:
       - name: id
-        description: ""
+        description: "ID of the league"
         tests:
           - unique
           - not_null
       - name: country_id
-        description: ""
+        description: "ID of the country"
         tests:
           - unique
           - not_null
+          - relationships:
+              to: ref('stg_country')
+              field: id
       - name: name
-        description: ""
+        description: "Name of the league"
         tests:
           - unique
           - not_null

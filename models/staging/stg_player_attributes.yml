@@ -2,4 +2,49 @@ version: 2
 
 models:
   - name: stg_player_attributes
-    description: ""
+    description: "Table of the parsed JSON data from player attributes source"
+    columns:
+      - name: id
+        description: ""
+        tests:
+          - not_null
+          - unique
+      - name: player_api_id
+        description: ""
+        tests:
+          - not_null
+          - relationships:
+              to: ref('stg_player')
+              field: player_api_id
+      - name: player_fifa_api_id
+        description: ""
+        tests:
+          - relationships:
+              to: ref('stg_player')
+              field: player_fifa_api_id
+      - name: preferred_foot
+        description: ""
+        tests:
+          - accepted_values:
+              values:
+                - left
+                - right
+                - unknown
+      - name: attacking_work_rate
+        description: ""
+        tests:
+          - accepted_values:
+              values:
+                - high
+                - medium
+                - low
+                - unknown
+      - name: defensive_work_rate
+        description: ""
+        tests:
+          - accepted_values:
+              values:
+                - high
+                - medium
+                - low
+                - unknown

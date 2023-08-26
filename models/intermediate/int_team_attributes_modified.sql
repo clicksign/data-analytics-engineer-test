@@ -31,21 +31,7 @@
                                   team_attributes_columns_by_type['text']
 %}
 
-WITH team_attributes AS (
-    SELECT
-        {%- for _column in team_attributes_columns_by_type['integer'] %}
-        CAST(JSON_EXTRACT(team_attributes, '$.{{ _column }}') AS integer) AS {{ _column }},
-        {%- endfor %}
-        {%- for _column in team_attributes_columns_by_type['text'] %}
-        CAST(JSON_EXTRACT(team_attributes, '$.{{ _column }}') AS text) AS {{ _column }},
-        {%- endfor %}
-        {%- for _column in team_attributes_columns_by_type['date'] %}
-        DATE(CAST(JSON_EXTRACT(team_attributes, '$.{{ _column }}') AS text)) AS {{ _column }}{{ ',' if not loop.last }}
-        {%- endfor %}
-    FROM {{ ref('stg_team_attributes') }}
-)
-,
-team AS (
+WITH team AS (
     SELECT
         id,
         team_api_id,
@@ -55,15 +41,15 @@ team AS (
     FROM {{ ref('stg_team') }}
 )
 ,
-team_attributes_joined_with_team AS (
+team_joined_with_team_attributes AS (
     SELECT
         team.team_long_name,
         team.team_short_name,
         {%- for _column in team_attributes_columns %}
         team_attributes.{{ _column }}{{ ',' if not loop.last }}
         {%- endfor %}
-    FROM team_attributes
+    FROM {{ ref('stg_team_attributes') }} AS team_attributes
         INNER JOIN team ON team_attributes.team_api_id = team.team_api_id
 )
 
-SELECT * FROM team_attributes_joined_with_team
+SELECT * FROM team_joined_with_team_attributes

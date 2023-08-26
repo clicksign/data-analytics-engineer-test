@@ -6,24 +6,24 @@ models:
     description: ""
     columns:
       - name: id
-        description: ""
+        description: "ID of the team"
         tests:
           - unique
           - not_null
       - name: team_api_id
-        description: ""
+        description: "ID of the team from the API"
         tests:
           - unique
           - not_null
       - name: team_fifa_api_id
-        description: ""
+        description: "ID of the team from the FIFA API"
         tests:
           - unique
       - name: team_long_name
-        description: ""
+        description: "Long name of the team"
         tests:
           - not_null
       - name: team_short_name
-        description: ""
+        description: "Short name of the team"
         tests:
           - not_null

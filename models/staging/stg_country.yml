@@ -4,3 +4,9 @@ models:
   - name: stg_country
     unique_key: id
     description: ""
+    columns:
+      - name: id
+        description: ""
+        tests:
+          - unique
+          - not_null
