@@ -3,3 +3,35 @@ version: 2
 models:
   - name: stg_player
     description: ""
+    columns:
+      - name: id
+        description: ""
+        tests:
+          - unique
+          - not_null
+      - name: player_api_id
+        description: ""
+        tests:
+          - unique
+          - not_null
+      - name: player_name
+        description: ""
+        tests:
+          - not_null
+      - name: player_fifa_api_id
+        description: ""
+        tests:
+          - unique
+          - not_null
+      - name: birthday
+        description: ""
+        tests:
+          - not_null
+      - name: height
+        description: ""
+        tests:
+          - not_null
+      - name: weight
+        description: ""
+        tests:
+          - not_null

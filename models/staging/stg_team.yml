@@ -2,4 +2,28 @@ version: 2
 
 models:
   - name: stg_team
+    unique_key: id, team_api_id
     description: ""
+    columns:
+      - name: id
+        description: ""
+        tests:
+          - unique
+          - not_null
+      - name: team_api_id
+        description: ""
+        tests:
+          - unique
+          - not_null
+      - name: team_fifa_api_id
+        description: ""
+        tests:
+          - unique
+      - name: team_long_name
+        description: ""
+        tests:
+          - not_null
+      - name: team_short_name
+        description: ""
+        tests:
+          - not_null
