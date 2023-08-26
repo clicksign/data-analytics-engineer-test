@@ -18,7 +18,8 @@ def replace_nan_in_json(data):
 
 
 def read_csv_and_clean(file_path):
-    """Reads a CSV file, drops 'Unnamed: 0' column if present, and normalizes JSON data."""
+    """Reads a CSV file, drops 'Unnamed: 0' column if present,
+    and normalizes JSON data if the ***first value in the column*** is json like."""
     table = pd.read_csv(file_path)
     if "Unnamed: 0" in table.columns:
         table = table.drop("Unnamed: 0", axis=1)

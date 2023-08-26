@@ -19,6 +19,6 @@ repos:
     hooks:
       - id: pylint
         name: pylint
-        entry: poetry run pylint python_scripts
+        entry: poetry run pylint ./python_scripts
         language: system
         types: [python]
