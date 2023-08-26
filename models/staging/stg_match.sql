@@ -1,1 +1,2 @@
-SELECT * FROM {{ source('Fifadata','Match') }}
+SELECT *
+FROM {{ source('Fifadata','Match') }}
