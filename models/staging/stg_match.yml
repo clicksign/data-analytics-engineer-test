@@ -2,4 +2,19 @@ version: 2
 
 models:
   - name: stg_match
+    unique_key: id, country_id
     description: ""
+    columns:
+      - name: id
+        description: ""
+        tests:
+          - unique
+          - not_null
+      - name: country_id
+        description: ""
+        tests:
+          - not_null
+      - name: league_id
+        description: ""
+        tests:
+          - not_null
