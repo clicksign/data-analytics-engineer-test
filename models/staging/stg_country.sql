@@ -17,6 +17,6 @@ WITH unique_id_country AS (
 )
 
 SELECT
-    not_null_id AS id,
-    name
+    CAST(not_null_id AS integer) AS id,
+    CAST(name AS text) AS name
 FROM unique_id_country
