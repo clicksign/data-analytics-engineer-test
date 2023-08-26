@@ -2,19 +2,39 @@ version: 2
 
 models:
   - name: stg_match
-    unique_key: id, country_id
-    description: ""
+    unique_key: id
+    description: "Staging table for match data"
     columns:
       - name: id
-        description: ""
+        description: "ID of the match"
         tests:
           - unique
           - not_null
       - name: country_id
-        description: ""
+        description: "ID of the country"
         tests:
           - not_null
+          - relationships:
+              to: ref('stg_country')
+              field: id
       - name: league_id
-        description: ""
+        description: "ID of the league"
         tests:
           - not_null
+          - relationships:
+              to: ref('stg_league')
+              field: id
+      - name: home_team_api_id
+        description: "ID of the home team from the API"
+        tests:
+          - not_null
+          - relationships:
+              to: ref('stg_team')
+              field: team_api_id
+      - name: away_team_api_id
+        description: "ID of the away team from the API"
+        tests:
+          - not_null
+          - relationships:
+              to: ref('stg_team')
+              field: team_api_id

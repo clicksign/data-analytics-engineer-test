@@ -46,7 +46,10 @@ WITH team_attributes AS (
 )
 
 SELECT
-    {%- for _column in team_attributes_columns %}
-    {{ _column }}{{ ',' if not loop.last }}
-    {%- endfor %}
+    team_fifa_api_id AS unique_field,
+    COUNT(DISTINCT team_api_id) AS distinct_team_api_id_count
+
 FROM team_attributes
+WHERE team_fifa_api_id IS NOT NULL
+GROUP BY team_fifa_api_id
+HAVING distinct_team_api_id_count > 1

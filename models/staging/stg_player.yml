@@ -5,33 +5,33 @@ models:
     description: ""
     columns:
       - name: id
-        description: ""
+        description: "ID of the player"
         tests:
           - unique
           - not_null
       - name: player_api_id
-        description: ""
+        description: "ID of the player from the API"
         tests:
           - unique
           - not_null
       - name: player_name
-        description: ""
+        description: "Name of the player"
         tests:
           - not_null
       - name: player_fifa_api_id
-        description: ""
+        description: "ID of the player from the FIFA API"
         tests:
           - unique
           - not_null
       - name: birthday
-        description: ""
+        description: "Birthday of the player"
         tests:
           - not_null
       - name: height
-        description: ""
+        description: "Height of the player"
         tests:
           - not_null
       - name: weight
-        description: ""
+        description: "Weight of the player"
         tests:
           - not_null

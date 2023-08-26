@@ -20,3 +20,13 @@ SELECT
     CAST(not_null_id AS integer) AS id,
     CAST(name AS text) AS name
 FROM unique_id_country
+UNION ALL
+SELECT
+    51220 AS id,
+    'Angola' AS name
+UNION ALL
+SELECT
+    44560 AS id,
+    'Brazil' AS name
+-- the data from above I got from the additional countries from stg_league
+-- table as I can't use another source as country table.
