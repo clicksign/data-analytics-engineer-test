@@ -1,9 +1,9 @@
 # Configurando o WSL2 (para usuarios Windows)
 - Baixe e instale o VSCode: https://code.visualstudio.com/download.
 - Abra o PowerShell como administrador e execute o comando: `wsl --install`
-- Configure um usuário e senha para o WSL2.
 - Reinicie o computador.
-- Na barra de pesquisa do Windows, digite "Ubuntu" e abra-o.
+- Se o Ubuntu não inicializar automaticamente, va na barra de pesquisa do Windows, busque por Ubuntu e abra-o.
+- Configure um usuário e senha - e lembre bem dessa senha que ela poderá ser pedida para alguns comandos.
 - Rode o seguinte comando para abrir o VSCode no Ubuntu: `code .`
 - Instale a extensão WSL no VSCode, feche e rode novamente o comando acima no terminal do Ubuntu.
 
