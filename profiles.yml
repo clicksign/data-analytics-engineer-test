@@ -6,14 +6,14 @@ analytics_engineer_test:
       database: test_analytics_engineer
       schema: main
       schemas_and_paths:
-        main: '/home/galvsoliveira/data-analytics-engineer-test/test_analytics_engineer.sqlite'
-      schema_directory: '/home/galvsoliveira/data-analytics-engineer-test/'
+        main: 'test_analytics_engineer.sqlite'
+      schema_directory: '/'
     prod:
       type: sqlite
       threads: 1
       database: test_analytics_engineer
       schema: main
       schemas_and_paths:
-        main: '/home/galvsoliveira/data-analytics-engineer-test/test_analytics_engineer.sqlite'
-      schema_directory: '/home/galvsoliveira/data-analytics-engineer-test/'
+        main: 'test_analytics_engineer.sqlite'
+      schema_directory: '/'
   target: dev

@@ -15,7 +15,7 @@ git clone https://github.com/asdf-vm/asdf.git ~/.asdf --branch v0.10.2
 echo '. $HOME/.asdf/asdf.sh' >> ~/.bashrc
 echo '. $HOME/.asdf/completions/asdf.bash' >> ~/.bashrc
 source ~/.bashrc
-sleep 5
+sleep 15
 source ~/.bashrc
 
 echo 'Installing Python ...'
