@@ -1,0 +1,33 @@
+version: 2
+
+models:
+  - name: relations
+    description: "Table of relations between weight, height and average performance of players"
+    columns:
+      - name: player_id
+        description: "ID of the player from the API"
+        tests:
+          - not_null
+          - relationships:
+              to: ref('stg_player')
+              field: player_api_id
+      - name: weight_category
+        description: "Category of the weight of the player"
+        tests:
+          - accepted_values:
+              values:
+                - light
+                - medium
+                - heavy
+      - name: height_category
+        description: "Category of the height of the player"
+        tests:
+          - accepted_values:
+              values:
+                - short
+                - medium
+                - tall
+      - name: avg_performance
+        description: "Average performance of the player"
+        tests:
+          - not_null

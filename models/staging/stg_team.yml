@@ -2,8 +2,7 @@ version: 2
 
 models:
   - name: stg_team
-    unique_key: id, team_api_id
-    description: ""
+    description: "Staging table for team data"
     columns:
       - name: id
         description: "ID of the team"
@@ -16,9 +15,7 @@ models:
           - unique
           - not_null
       - name: team_fifa_api_id
-        description: "ID of the team from the FIFA API"
-        tests:
-          - unique
+        description: "ID of the team from the FIFA API, NOT UNIQUE in this table since we can have 2 team_api_id for the same team_fifa_api_id"
       - name: team_long_name
         description: "Long name of the team"
         tests:

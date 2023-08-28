@@ -2,4 +2,49 @@ version: 2
 
 models:
   - name: int_player_attributes_modified
-    description: ""
+    description: "Table of player attributes joined with player information"
+    columns:
+      - name: id
+        description: "ID of the attribute"
+        tests:
+          - not_null
+          - unique
+      - name: player_api_id
+        description: "ID of the player from the API"
+        tests:
+          - not_null
+          - relationships:
+              to: ref('stg_player')
+              field: player_api_id
+      - name: player_fifa_api_id
+        description: "ID of the player from the FIFA API"
+        tests:
+          - relationships:
+              to: ref('stg_player')
+              field: player_fifa_api_id
+      - name: preferred_foot
+        description: "Preferred foot of the player"
+        tests:
+          - accepted_values:
+              values:
+                - left
+                - right
+                - unknown
+      - name: attacking_work_rate
+        description: "Attacking work rate of the player"
+        tests:
+          - accepted_values:
+              values:
+                - high
+                - medium
+                - low
+                - unknown
+      - name: defensive_work_rate
+        description: "Defensive work rate of the player"
+        tests:
+          - accepted_values:
+              values:
+                - high
+                - medium
+                - low
+                - unknown

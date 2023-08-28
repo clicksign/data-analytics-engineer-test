@@ -29,4 +29,4 @@ SELECT
     44560 AS id,
     'Brazil' AS name
 -- the data from above I got from the additional countries from stg_league
--- table as I can't use another source as country table.
+-- table since I can't use another source as country table.

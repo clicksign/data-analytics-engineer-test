@@ -2,11 +2,15 @@ version: 2
 
 models:
   - name: stg_match
-    unique_key: id
     description: "Staging table for match data"
     columns:
       - name: id
         description: "ID of the match"
+        tests:
+          - unique
+          - not_null
+      - name: match_api_id
+        description: "ID of the match from the API"
         tests:
           - unique
           - not_null
@@ -38,3 +42,135 @@ models:
           - relationships:
               to: ref('stg_team')
               field: team_api_id
+      - name: home_player_1
+        description: "ID of the home team player 1"
+        tests:
+          - relationships:
+              to: ref('stg_player')
+              field: player_api_id
+      - name: home_player_2
+        description: "ID of the home team player 2"
+        tests:
+          - relationships:
+              to: ref('stg_player')
+              field: player_api_id
+      - name: home_player_3
+        description: "ID of the home team player 3"
+        tests:
+          - relationships:
+              to: ref('stg_player')
+              field: player_api_id
+      - name: home_player_4
+        description: "ID of the home team player 4"
+        tests:
+          - relationships:
+              to: ref('stg_player')
+              field: player_api_id
+      - name: home_player_5
+        description: "ID of the home team player 5"
+        tests:
+          - relationships:
+              to: ref('stg_player')
+              field: player_api_id
+      - name: home_player_6
+        description: "ID of the home team player 6"
+        tests:
+          - relationships:
+              to: ref('stg_player')
+              field: player_api_id
+      - name: home_player_7
+        description: "ID of the home team player 7"
+        tests:
+          - relationships:
+              to: ref('stg_player')
+              field: player_api_id
+      - name: home_player_8
+        description: "ID of the home team player 8"
+        tests:
+          - relationships:
+              to: ref('stg_player')
+              field: player_api_id
+      - name: home_player_9
+        description: "ID of the home team player 9"
+        tests:
+          - relationships:
+              to: ref('stg_player')
+              field: player_api_id
+      - name: home_player_10
+        description: "ID of the home team player 10"
+        tests:
+          - relationships:
+              to: ref('stg_player')
+              field: player_api_id
+      - name: home_player_11
+        description: "ID of the home team player 11"
+        tests:
+          - relationships:
+              to: ref('stg_player')
+              field: player_api_id
+      - name: away_player_1
+        description: "ID of the away team player 1"
+        tests:
+          - relationships:
+              to: ref('stg_player')
+              field: player_api_id
+      - name: away_player_2
+        description: "ID of the away team player 2"
+        tests:
+          - relationships:
+              to: ref('stg_player')
+              field: player_api_id
+      - name: away_player_3
+        description: "ID of the away team player 3"
+        tests:
+          - relationships:
+              to: ref('stg_player')
+              field: player_api_id
+      - name: away_player_4
+        description: "ID of the away team player 4"
+        tests:
+          - relationships:
+              to: ref('stg_player')
+              field: player_api_id
+      - name: away_player_5
+        description: "ID of the away team player 5"
+        tests:
+          - relationships:
+              to: ref('stg_player')
+              field: player_api_id
+      - name: away_player_6
+        description: "ID of the away team player 6"
+        tests:
+          - relationships:
+              to: ref('stg_player')
+              field: player_api_id
+      - name: away_player_7
+        description: "ID of the away team player 7"
+        tests:
+          - relationships:
+              to: ref('stg_player')
+              field: player_api_id
+      - name: away_player_8
+        description: "ID of the away team player 8"
+        tests:
+          - relationships:
+              to: ref('stg_player')
+              field: player_api_id
+      - name: away_player_9
+        description: "ID of the away team player 9"
+        tests:
+          - relationships:
+              to: ref('stg_player')
+              field: player_api_id
+      - name: away_player_10
+        description: "ID of the away team player 10"
+        tests:
+          - relationships:
+              to: ref('stg_player')
+              field: player_api_id
+      - name: away_player_11
+        description: "ID of the away team player 11"
+        tests:
+          - relationships:
+              to: ref('stg_player')
+              field: player_api_id

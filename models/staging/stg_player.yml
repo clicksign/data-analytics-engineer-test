@@ -2,7 +2,7 @@ version: 2
 
 models:
   - name: stg_player
-    description: ""
+    description: "Staging table for player data"
     columns:
       - name: id
         description: "ID of the player"

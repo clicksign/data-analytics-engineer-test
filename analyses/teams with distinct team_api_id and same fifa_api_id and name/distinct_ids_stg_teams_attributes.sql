@@ -40,13 +40,16 @@ WITH team_attributes AS (
         CAST(JSON_EXTRACT(team_attributes, '$.{{ _column }}') AS text) AS {{ _column }},
         {%- endfor %}
         {%- for _column in team_attributes_columns_by_type['date'] %}
-        CAST(DATE(CAST(JSON_EXTRACT(team_attributes, '$.{{ _column }}') AS text)) AS text) AS {{ _column }}{{ ',' if not loop.last }}
+        DATE(CAST(JSON_EXTRACT(team_attributes, '$.{{ _column }}') AS text)) AS {{ _column }}{{ ',' if not loop.last }}
         {%- endfor %}
     FROM {{ source('Fifadata','Team_Attributes') }}
 )
 
 SELECT
-    {%- for _column in team_attributes_columns %}
-    {{ _column }}{{ ',' if not loop.last }}
-    {%- endfor %}
+    team_fifa_api_id AS unique_field,
+    COUNT(DISTINCT team_api_id) AS distinct_team_api_id_count
 FROM team_attributes
+WHERE team_fifa_api_id IS NOT NULL
+GROUP BY team_fifa_api_id
+HAVING distinct_team_api_id_count > 1
+{# Note that the same unique_field are present in both teams and teams_attributes. #}

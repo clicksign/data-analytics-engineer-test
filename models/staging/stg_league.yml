@@ -2,7 +2,6 @@ version: 2
 
 models:
   - name: stg_league
-    unique_key: id
     description: "Staging table for league data"
     columns:
       - name: id

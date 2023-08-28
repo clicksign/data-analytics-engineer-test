@@ -2,11 +2,15 @@ version: 2
 
 models:
   - name: stg_country
-    unique_key: id
-    description: ""
+    description: "Staging table for country data"
     columns:
       - name: id
-        description: ""
+        description: "ID of the country"
+        tests:
+          - unique
+          - not_null
+      - name: name
+        description: "Name of the country"
         tests:
           - unique
           - not_null
