@@ -23,7 +23,7 @@ class TestCSVProcessing(unittest.TestCase):
 
     def test_read_csv_and_clean(self):
         """Tests that read_csv_and_clean() correctly reads and cleans a CSV file."""
-        file_path = "python_scripts/Data/test.csv"
+        file_path = "data/test.csv"
         # Create a test DataFrame with appropriate columns and data
         test_data = {
             "column1": ['{"key": "value"}', '{"key": "value2"}', '{"key3": "value2"}'],

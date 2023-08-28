@@ -1,4 +1,3 @@
-#%%
 """Extracts data from CSV files and loads it into the SQLite database."""
 import os
 import sqlite3
@@ -45,14 +44,18 @@ def main():
     """Reads CSV files in the Data folder, cleans the data, and inserts it into
     the SQLite database."""
     # Connect to the SQLite database
-    conn = sqlite3.connect("../test_analytics_engineer.sqlite")
+    conn = sqlite3.connect("test_analytics_engineer.sqlite")
 
     # Get a list of CSV files in the current Data folder
-    csv_files = [file for file in os.listdir("Data/") if file.endswith(".csv")]
+    csv_files = [
+        file
+        for file in os.listdir("data/extracted_files/Data/")
+        if file.endswith(".csv")
+    ]
 
     for csv_file in csv_files:
         table_name = os.path.splitext(csv_file)[0]
-        file_path = os.path.join("Data", csv_file)
+        file_path = os.path.join("data/extracted_files/Data", csv_file)
 
         table = read_csv_and_clean(file_path)
         insert_into_database(table, table_name, conn)
@@ -63,5 +66,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
-# %%
