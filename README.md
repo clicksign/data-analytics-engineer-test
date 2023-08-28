@@ -99,3 +99,30 @@ data-analytics-engineer-test/
 ## Banco de Dados
 
 - `test_analytics_engineer.sqlite`: É um arquivo de banco de dados SQLite usado para o projeto.
+
+# Melhorias
+
+- Implementar o Airflow para fazer a orquestração do processo de extração e carregamento.
+- Desenvolver todos os modelos de staging de forma incremental, para que não seja necessário carregar todos os dados novamente.
+- Desenvolver ciência de dados para responder as perguntas do case, fazer análises, clusterizações de jogadores similares e fazer previsões.
+- Refazer o processo de web scraping para extrair dados de forma que não tenhamos problemas com falta de dados em colunas, ou dados com má formatação ou formato de html.
+
+# Questões do teste
+
+## 1. Utilize Python para extrair e enviar os dados para um banco SQLite com nome das tabelas iguais aos nomes dos arquivos
+Foi feito com os scripts `python_scripts/unzip.py` e `python_scripts/extract_and_load.py`. Como optei por um ELT, deixei a tipagem e os tratamentos de dados para o dbt nos modelos de staging.
+
+## 2. Utilize SQL para criar tabelas modified
+A conversão de JSON para tabela foi feito direto nos modelos de staging `stg_player_attributes` e `stg_team_attributes`. Já a união das tabelas foi feita como intermediate model `int_player_attributes_modified` e `int_team_attributes_modified`. A criação da tabela com JSON foi feita no modelo `int_match_modified`.
+
+## 3. Validar qualidade de dados e buscar "sujeiras"
+Esse processo foi inteiramente feito com o auxílio do dbt. Criei diversos testes no dbt de não nulos, distintos e testes de chaves estrangeiras para todos modelos de staging. Adicionei descrição nas colunas e tabelas para facilitar a compreensão do que cada coluna e tabela representa. Com esses testes, o dbt me retorna um SQL do que está com problema e eu posso corrigir os dados. Fiz também algumas análises exploratorias respondendo as perguntas de exemplo e explorei a não unicidade de nomes de times e `team_fifa_api_id` chegando à conclusão de que há alguns países com dois times nacionais não oficiais pela FIFA, isso é evidente devido a existência de jogos entre eles, e com o mesmo nome. Mas tendo que escolher somente um quando as partidas são pela FIFA.
+
+## 4. Tabela Relations
+Como não identifiquei outliers nos dados de pesos e alturas, decidi ter uma abordagem mais geral para o problema. Encontrei o intervalo entre os pesos/alturas máximos e mínimos e dividi em 3 partes esse intervalo. Caso o peso/altura esteja na primeira parte, ele é considerado leve/baixo, caso esteja na segunda parte, ele é considerado médio e caso esteja na terceira parte, ele é considerado pesado/alto. A tabela foi criada com um modelo mart `relations`.
+
+## 5. Solicitação do gerente da FIFA
+Como o projeto foi inteiramente desenvolvido no dbt, decidi montar um modelo mart incremental no dbt para fornecer esses dados, usando como chave para o merge a data truncada na semana e o id do time. Coloquei uma tag `weekly` para permitir rodar esse modelo semanalmente. O modelo em questão é o `home_team_performance_weekly`. Para automatizar esse processo poderia ser usado o Airflow.
+
+## 6. Criação de um projeto no dbt
+Foi feito durante o desenvolvimento do projeto.
