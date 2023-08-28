@@ -1,4 +1,5 @@
 # Configurando o WSL2 (para usuários Windows)
+
 - Baixe e instale o VSCode: https://code.visualstudio.com/download.
 - Abra o PowerShell como administrador e execute o comando: `wsl --install`
 - Reinicie o computador.
@@ -8,15 +9,17 @@
 - Instale a extensão WSL no VSCode, feche e rode novamente o comando acima no terminal do Ubuntu.
 
 # Configuração do ambiente em WSL2 ou Linux:
-- Clone o repositório, rodando o seguinte comando no terminal do VSCode: `git clone https://github.com/clicksign/data-analytics-engineer-test.git`
-- Mude para a branch `Gustavo Oliveira`.
+
+- Clone o repositório, rodando o seguinte comando no terminal do VSCode: `git clone https://github.com/galvsoliveira/data-analytics-engineer-test.git`.
 - Instale a extensão dbt Power User no VSCode, que é bastante útil para desenvolver com dbt.
 - Na raiz do projeto, execute o seguinte comando no terminal do vscode para configurar o asdf: `cd config-scripts && chmod +x setup-linux-wsl2__adsf.sh && ./setup-linux-wsl2__adsf.sh && cd ..`
 - Abra um novo terminal e rode o seguinte comando para terminar a configuração do asdf: `source ~/.bashrc`
 - Agora rode o seguinte comando para configurar o python:`cd config-scripts && chmod +x setup-linux-wsl2__python.sh && ./setup-linux-wsl2__python.sh && cd ..`
 
 # Rodando o projeto:
+
 ## Extração e carregamento dos dados:
+
 - Na raiz do projeto, abra um novo terminal e execute: `poetry run python python_scripts/unzip.py` para extrair os arquivos `.csv` de `data/Data.rar` para a pasta `data/extracted_files/Data`.
 - Em seguida, execute: `poetry run python python_scripts/extract_and_load.py`.
 - EXTRA: O teste unitário do script `extract_and_load.py` pode ser executado com o comando: `poetry run python_scripts/test_extract_and_load.py`.
@@ -26,11 +29,13 @@ Dessa forma, os dados serão extraídos do arquivo `.rar` e carregados no banco 
 Obs: Os arquivos `.csv` poderiam ser diretamente importados para o banco ao colocar na pasta seeds, mas preferi fazer dessa forma para simular um processo de ELT.
 
 ## Configuração do dbt:
+
 - Na raiz do projeto no terminal, execute: `poetry run dbt build`
 
 O comando acima irá executar os modelos do dbt e criar as tabelas de staging, intermediate e mart no banco de dados SQLite, rodando os testes para cada modelo.
 
 ## Documentação do dbt:
+
 - Na raiz do projeto no terminal, execute: `poetry run dbt docs generate` para gerar a documentação do dbt.
 - Em seguida, execute: `poetry run dbt docs serve --port 9090` para visualizar a documentação do dbt no link http://localhost:9090/ no navegador.
 
@@ -69,7 +74,9 @@ data-analytics-engineer-test/
 - `README.md`: Contém informações sobre o projeto, incluindo como configurar e executar o projeto.
 - `pyproject.toml`: Especifica as dependências do projeto Python.
 - `.pre-commit-config.yaml`: É o arquivo de configuração do pre-commit, onde você pode definir hooks para serem executados antes de cada commit.
+  
 ### Configuração do dbt
+
 - `dbt_project.yml`: É o arquivo de configuração do projeto dbt, onde você pode definir configurações globais para seu projeto.
 - `packages.yml`: Especifica as dependências do projeto dbt.
 - `profiles.yml`: Especifica as configurações de conexão com o banco de dados para o dbt.
