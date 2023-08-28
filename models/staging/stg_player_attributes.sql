@@ -59,11 +59,11 @@ WITH player_attributes AS (
 )
 
 SELECT
-    CASE WHEN TRIM(preferred_foot) IN ('left', 'right') THEN preferred_foot ELSE 'unknown' END AS preferred_foot,
-    CASE WHEN TRIM(attacking_work_rate) IN ('high', 'medium', 'low') THEN attacking_work_rate ELSE 'unknown' END AS attacking_work_rate,
-    CASE WHEN TRIM(defensive_work_rate) IN ('high', 'medium', 'low') THEN defensive_work_rate ELSE 'unknown' END AS defensive_work_rate,
+    CAST((CASE WHEN TRIM(preferred_foot) IN ('left', 'right') THEN preferred_foot ELSE 'unknown' END) AS text) AS preferred_foot,
+    CAST((CASE WHEN TRIM(attacking_work_rate) IN ('high', 'medium', 'low') THEN attacking_work_rate ELSE 'unknown' END) AS text) AS attacking_work_rate,
+    CAST((CASE WHEN TRIM(defensive_work_rate) IN ('high', 'medium', 'low') THEN defensive_work_rate ELSE 'unknown' END) AS text) AS defensive_work_rate,
     {%- for _column in player_attributes_columns_by_type['date'] %}
-    {{ _column }},
+    CAST({{ _column }} AS text) AS {{ _column }},
     {%- endfor %}
     {%- for _column in player_attributes_columns_by_type['integer'] %}
     {{ _column }}{{ ',' if not loop.last }}

@@ -1,0 +1,5 @@
+version: 2
+
+models:
+  - name: int_team_added_country_league
+    description: "Team table with country and league information"

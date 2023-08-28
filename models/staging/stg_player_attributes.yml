@@ -10,20 +10,20 @@ models:
           - not_null
           - unique
       - name: player_api_id
-        description: ""
+        description: "ID of the player from the API"
         tests:
           - not_null
           - relationships:
               to: ref('stg_player')
               field: player_api_id
       - name: player_fifa_api_id
-        description: ""
+        description: "ID of the player from the FIFA API"
         tests:
           - relationships:
               to: ref('stg_player')
               field: player_fifa_api_id
       - name: preferred_foot
-        description: ""
+        description: "Preferred foot of the player"
         tests:
           - accepted_values:
               values:
@@ -31,7 +31,7 @@ models:
                 - right
                 - unknown
       - name: attacking_work_rate
-        description: ""
+        description: "Attacking work rate of the player"
         tests:
           - accepted_values:
               values:
@@ -40,7 +40,7 @@ models:
                 - low
                 - unknown
       - name: defensive_work_rate
-        description: ""
+        description: "Defensive work rate of the player"
         tests:
           - accepted_values:
               values:

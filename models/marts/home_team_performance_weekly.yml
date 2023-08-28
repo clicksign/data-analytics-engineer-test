@@ -1,0 +1,10 @@
+version: 2
+
+models:
+  - name: home_team_performance_weekly
+    description: "Table of weekly performance of home teams"
+    config:
+      tags: ['weekly']
+      materialized: 'incremental'
+      unique_key: ['team_id', 'week_start']
+      incremental_strategy: 'merge'

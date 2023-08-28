@@ -126,8 +126,13 @@
 } %}
 
 SELECT
-    {{ match_columns_by_type['integer'] | join(',\n    ') }},
-    {{ match_columns_by_type['real'] | join(',\n    ') }},
-    {{ match_columns_by_type['text'] | join(',\n    ') }},
+    home_team_api_id,
+    away_team_api_id,
+    match_api_id,
     CAST(DATE(date) AS TEXT) AS date
 FROM {{ source('Fifadata','Match') }}
+--where home_team_api_id in (9996,274581)
+--where home_team_api_id in (8024, 8244)
+WHERE home_team_api_id IN (8020, 8031)
+ORDER BY date DESC
+-- hypotesis false, the team_api_id doesn't seem to change at an specific time
