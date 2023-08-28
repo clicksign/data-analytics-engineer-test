@@ -11,9 +11,9 @@
 - Clone o repositório, rodando o seguinte comando no terminal do VSCode: `git clone https://github.com/clicksign/data-analytics-engineer-test.git`
 - Mude para a branch `Gustavo Oliveira`.
 - Instale a extensão dbt Power User no VSCode, que é bastante útil para desenvolver com dbt.
-- Na raiz do projeto, execute o seguinte comando no terminal do vscode para configurar o asdf: `cd config-scripts && chmod +x setup-linux-wsl2__adsf.sh && ./setup-linux-wsl2.sh && cd ..`
+- Na raiz do projeto, execute o seguinte comando no terminal do vscode para configurar o asdf: `cd config-scripts && chmod +x setup-linux-wsl2__adsf.sh && ./setup-linux-wsl2__adsf.sh && cd ..`
 - Abra um novo terminal e rode o seguinte comando para terminar a configuração do asdf: `source ~/.bashrc`
-- Agora rode o seguinte comando para configurar o python:`cd config-scripts && chmod +x setup-linux-wsl2__python.sh && ./setup-linux-wsl2.sh && cd ..`
+- Agora rode o seguinte comando para configurar o python:`cd config-scripts && chmod +x setup-linux-wsl2__python.sh && ./setup-linux-wsl2__python.sh && cd ..`
 
 # Estrutura do Projeto
 
