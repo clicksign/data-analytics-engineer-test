@@ -1,6 +1,19 @@
+# Configurando o WSL2 (para usuarios Windows)
+- Baixe e instale o VSCode: https://code.visualstudio.com/download.
+- Abra o PowerShell como administrador e execute o comando: `wsl --install`
+- Configure um usuário e senha para o WSL2.
+- Reinicie o computador.
+- Na barra de pesquisa do Windows, digite "Ubuntu" e abra-o.
+- Rode o seguinte comando para abrir o VSCode no Ubuntu: `code .`
+- Instale a extensão WSL no VSCode, feche e rode novamente o comando acima no terminal do Ubuntu.
+
 # Configuração do ambiente em WSL2 ou Linux:
-- Clone o repositório.
-- Na raiz do projeto, execute o comando: `cd config-scripts && chmod +x setup-linux-wsl2.sh && ./setup-linux-wsl2.sh && cd ..`
+- Clone o repositório, rodando o seguinte comando no terminal do VSCode: `git clone https://github.com/clicksign/data-analytics-engineer-test.git`
+- Mude para a branch `Gustavo Oliveira`.
+- Instale a extensão dbt Power User no VSCode, que é bastante útil para desenvolver com dbt.
+- Na raiz do projeto, execute o seguinte comando no terminal do vscode para configurar o asdf: `cd config-scripts && chmod +x setup-linux-wsl2__adsf.sh && ./setup-linux-wsl2.sh && cd ..`
+- Abra um novo terminal e rode o seguinte comando para terminar a configuração do asdf: `source ~/.bashrc`
+- Agora rode o seguinte comando para configurar o python:`cd config-scripts && chmod +x setup-linux-wsl2__python.sh && ./setup-linux-wsl2.sh && cd ..`
 
 # Estrutura do Projeto
 
