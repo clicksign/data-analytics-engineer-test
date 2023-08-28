@@ -26,7 +26,11 @@ Dessa forma, os dados serão extraídos do arquivo zip e carregados no banco de 
 ## Configuração do dbt:
 - Na raiz do projeto no terminal, execute: `poetry run dbt build`
 
-O comando acima irá criar as tabelas de staging, intermediate e mart no banco de dados SQLite, rodando os testes para cada modelo.
+O comando acima irá executar os modelos do dbt e criar as tabelas de staging, intermediate e mart no banco de dados SQLite, rodando os testes para cada modelo.
+
+## Documentação do dbt:
+- Na raiz do projeto no terminal, execute: `poetry run dbt docs generate` para gerar a documentação do dbt.
+- Em seguida, execute: `poetry run dbt docs serve --port 9090` para visualizar a documentação do dbt no link http://localhost:9090/ no navegador.
 
 # Estrutura do Projeto
 
