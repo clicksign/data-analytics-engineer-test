@@ -100,13 +100,6 @@ data-analytics-engineer-test/
 
 - `test_analytics_engineer.sqlite`: É um arquivo de banco de dados SQLite usado para o projeto.
 
-# Melhorias
-
-- Implementar o Airflow para fazer a orquestração do processo de extração e carregamento.
-- Desenvolver todos os modelos de staging de forma incremental, para que não seja necessário carregar todos os dados novamente.
-- Desenvolver ciência de dados para responder as perguntas do case, fazer análises, clusterizações de jogadores similares e fazer previsões.
-- Refazer o processo de web scraping para extrair dados de forma que não tenhamos problemas com falta de dados em colunas, ou dados com má formatação ou formato de html.
-
 # Questões do teste
 
 O case foi inteiramente desenvolvido usando sheel, python e dbt. Foquei em usar nomenclaturas condizentes com as boas práticas do dbt e desenvolver os códigos com boas práticas de engenharia de software.
@@ -152,3 +145,10 @@ Essas métricas adicionais proporcionam uma visão mais abrangente do desempenho
 ## 6. Criação de um projeto no dbt
 
 Foi feito durante o desenvolvimento do projeto.
+
+# Melhorias
+
+- Implementar o Airflow para fazer a orquestração do processo de extração e carregamento.
+- Desenvolver todos os modelos de staging de forma incremental, para que não seja necessário carregar todos os dados novamente.
+- Desenvolver ciência de dados para responder as perguntas do case, fazer análises, clusterizações de jogadores similares e fazer previsões.
+- Refazer o processo de web scraping para extrair dados de forma que não tenhamos problemas com falta de dados em colunas, ou dados com má formatação ou formato de html.
