@@ -19,7 +19,7 @@
 ## Extração e carregamento dos dados:
 - Na raiz do projeto, abra um novo terminal e execute: `poetry run python python_scripts/unzip.py`
 - Em seguida, execute: `poetry run python python_scripts/extract_and_load.py`
-- EXTRA: O teste unitário do script `extract_and_load.py` pode ser executado com o comando: `poetry run pytest tests/test_extract_and_load.py`
+- EXTRA: O teste unitário do script `extract_and_load.py` pode ser executado com o comando: `poetry run python_scripts/test_extract_and_load.py`
 
 Dessa forma, os dados serão extraídos do arquivo zip e carregados no banco de dados SQLite com arquivo `test_analytics_engineer.sqlite` na raiz do projeto.
 
