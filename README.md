@@ -17,11 +17,13 @@
 
 # Rodando o projeto:
 ## Extração e carregamento dos dados:
-- Na raiz do projeto, abra um novo terminal e execute: `poetry run python python_scripts/unzip.py`
-- Em seguida, execute: `poetry run python python_scripts/extract_and_load.py`
-- EXTRA: O teste unitário do script `extract_and_load.py` pode ser executado com o comando: `poetry run python_scripts/test_extract_and_load.py`
+- Na raiz do projeto, abra um novo terminal e execute: `poetry run python python_scripts/unzip.py` para extrair os arquivos `.csv` de `data/Data.rar` para a pasta `data/extracted_files/Data`.
+- Em seguida, execute: `poetry run python python_scripts/extract_and_load.py`.
+- EXTRA: O teste unitário do script `extract_and_load.py` pode ser executado com o comando: `poetry run python_scripts/test_extract_and_load.py`.
 
-Dessa forma, os dados serão extraídos do arquivo zip e carregados no banco de dados SQLite com arquivo `test_analytics_engineer.sqlite` na raiz do projeto.
+Dessa forma, os dados serão extraídos do arquivo `.rar` e carregados no banco de dados SQLite com arquivo `test_analytics_engineer.sqlite` na raiz do projeto. O script é flexível o bastante para que você possa adicionar novos arquivos `.csv` na pasta `data/extracted_files/Data` e eles serão carregados no banco de dados com tabelas de mesmo nome.
+
+Obs: Os arquivos `.csv` poderiam ser diretamente importados para o banco ao colocar na pasta seeds, mas preferi fazer dessa forma para simular um processo de ELT.
 
 ## Configuração do dbt:
 - Na raiz do projeto no terminal, execute: `poetry run dbt build`
@@ -49,6 +51,7 @@ data-analytics-engineer-test/
 ├── snapshots/
 ├── tests/
 ├── .gitignore
+├── .pre-commit-config.yaml
 ├── README.md
 ├── packages.yml
 ├── poetry.lock
@@ -66,6 +69,7 @@ data-analytics-engineer-test/
 - `profiles.yml`: Especifica as configurações de conexão com o banco de dados para o dbt.
 - `pyproject.toml`: Especifica as dependências do projeto Python.
 - `dbt_project.yml`: É o arquivo de configuração do projeto dbt, onde você pode definir configurações globais para seu projeto.
+- `.pre-commit-config.yaml`: É o arquivo de configuração do pre-commit, onde você pode definir hooks para serem executados antes de cada commit.
 
 ## Gerenciamento de Dados
 
