@@ -109,20 +109,46 @@ data-analytics-engineer-test/
 
 # Questões do teste
 
+O case foi inteiramente desenvolvido usando sheel, python e dbt. Foquei em usar nomenclaturas condizentes com as boas práticas do dbt e desenvolver os códigos com boas práticas de engenharia de software.
+A seguir, respondo as questões do teste:
+
 ## 1. Utilize Python para extrair e enviar os dados para um banco SQLite com nome das tabelas iguais aos nomes dos arquivos
+
 Foi feito com os scripts `python_scripts/unzip.py` e `python_scripts/extract_and_load.py`. Como optei por um ELT, deixei a tipagem e os tratamentos de dados para o dbt nos modelos de staging.
 
 ## 2. Utilize SQL para criar tabelas modified
+
 A conversão de JSON para tabela foi feito direto nos modelos de staging `stg_player_attributes` e `stg_team_attributes`. Já a união das tabelas foi feita como intermediate model `int_player_attributes_modified` e `int_team_attributes_modified`. A criação da tabela com JSON foi feita no modelo `int_match_modified`.
 
 ## 3. Validar qualidade de dados e buscar "sujeiras"
+
 Esse processo foi inteiramente feito com o auxílio do dbt. Criei diversos testes no dbt de não nulos, distintos e testes de chaves estrangeiras para todos modelos de staging. Adicionei descrição nas colunas e tabelas para facilitar a compreensão do que cada coluna e tabela representa. Com esses testes, o dbt me retorna um SQL do que está com problema e eu posso corrigir os dados. Fiz também algumas análises exploratorias respondendo as perguntas de exemplo e explorei a não unicidade de nomes de times e `team_fifa_api_id` chegando à conclusão de que há alguns países com dois times nacionais não oficiais pela FIFA, isso é evidente devido a existência de jogos entre eles, e com o mesmo nome. Mas tendo que escolher somente um quando as partidas são pela FIFA.
 
 ## 4. Tabela Relations
+
 Como não identifiquei outliers nos dados de pesos e alturas, decidi ter uma abordagem mais geral para o problema. Encontrei o intervalo entre os pesos/alturas máximos e mínimos e dividi em 3 partes esse intervalo. Caso o peso/altura esteja na primeira parte, ele é considerado leve/baixo, caso esteja na segunda parte, ele é considerado médio e caso esteja na terceira parte, ele é considerado pesado/alto. A tabela foi criada com um modelo mart `relations`.
 
 ## 5. Solicitação do gerente da FIFA
-Como o projeto foi inteiramente desenvolvido no dbt, decidi montar um modelo mart incremental no dbt para fornecer esses dados, usando como chave para o merge a data truncada na semana e o id do time. Coloquei uma tag `weekly` para permitir rodar esse modelo semanalmente. O modelo em questão é o `home_team_performance_weekly`. Para automatizar esse processo poderia ser usado o Airflow.
+
+Respondendo ao pedido do gerente da FIFA, desenvolvi um modelo mart incremental no dbt para disponibilizar os dados solicitados, ampliando a análise com métricas adicionais. Para facilitar a fusão de dados, utilizei a data truncada para a semana e o ID do time como chaves de junção. Introduzi a tag `weekly` para permitir a execução automatizada desse modelo em intervalos semanais. O modelo específico que contempla essas transformações é o `home_team_performance_weekly`.
+
+Com o intuito de automatizar o processo, sugiro a implementação do Airflow, uma plataforma que possibilita agendar e gerenciar fluxos de trabalho de maneira eficiente e escolher a tag `weekly` como gatilho para a execução do modelo.
+
+Inicialmente, busquei incluir informações adicionais sobre as partidas, mas infelizmente, muitas colunas relevantes possuíam formatação inadequada. Para corrigir essa questão, seria necessário reestruturar a coleta de dados por meio de web scraping. Diante dessa limitação, optei por focar nas colunas `home_team_api_id`, `away_team_api_id`, `home_team_goal` e `away_team_goal`, que estavam disponíveis e prontas para uso.
+
+No entanto, aprimorei a análise incorporando as seguintes métricas às estatísticas das equipes:
+
+- **Total de Gols Semanais**: Soma dos gols marcados em casa e fora em cada semana.
+- **Total de Partidas Semanais**: Contagem do número total de partidas disputadas por cada equipe em cada semana.
+- **Diferença de Gols Semanais**: Diferença entre gols marcados e gols sofridos por cada equipe em cada semana.
+- **Média de Gols Semanais**: Média de gols marcados por partida para cada equipe em cada semana.
+- **Número de Vitórias Semanais**: Contagem de vezes que cada equipe venceu em uma semana.
+- **Número de Empates Semanais**: Contagem de vezes que cada equipe empatou em uma semana.
+- **Número de Derrotas Semanais**: Contagem de vezes que cada equipe perdeu em uma semana.
+- **Taxa de Vitórias Semanais**: Proporção de vitórias em relação ao total de partidas jogadas em cada semana.
+
+Essas métricas adicionais proporcionam uma visão mais abrangente do desempenho das equipes ao longo das semanas, permitindo análises mais detalhadas e insights valiosos para a gestão de equipes no cenário esportivo.
 
 ## 6. Criação de um projeto no dbt
+
 Foi feito durante o desenvolvimento do projeto.
